@@ -67,13 +67,241 @@ El sistema será un apoyo para los registros de los clientes de la empresa,consi
 
 #### 3.	Requerimientos Específicos
 ##### 3.1	Requerimientos Funcionales
-|Implementación de un software para el registro de clientes en la empresa planeadores                     |
-|---------------------------------------------------------------------|
-|               SRS – Especificación de Requerimientos                |
+1.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
 
 |    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
 |------------|:--------------:|:------------:|-----------------------:|
 |    RF-001  |MÓDULO DE LOGIN | 15-11-2019   |          Alto          |
+| **Entradas**     |**Fuente**|**Salida**|**Destino**|
+|Datos personales(Usuario y  contraseña)|Base de datos |Interfaz principal(Registro de clientes)|Base de datos(registro de quien accede)  
+|**Restricciones**|
+|Solo se accederá a ciertos módulos del sistema según el rol del usuario|
 
-| Descripción  |  Al sistema solo accederá personal autorizado por el administrador, quien asignará los roles a los usuario   |
-|--------------|------------------------------------------------------|
+|  **Descripción:**|Al sistema solo accederá personal autorizado por el administrador, quien asignará los roles a los usuario                         |
+|--------------------------|-------------------------|
+|**Proceso:**|**•	Ingresar nombre y contraseña de usuario y elegir rol para Iniciar sesión.Cabe aclarar que el usuario previamente se encuentra en la base de datos del sistema**|
+|**Efecto Colateral:**|**Errar la contraseña o nombre de usuario niega el ingresó a la aplicación web.**|
+
+2.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-003  |LISTA DE CLIENTES REGISTRADOS | 15-11-2019   |          Alto          |
+| **Entradas**     |**Fuente**|**Salida**|**Destino**|
+|Datos personales: Identificación, Nombres, Apellidos,ETC.| Formulario de Registro para cliente|Cliente registrado|Base de Datos   
+|**Restricciones**|
+|Un cliente solo se puede registras una vez|
+
+|  **Descripción:**|El sistema debe permitir el registro de clientes                        |
+|--------------------------|-------------------------|
+|**Proceso:**|**•	Recolección datos básicos personales (nombre, apellido, celular etc.).<br>•	Registro de cliente**|
+|**Efecto Colateral:**|**registrar con un cliente ya registrado**|
+
+3.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-002  |REGISTRO DE CLIENTES | 15-11-2019   |          Alto          |
+| **Entradas**     |**Fuente**|**Salida**|**Destino**|
+|Ninguna|Base de datose|Lista de los usuarios registrados|Interfaz que permite visualizar el listado de los clientes registrados en la base de datos   
+|**Restricciones**|
+|Ninguna|
+
+|  **Descripción:**|El sistema tendrá una interfaz que permita visualizar el listado de los clientes registrados en la base de datos                       |
+|--------------------------|-------------------------|
+|**Proceso:**|**El usuario del sistema deberá solicitar la información del cliente para poder visualizarla.**|
+|**Efecto Colateral:**|**El cliente ya está registrado en la base de datos**|
+
+4.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-004  |OBSERVACIONES  | 15-11-2019   |          Alto          |
+| **Entradas**     |**Fuente**|**Salida**|**Destino**|
+|Descripción de Anotación o queja|Cliente|Queja registrada |Base de datos  
+|**Restricciones**|
+|Ninguna|
+
+|  **Descripción:**|Los clientes podrán indicar sus peticiones y quejas referentes a las planeaciones entregadas.                     |
+|--------------------------|-------------------------|
+|**Proceso:**|**•	El cliente debe informar al usuario su .**|
+|**Efecto Colateral:**|**Ninguno**|
+
+5.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-005  |USABILIDAD   | 15-11-2019   |          Alto          |
+
+
+|  **Descripción:**|Los clientes podrán indicar sus peticiones y quejas referentes a las planeaciones entregadas.                     |
+|--------------------------|-------------------------|
+
+
+6.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-006  |ESCALABILIDAD   | 15-11-2019   |          Alto          |
+
+
+|  **Descripción:**|El diseño del software soportará el incremento de volumen de operaciones sin necesidad de modificar el código fuente.                    |
+|--------------------------|-------------------------|
+
+7.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-007  |DISPONIBILIDAD    | 15-11-2019   |          Alto          |
+
+
+|  **Descripción:**|El software  tiene una  disponibilidad  continua para prestar servicios  al público ya que el parqueadero no está exento de hacerlo en horarios no hábiles  como  por ejemplo los domingos o festivos.                    |
+|--------------------------|-------------------------|
+
+8.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-008  | FIABILIDAD   | 15-11-2019   |          Alto          |
+
+
+|  **Descripción:**|El sistema debe tener en cuenta la recuperación frente a fallos de conexión: Asegurar que no se pierdan los datos de la base de datos.                    |
+|--------------------------|-------------------------|
+
+9.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-009  | MANTENIBILIDAD  | 15-11-2019   |          Alto          |
+
+
+|  **Descripción:**|Al software se  le debe estar brindando mantenimiento preventivo ya que es de gran importancia para un buen desarrollo de las actividades o procesos de este.                    |
+|--------------------------|-------------------------|
+
+#### 3.2	 Requerimientos de interfaz de usuario
+
+1.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-001  | LOGIN   | 15-11-2019   |          Alto          |
+
+
+|  **Descripción:**|Interfaz que permitirá al administrador y a los usuario del sistema ingresar a este, para dar uso a los otros procesos.                   |
+|--------------------------|-------------------------|
+
+2.   
+
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-002  | REGISTRO DE USUARIO  | 15-11-2019   |          Alto          |
+
+
+|  **Descripción:**|Interfaz que permitirá que permitirá a personas registrarla en la base de datos del sistema.                   |
+|--------------------------|-------------------------|
+
+3.
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-003  |REGISTRO DE CLIENTES | 15-11-2019   |          Alto          |
+
+
+|  **Descripción:**|Interfaz que permitirá al usuario registrar clientes                |
+|--------------------------|-------------------------|
+
+4.  
+
+
+
+|**Implementación de un software para el registro de clientes en la empresa planeadores**                         |
+|-------------------------------------------------------|
+|**SRS – Especificación de Requerimientos**
+
+|    Código  |   Nombre       |    Fecha     |   Grado Necesidad      |
+|------------|:--------------:|:------------:|-----------------------:|
+|    RF-004  |OBSERVACIONES | 15-11-2019   |          Alto          |
+
+
+|  **Descripción:**|Interfaz que permite escribir  al usuario anotaciones  o quejas por parte de los clientes                |
+|--------------------------|-------------------------|
+
+#### 4.	Determinación de las tecnologías de hardware, software y servicios requeridos para el proyecto en desarrollo.
+
+##### 4.1. Software
+|ITEM|CANTIDAD POR COMPONENTE|COMPONENTE|
+|----------------|------------------|----------------|
+|1|1|Módulo de ingreso administrador|
+|2|1|Módulo registro de clientes|
+|3|1|Base de datos de los clientes registrados|
+
+##### 4.2. Computador
+|ITEM|CANTIDAD POR COMPONENTE|COMPONENTE|DESCRIPCION|
+|---------------------|---------------|----------------|-----|
+|1|2|MOUSE|Óptico inalámbrico 2.4 Ghz|
+|2|2|TECLADO|Conexión USB|
+|2|2|CABLE HDMI|Cable de conexión para el monitor|
+|3|2|CABLES DE PODER|Enchufe Black Awin 2mm|
+|4|2|MONITOR PLANO LCD DE 24|Asus VG248QE l 24 Pulgadas-144Hz.|
+|5|2|UNIDADES OPTICAS|Lecto-grabadora de DVD 16X  mínimo, interfaz EIDE/SATA|
