@@ -1,1 +1,89 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
+body, html {
+	font-family: helvetica, neue;
+}
+
+header {
+	width: 100vw;
+	height: 100vh;
+
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+header .toggleMenu {
+	position: fixed;
+	top: 25px;
+	right: 10px;
+	cursor: pointer;
+	background: #f4f4f4;
+	color: #333;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	text-align: center;
+}
+
+header .toggleMenu .hamb1,.hamb2,.hamb3 {
+	background: #333;
+	width: 60%;
+	height: 10%;
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+header nav {
+	width: 100%;
+	margin-left: 50px;
+}
+
+header nav a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 20px;
+	transition: all 0.3s;
+}
+
+header nav a:hover {
+	color: #333;
+}
+
+header .textos {
+	width: 50%;
+	color: #f4f4f4;
+}
+
+header .textos h1 {
+	width: 100%;
+	margin-left: 50px;
+	font-size: 40pt;
+	font-weight: normal;
+}
+
+header .textos p {
+	margin-left: 50px;
+	font-size: 15pt;
+	margin-top: 30px;
+}
+
+header .images {
+	width: 50%;
+}
+
+header .images img {
+	width: 70%;
+	height: 70%;
+	object-fit: cover;
+	border-radius: 10px;
+}
