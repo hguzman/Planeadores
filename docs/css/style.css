@@ -23,66 +23,110 @@ header {
 	overflow: hidden;
 }
 
-header .toggleMenu {
-	position: fixed;
-	top: 25px;
-	right: 10px;
-	cursor: pointer;
-	background: #f4f4f4;
-	color: #333;
-	height: 47px;
-	width: 47px;
-	border-radius: 50%;
-	line-height: 40px;
+	header .toggleMenu {
+		position: fixed;
+		top: 25px;
+		right: 10px;
+		cursor: pointer;
+		background: #f4f4f4;
+		color: #333;
+		height: 47px;
+		width: 47px;
+		border-radius: 50%;
+		line-height: 40px;
+		text-align: center;
+	}
+
+		header .toggleMenu #symbol {
+			font-size: 50pt;
+		}
+
+	header nav {
+		width: 100%;
+		margin-left: -600px;
+		transition: all .3s ease;
+	}
+
+		header nav a {
+			color: #fff;
+			text-decoration: none;
+			margin-left: 20px;
+			transition: all 0.3s;
+		}
+
+		header nav a:hover {
+			color: #333;
+		}
+
+	header .textos {
+		width: 50%;
+		color: #f4f4f4;
+	}
+
+		header .textos h1 {
+			width: 100%;
+			margin-left: 50px;
+			font-size: 40pt;
+			font-weight: normal;
+		}
+
+		header .textos p {
+			margin-left: 50px;
+			font-size: 15pt;
+			margin-top: 30px;
+		}
+
+	header .images {
+		width: 50%;
+	}
+
+		header .images img {
+			width: 70%;
+			height: 70%;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+
+#integrantes {
+	margin-top: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+	#integrantes h1 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+		font-size: 21pt;
+	}
+
+	#integrantes .info {
+		width: 80%;
+		background: #f4f4f4;
+		margin-top: 25px;
+		padding: 10px 25px;
+		border-radius: 10px;
+	}
+
+		#integrantes .info h2 {
+			margin-bottom: 10px;
+		}
+
+		#integrantes .info p {
+			line-height: 25px;
+			font-weight: normal;
+			opacity: 0.7;
+			letter-spacing: 1px;
+		}
+
+footer {
+	margin-top: 100px;
 	text-align: center;
-}
-
-header .toggleMenu #symbol {
-	font-size: 50pt;
-}
-
-header nav {
-	width: 100%;
-	margin-left: -600px;
-	transition: all .3s ease;
-}
-
-header nav a {
-	color: #fff;
-	text-decoration: none;
-	margin-left: 20px;
-	transition: all 0.3s;
-}
-
-header nav a:hover {
-	color: #333;
-}
-
-header .textos {
-	width: 50%;
+	background: #333;
 	color: #f4f4f4;
-}
-
-header .textos h1 {
-	width: 100%;
-	margin-left: 50px;
-	font-size: 40pt;
-	font-weight: normal;
-}
-
-header .textos p {
-	margin-left: 50px;
-	font-size: 15pt;
-	margin-top: 30px;
-}
-
-header .images {
-	width: 50%;
-}
-
-header .images img {
-	width: 70%;
-	height: 70%;
-	object-fit: cover;
-	border-radius: 10px;
+	padding: 20px 0;
+	letter-spacing: 1px;
 }
