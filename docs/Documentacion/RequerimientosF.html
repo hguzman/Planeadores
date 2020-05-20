@@ -3,178 +3,583 @@
 <head>
 <meta charset="utf-8">
 <title>Requerimientos Funcionales</title>
+<link rel="stylesheet" href="Estilos/styles.css">
 </head>
 
 <body>
-Implementación de un software para el registro de clientes en la empresa planeadores (RDCEP)
-SENA
-Version 1.0
-Historial de Revisión
-Fecha	Versión	Descripción	Autor
-15-11-2019	1.0	Primera versión del software	Jhan
-Cristian
-Zohair
-Oliver
-Especificación de Requerimientos
-1. Introducción
-La siguiente Especificación de Requerimientos de Software (SRS) del sistema a construir, surge con la finalidad de proveer toda la información de lo que quiere el cliente que haga el software. Tales requerimientos y requisitos son la base a la hora de comenzar el desarrollo del Software. En este caso el software a desarrollar es un software para el registro de clientes en la empresa Planeadores.
+<header><div class="toggleMenu">
+			<div id="symbol">&#x232f;</div>
+		</div>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="../Documentacion/documentacion.html">Documentación</a>
+			<a href="#">Diagramas</a>
+			<a href="#">Galería</a>
+		</nav>
+</header>
+<div class="RF">
+<h2>Implementación de un software para el registro de clientes en la empresa planeadores (RDCEP)
+</h2>
+	<h4>SENA<br>
+	Version 1.o</h4>
+	<table width="500" border="1">
+  <tbody>
+    <tr>
+      <th>Fecha</th>
+      <th>Versión</th>
+      <th>Descripción</th>
+      <th>Autor</th>
+    </tr>
+    <tr>
+      <td>15-11-2019</td>
+      <td>1.0</td>
+      <td>Primera versión del software	</td>
+      <td>Jhan Carlos<br>
+		Cristian Julio<br>
+		Zohair Castro<br>
+		Oliver Oliveros</td>
 
-1.1 Propósito
-El propósito de este documento es describir lo acordado con el cliente y desarrollar el paso a paso para crear el software que servirá para registrar a los clientes en la empresa planeadores haciendo más eficaz llevar el registro de personas.
+    <tr>
+      <td>15-05-2020</td>
+      <td>1.0</td>
+      <td>Primera versión del software	</td>
+      <td>Jhan Carlos<br>
+		Cristian Julio<br>
+		Zohair Castro</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Especificación de Requerimientos
+</h2>
+	<h4>1. Introducción
+</h4>
+	<p>La siguiente Especificación de Requerimientos de Software (SRS) del sistema a construir, surge con la finalidad de proveer toda la información de lo que quiere el cliente que haga el software. Tales requerimientos y requisitos son la base a la hora de comenzar el desarrollo del Software. En este caso el software a desarrollar es un software para el registro de clientes en la empresa Planeadores.</p>
+	<h5>1.1 Propósito</h5>
+	<p>El propósito de este documento es describir lo acordado con el cliente y desarrollar el paso a paso para crear el software que servirá para registrar a los clientes en la empresa planeadores haciendo más eficaz llevar el registro de personas.</p>
+	<h5>1.2 Alcance</h5>
+	<p>El sistema será un programa de escritorio que ayudara a los trabajadores de la empresa Planeadores a llevar un mejor registro de sus clientes y ser más eficaz al momento de buscar y mostrar la informacion del cliente además de otras funciones que se encuentran detalladas en la sesión de requisitos. Este sistema dará apoyo a los siguientes procesos:
+	<li type="square">Registro de clientes.</li>
+	<li type="square">Control y organización de los clientes.</li></p>
+	<h5>1.3 Definiciones, Acrónimos, y Abreviaturas</h5>
+	<p><li type="square">Backup: Las copias de seguridad en un sistema informático tienen por objetivo el mantener la información de recuperación de la información ante posibles pérdidas.</li>
 
-1.2 Alcance
-El sistema será un programa de escritorio que ayudara a los trabajadores de la empresa Planeadores a llevar un mejor registro de sus clientes y ser más eficaz al momento de buscar y mostrar la informacion del cliente además de otras funciones que se encuentran detalladas en la sesión de requisitos. Este sistema dará apoyo a los siguientes procesos:
+	<li>Interfaz: Permite la comunicación entre el usuario y el sistema Para observar los campos necesarios a llenar para el registro.</li>
 
-Registro de clientes
-Control y organización de los clientes.
-1.3 Definiciones, Acrónimos, y Abreviaturas
-Backup: Las copias de seguridad en un sistema informático tienen por objetivo el mantener la información de recuperación de la información ante posibles pérdidas.
+	<li>BD: Base de Datos es un conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su posterior uso.</li>
 
-Interfaz: Permite la comunicación entre el usuario y el sistema Para observar los campos necesarios a llenar para el registro.
+	<li>Requerimientos funcionales (RF): describen las capacidades  o funciones que el sistema será capaz de realizar.</li>
 
-BD: Base de Datos es un conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su posterior uso.
+	<li> Requerimientos no funcionales (RNF): restricciones o características que de delimitan el sistema, como por ejemplo, rendimiento, interfaces de usuario, fiabilidad, seguridad, portabilidad, normas, entre otros.</li>
 
-Requerimientos funcionales (RF): describen las capacidades o funciones que el sistema será capaz de realizar.
+	<li>Requerimientos de interfaz de usuario (RIU): describen lo que el usuario (administrador) vera finalmente.</li>
 
-Requerimientos no funcionales (RNF): restricciones o características que de delimitan el sistema, como por ejemplo, rendimiento, interfaces de usuario, fiabilidad, seguridad, portabilidad, normas, entre otros.
+	<li>Programa de escritorio: Una aplicación de escritorio es aquella que se encuentra instalado en el ordenador o sistema de almacenamiento (USB) y podemos ejecutarlo sin internet en nuestro sistema operativo.</li>
+	<h5>1.4 Referencias</h5>
+	<a href="https://es.wikipedia.org/wiki/Base_de_datos"><li type="square">Base de Datos</li></a>
+	<a href="https://es.wikipedia.org/wiki/Aplicaci%C3%B3n_de_escritorio"><li type="square">Aplicacion de Escritorio</li></a>
+	<a href="https://es.wikipedia.org/wiki/Requisito_no_funcional"><li type="square">Requerimientos no Funcionales</li></a>
+	<h5>1.5 Apreciación Global</h5>
+	<p>En la primera parte de este documento, se ha presentado una corta introducción al mismo y al proyecto en sí. En el siguiente capítulo observara la perspectiva del proyecto, con sus funciones, especificaciones y características del proyecto mismo y de sus futuros usuarios. En el capítulo 3 se presenta una especificación detallada de requerimientos que son necesarios para el desarrollo e implementación del diseño de regristro de clientes y objetos para el software.</p>
+	<h4>2. Descripción General</h4>
+	<h5>2.1 Perspectivas del Producto</h5>
+	<p>Con este sistema se espera una mejora en el registro de clientes. Este producto será un arma contra inconvenientes en los registros de los clientes de la empresa Planeadores.</p>
+	<h5>2.2 Funciones del Producto</h5>
+	<h5>Este software cumplirá con las siguientes funciones:</h5>
+	<li>Registro de Clientes.</li>
+	<li>Generar reportes.</li>
+	<li>Acceder a los registros guardados en la base de datos.</li>
+	<h5>2.3 Características de Usuario</h5>
+	<p>Las personas que interactuaran con este sistema son personas encargadas de crear planeaciones que posteriormente serán entregadas a los clientes (Implementación de un software para el registro de los clientes en la empresa Planeadores) (RDCEP).</p>
+	<h5>2.4 Restricciones</h5>
+	<p>Presupuesto para la creación del sistema, recursos, tiempo de desarrollo.</p>
+	<h5>2.5 Atención y Dependencias</h5>
+	<p>El sistema será un apoyo para los registros de los clientes de la empresa,consiguiendo con esto una mejor organización y mas seguridad de los datos registrados.</p>
+	<h4>3. Requerimientos Específicos</h4>
+	<h5>3.1 Requerimientos Funcionales</h5>
+	<h4>1.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
 
-Requerimientos de interfaz de usuario (RIU): describen lo que el usuario (administrador) vera finalmente.
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th>Codigo</th>
+      <th>Nombre</th>
+      <th>Fecha</th>
+      <th>Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-001</td>
+      <td>MÓDULO DE LOGIN</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>Al sistema solo accederá personal autorizado por el administrador, quien asignará los roles a los usuario</td></tr></table>
+<table class="Tbl" width="600" border="1">
+ <tr>
+      <th>Entrada</th>
+      <th>Fuente</th>
+      <th>Salida</th>
+      <th>Destino</th>
+	  <th>Retricciones</th>
+    </tr>
+		<tr>
+      <td>Datos personales(Usuario y contraseña)</td>
+      <td>Base de datos</td>
+      <td>Interfaz principal(Registro de clientes)</td>
+      <td>Base de datos(registro de quien accede)</td>
+	  <td>Solo se accederá a ciertos módulos del sistema según el rol del usuario</td>
+    </tr>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Proceso</th><td> Ingresar nombre y contraseña de usuario y elegir rol para Iniciar sesión.Cabe aclarar que el usuario previamente se encuentra en la base de datos del sistema</td></tr></table>
+<table class="Tbl" width="600" border="1"><tr><th>Efecto Corateral</th><td>Errar la contraseña o nombre de usuario niega el ingresó a la aplicación web.</td></tr></table>
+<table class="Tbl" width="600" border="1"><tr><th>Efecto Corateral</th><td>Errar la contraseña o nombre de usuario niega el ingresó a la aplicación web.</td></tr></table>
+	<h4>2.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
 
-Programa de escritorio: Una aplicación de escritorio es aquella que se encuentra instalado en el ordenador o sistema de almacenamiento (USB) y podemos ejecutarlo sin internet en nuestro sistema operativo.
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-003</td>
+       <td>LISTA DE CLIENTES REGISTRADOS</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>El sistema debe permitir el registro de clientes</td></tr></table>
+<table class="Tbl" width="600" border="1">
+ <tr>
+      <th>Entrada</th>
+      <th>Fuente</th>
+      <th>Salida</th>
+      <th>Destino</th>
+	  <th>Retricciones</th>
+    </tr>
+		<tr>
+      <td>Datos personales: Identificación, Nombres, Apellidos,ETC.</td>
+      <td>Formulario de Registro para cliente</td>
+      <td>Cliente registrado</td>
+      <td>Base de Datos</td>
+	  <td>Un cliente solo se puede registras una vez</td>
+    </tr>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Proceso</th><td>	• Recolección datos básicos personales (nombre, apellido, celular etc.).<br>
+• Registro de cliente</td></tr></table>
+<table class="Tbl" width="600" border="1"><tr><th>Efecto Corateral</th><td>No registrar con un cliente ya registrado</td></tr></table>
+	<h4>3.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
 
-1.4 Referencias
-Base de Datos
-Aplicacion de Escritorio
-Requerimientos no Funcionales
-1.5 Apreciación Global
-En la primera parte de este documento, se ha presentado una corta introducción al mismo y al proyecto en sí. En el siguiente capítulo observara la perspectiva del proyecto, con sus funciones, especificaciones y características del proyecto mismo y de sus futuros usuarios. En el capítulo 3 se presenta una especificación detallada de requerimientos que son necesarios para el desarrollo e implementación del diseño de regristro de clientes y objetos para el software.
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-003</td>
+       <td>REGISTRO DE CLIENTES</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>El sistema tendrá una interfaz que permita visualizar el listado de los clientes registrados en la base de datos
+</td></tr></table>
+<table class="Tbl" width="600" border="1">
+ <tr>
+      <th>Entrada</th>
+      <th>Fuente</th>
+      <th>Salida</th>
+      <th>Destino</th>
+	  <th>Retricciones</th>
+    </tr>
+		<tr>
+      <td>Ninguna	</td>
+      <td>Base de datose</td>
+      <td>Lista de los usuarios registrados</td>
+      <td>Interfaz que permite visualizar el listado de los clientes registrados en la base de datos</td>
+	  <td>Ninguna</td>
+    </tr>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Proceso</th><td>El usuario del sistema deberá solicitar la información del cliente para poder visualizarla.
+</td></tr></table>
+<table class="Tbl" width="600" border="1"><tr><th>Efecto Corateral</th><td>El cliente ya está registrado en la base de datos</td></tr></table>
+	<h4>4.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
 
-2. Descripción General
-2.1 Perspectivas del Producto
-Con este sistema se espera una mejora en el registro de clientes. Este producto será un arma contra inconvenientes en los registros de los clientes de la empresa Planeadores.
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-004</td>
+       <td>OBSERVACIONES</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>Los clientes podrán indicar sus peticiones y quejas referentes a las planeaciones entregadas.
+</td></tr></table>
+<table class="Tbl" width="600" border="1">
+ <tr>
+      <th>Entrada</th>
+      <th>Fuente</th>
+      <th>Salida</th>
+      <th>Destino</th>
+	  <th>Retricciones</th>
+    </tr>
+		<tr>
+      <td>Descripción de Anotación o queja	</td>
+      <td>Cliente</td>
+      <td>Queja registrada	</td>
+      <td>Base de datos</td>
+	  <td>Ninguna</td>
+    </tr>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Proceso</th><td> El cliente debe informar al usuario su Anotacion o queja.</td></tr></table>
+<table class="Tbl" width="600" border="1"><tr><th>Efecto Corateral</th><td>Ninguno
+</td></tr></table>
+	<h4>5.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
 
-2.2 Funciones del Producto
-Este software cumplirá con las siguientes funciones:
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-005</td>
+       <td>USABILIDAD</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>Los clientes podrán indicar sus peticiones y quejas referentes a las planeaciones entregadas.
+</td></tr></table>
+	<h4>6.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
 
-Registro de Clientes.
-Generar reportes.
-Acceder a los registros guardados en la base de datos.
-2.3 Características de Usuario
-Las personas que interactuaran con este sistema son personas encargadas de crear planeaciones que posteriormente serán entregadas a los clientes (Implementación de un software para el registro de los clientes en la empresa Planeadores) (RDCEP).
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-006</td>
+       <td>ESCALABILIDAD</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>El diseño del software soportará el incremento de volumen de operaciones sin necesidad de modificar el código fuente.
+</td></tr></table>
+<h4>7.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
 
-2.4 Restricciones
-Presupuesto para la creación del sistema, recursos, tiempo de desarrollo.
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-007</td>
+       <td>DISPONIBILIDAD</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>El software tiene una disponibilidad continua para prestar servicios al público ya que el parqueadero no está exento de hacerlo en horarios no hábiles como por ejemplo los domingos o festivos.
+</td></tr></table>
+<h4>8.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
 
-2.5 Atención y Dependencias
-El sistema será un apoyo para los registros de los clientes de la empresa,consiguiendo con esto una mejor organización y mas seguridad de los datos registrados.
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-008</td>
+       <td>FIABILIDAD</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>El sistema debe tener en cuenta la recuperación frente a fallos de conexión: Asegurar que no se pierdan los datos de la base de datos.
+</td></tr></table>
+<h4>9.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
 
-3. Requerimientos Específicos
-3.1 Requerimientos Funcionales
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-001	MÓDULO DE LOGIN	15-11-2019	Alto
-Entradas	Fuente	Salida	Destino
-Datos personales(Usuario y contraseña)	Base de datos	Interfaz principal(Registro de clientes)	Base de datos(registro de quien accede)
-Restricciones			
-Solo se accederá a ciertos módulos del sistema según el rol del usuario			
-Descripción:	Al sistema solo accederá personal autorizado por el administrador, quien asignará los roles a los usuario
-Proceso:	• Ingresar nombre y contraseña de usuario y elegir rol para Iniciar sesión.Cabe aclarar que el usuario previamente se encuentra en la base de datos del sistema
-Efecto Colateral:	Errar la contraseña o nombre de usuario niega el ingresó a la aplicación web.
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-003	LISTA DE CLIENTES REGISTRADOS	15-11-2019	Alto
-Entradas	Fuente	Salida	Destino
-Datos personales: Identificación, Nombres, Apellidos,ETC.	Formulario de Registro para cliente	Cliente registrado	Base de Datos
-Restricciones			
-Un cliente solo se puede registras una vez			
-Descripción:	El sistema debe permitir el registro de clientes
-Proceso:	• Recolección datos básicos personales (nombre, apellido, celular etc.).
-• Registro de cliente
-Efecto Colateral:	registrar con un cliente ya registrado
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-002	REGISTRO DE CLIENTES	15-11-2019	Alto
-Entradas	Fuente	Salida	Destino
-Ninguna	Base de datose	Lista de los usuarios registrados	Interfaz que permite visualizar el listado de los clientes registrados en la base de datos
-Restricciones			
-Ninguna			
-Descripción:	El sistema tendrá una interfaz que permita visualizar el listado de los clientes registrados en la base de datos
-Proceso:	El usuario del sistema deberá solicitar la información del cliente para poder visualizarla.
-Efecto Colateral:	El cliente ya está registrado en la base de datos
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-004	OBSERVACIONES	15-11-2019	Alto
-Entradas	Fuente	Salida	Destino
-Descripción de Anotación o queja	Cliente	Queja registrada	Base de datos
-Restricciones			
-Ninguna			
-Descripción:	Los clientes podrán indicar sus peticiones y quejas referentes a las planeaciones entregadas.
-Proceso:	• El cliente debe informar al usuario su .
-Efecto Colateral:	Ninguno
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-005	USABILIDAD	15-11-2019	Alto
-Descripción:	Los clientes podrán indicar sus peticiones y quejas referentes a las planeaciones entregadas.
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-006	ESCALABILIDAD	15-11-2019	Alto
-Descripción:	El diseño del software soportará el incremento de volumen de operaciones sin necesidad de modificar el código fuente.
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-007	DISPONIBILIDAD	15-11-2019	Alto
-Descripción:	El software tiene una disponibilidad continua para prestar servicios al público ya que el parqueadero no está exento de hacerlo en horarios no hábiles como por ejemplo los domingos o festivos.
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-008	FIABILIDAD	15-11-2019	Alto
-Descripción:	El sistema debe tener en cuenta la recuperación frente a fallos de conexión: Asegurar que no se pierdan los datos de la base de datos.
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-009	MANTENIBILIDAD	15-11-2019	Alto
-Descripción:	Al software se le debe estar brindando mantenimiento preventivo ya que es de gran importancia para un buen desarrollo de las actividades o procesos de este.
-3.2 Requerimientos de interfaz de usuario
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-001	LOGIN	15-11-2019	Alto
-Descripción:	Interfaz que permitirá al administrador y a los usuario del sistema ingresar a este, para dar uso a los otros procesos.
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-002	REGISTRO DE USUARIO	15-11-2019	Alto
-Descripción:	Interfaz que permitirá que permitirá a personas registrarla en la base de datos del sistema.
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-003	REGISTRO DE CLIENTES	15-11-2019	Alto
-Descripción:	Interfaz que permitirá al usuario registrar clientes
-Implementación de un software para el registro de clientes en la empresa planeadores
-SRS – Especificación de Requerimientos
-Código	Nombre	Fecha	Grado Necesidad
-RF-004	OBSERVACIONES	15-11-2019	Alto
-Descripción:	Interfaz que permite escribir al usuario anotaciones o quejas por parte de los clientes
-4. Determinación de las tecnologías de hardware, software y servicios requeridos para el proyecto en desarrollo.
-4.1. Software
-ITEM	CANTIDAD POR COMPONENTE	COMPONENTE
-1	1	Módulo de ingreso administrador
-2	1	Módulo registro de clientes
-3	1	Base de datos de los clientes registrados
-4.2. Computador
-ITEM	CANTIDAD POR COMPONENTE	COMPONENTE	DESCRIPCION
-1	2	MOUSE	Óptico inalámbrico 2.4 Ghz
-2	2	TECLADO	Conexión USB
-2	2	CABLE HDMI	Cable de conexión para el monitor
-3	2	CABLES DE PODER	Enchufe Black Awin 2mm
-4	2	MONITOR PLANO LCD DE 24	Asus VG248QE l 24 Pulgadas-144Hz.
-5	2	UNIDADES OPTICAS	Lecto-grabadora de DVD 16X mínimo, interfaz EIDE/SATA	
-	
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-009</td>
+       <td>MANTENIBILIDAD</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>Al software se le debe estar brindando mantenimiento preventivo ya que es de gran importancia para un buen desarrollo de las actividades o procesos de este.</td></tr></table><h5>3.2 Requerimientos de interfaz de usuario</h5>
+<h4>1.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
+
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-001</td>
+       <td>LOGIN</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>Interfaz que permitirá al administrador y a los usuario del sistema ingresar a este, para dar uso a los otros procesos.
+</td></tr></table>
+<h4>2.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores</th>
+
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-002</td>
+       <td>REGISTRO DE CLIENTES</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>Interfaz que permitirá al usuario registrar clientes
+</td></tr></table>
+<h4>3.</h4>
+	<table width="600" border="1">
+		<thead> 
+	<tr>
+      <th width="600">Implementación de un software para el registro de clientes en la empresa planeadores
+</th>
+    </tr>
+      <th>SRS – Especificación de Requerimientos</th>
+    </thead>
+</table>
+<table class="Tbl" width="600" border="1">  
+<tbody>
+   <tr>
+      <th width="64">Codigo</th>
+      <th width="226">Nombre</th>
+      <th width="112">Fecha</th>
+      <th width="170">Grado de Necesidad</th>
+    </tr>
+	<tr>
+      <td>RF-003</td>
+       <td>OBSERVACIONES</td>
+      <td>15-11-2019</td>
+      <td>Alto</td>
+    </tr>
+</tbody>
+</table>
+<table class="Tbl" width="600" border="1"><tr><th>Descripción</th><td>Interfaz que permite escribir al usuario anotaciones o quejas por parte de los clientes
+</td></tr></table>
+<h4>4. Determinación de las tecnologías de hardware, software y servicios requeridos para el proyecto en desarrollo.</h4>
+<h5>4.1. Software</h5>
+	<table width="450" border="1">
+  <tbody>
+    <tr>
+      <th>ITEM</th>
+      <th>CANTIDAD POR COMPONENTE</th>
+      <th>COMPPNENTE</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>LOGIN</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>Módulo registro de clientes</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>Base de datos de los clientes registrados</td>
+    </tr>
+  </tbody>
+</table>
+<h5>4.2. Computador</h5>
+<table width="600" border="1">
+  <tbody>
+    <tr>
+      <th>ITEM</th>
+      <th>CANTIDAD POR COMPONENTE</th>
+      <th>COMPONENTE</th>
+      <th>DESCRIPCION</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>MOUSE</td>
+      <td>Óptico inalámbrico 2.5 Ghz</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>TECLADO</td>
+      <td>Conexión USB</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+      <td>CABLE HDMI</td>
+      <td>Cable de conexión para el monitor</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2</td>
+      <td>CABLES DE PODER</td>
+      <td>Enchufe Black Awin 2mm</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>MONITOR PLANO LCD DE 24</td>
+      <td>Asus VG248QE l 24 Pulgadas-144Hz.</td>
+    </tr>
+	<tr>
+      <td>6</td>
+      <td>2</td>
+      <td>UNIDADES OPTICAS</td>
+      <td>Lecto-grabadora de DVD 16X mínimo, interfaz EIDE/SATA</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<script src="../js/app.js"></script>
 </body>
 </html>
