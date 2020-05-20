@@ -1,0 +1,115 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: helvetica, neue;
+}
+
+header {
+	width: 100;
+	height: 100px;
+
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+header .toggleMenu {
+	position: fixed;
+	top: 25px;
+	right: 10px;
+	cursor: pointer;
+	background: #f4f4f4;
+	color: #333;
+	height: 47px;
+	width: 47px;
+	border-radius: 50%;
+	line-height: 40px;
+	text-align: center;
+}
+
+header .toggleMenu #symbol {
+	font-size: 50pt;
+}
+
+header nav {
+    width: 100%;
+    margin-left: -600px;
+    transition: all .3s ease;
+    margin-top: -17px;
+}
+
+header nav a {
+    color: #FEF5F5;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: all 0.3s;
+    margin-top: 0px;
+}
+
+header nav a:hover {
+	color: #333;
+}
+.Card {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+solid;
+    width: 90%;
+    -webkit-box-shadow: 0px 4px 12px 0px;
+    box-shadow: 0px 4px 12px 0px;
+}
+.Card h3 {
+    font-family: Arial;
+    color: #3591FF;
+}
+
+.Card h4 {
+    margin-top: 6px;
+    color: #3591FF;
+}
+.Card p {
+    margin-top: 6px;
+}
