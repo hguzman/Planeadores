@@ -36,7 +36,7 @@ header .toggleMenu {
 }
 
 header .toggleMenu #symbol {
-	font-size: 50pt;
+    font-size: 50pt;
 }
 
 header nav {
@@ -57,60 +57,30 @@ header nav a {
 header nav a:hover {
 	color: #333;
 }
-.Card {
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    solid;
-  width: 90%;
-    -webkit-box-shadow: 0px 4px 12px 0px;
-    box-shadow: 0px 4px 12px 0px;
+body div {
 }
-.Card h3 {
-    font-family: Arial;
-    color: #3591FF;
-}
+.SSF {
+    margin-top: 20px;
+    width: 272px;
+    margin-left: 40px;
+    -webkit-box-shadow: 1px 4px 8px 1px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 4px 8px 1px;
 
-.Card h4 {
-    margin-top: 6px;
+}
+.SSF a h3 {
+    text-align: center;
     color: #3591FF;
 }
-.Card p {
-    margin-top: 6px;
+.SSF1 {
+    margin-top: -253px;
+    width: 272px;
+    margin-left: 350px;
+    -webkit-box-shadow: 1px 4px 8px 1px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 4px 8px 1px;
 }
-.RF h2 {
+.SSF1 a h3 {
+    text-align: center;
     color: #3591FF;
-    margin-top: 20px;
-}
-.RF h4 {
-    color: #3591FF;
-    margin-top: 20px;
-}
-.RF h5 {
-    color: #3591FF;
-    margin-top: 20px;
-}
-.RF p {
-    margin-top: 20px;
-}
-.RF li {
-    margin-top: 10px;
-}
-.RF table {
-    margin-top: 20px;
-}
-
-
-
-.RF {
-    margin: auto;
-    width: 90%;
-}
-.RF .Tbl {
-    margin-top: -3px;
-    border-collapse: collapse;
-}
-.RF table {
-    border-collapse: collapse;
 }
