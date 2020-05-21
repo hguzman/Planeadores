@@ -19,6 +19,8 @@ header {
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
+
+    margin-bottom: 100px;
 }
 
 header .toggleMenu {
@@ -58,27 +60,55 @@ header nav a:hover {
 	color: #333;
 }
 .Card {
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    solid;
-  width: 90%;
-    -webkit-box-shadow: 0px 4px 12px 0px;
-    box-shadow: 0px 4px 12px 0px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 90%;
+    background: #f4f4f4;
+    padding: 10px 25px;
+    border-radius: 20px;
 }
-.Card h3 {
-    font-family: Arial;
-    color: #3591FF;
+.Card h1 {
+    font-size: 20pt;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.Card h4 {
-    margin-top: 6px;
-    color: #3591FF;
+.Card h2 {
+    font-size: 15pt;
+    margin-bottom: 25px;
+    color: #333;
 }
 .Card p {
-    margin-top: 6px;
+    letter-spacing: .7px;
+    line-height: 25px;
+    font-weight: normal;
+    opacity: 0.7;
+    margin-bottom: 30px;
 }
+
+.link {
+    width: 110px;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: all .3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.link .Vm {
+    text-decoration: none;
+    font-weight: normal;
+    color: #f4f4f4;
+    display: block;
+}
+
+.link:hover {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: #f4f4f4;
+}
+
 .RF h2 {
     color: #3591FF;
     margin-top: 20px;
