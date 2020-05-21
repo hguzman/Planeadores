@@ -67,6 +67,19 @@ header nav a:hover {
     padding: 10px 25px;
     border-radius: 20px;
 }
+.Card1 {
+    margin-top: 50px;
+}
+.Card1 table {
+    border-collapse: collapse;
+}
+
+.Card1 .link {
+    margin-top: 20px;
+}
+
+
+
 .Card h1 {
     font-size: 20pt;
     color: #333;
@@ -143,4 +156,12 @@ header nav a:hover {
 }
 .RF table {
     border-collapse: collapse;
+}
+.Tb1 {
+    margin-right: auto;
+    margin-left: 150px;
+    margin-bottom: auto;
+}
+.Tb1 .Tbl1 {
+    margin-top: 50px;
 }
