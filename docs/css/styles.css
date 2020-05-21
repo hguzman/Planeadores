@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body, html {
 	font-family: helvetica, neue;
 }
@@ -87,7 +91,8 @@ header nav a:hover {
 }
 
 .link {
-    width: 110px;
+    width: 111px;
+    height: 40px;
     background: #333;
     padding: 10px 25px;
     border-radius: 5px;
