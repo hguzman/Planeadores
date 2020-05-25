@@ -149,3 +149,20 @@ header nav a:hover {
 .RF table {
     border-collapse: collapse;
 }
+.Tb1 {
+    margin-left: 150px;
+}
+.Tb1 table {
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.Tb1 h2 {
+    color: #3591FF;
+}
+.Tb1 h3 {
+    color: #3591FF;
+    margin-top: 30px;
+}
+.Card1 h1 {
+    margin-top: 20px;
+}
