@@ -32,4 +32,10 @@ document.querySelector('.cerrar').addEventListener('click', function(e) {
 	modal.style.display = 'none';
 });
 
+window.addEventListener('keyup', function(e) {
+	if (e.keyCode == 27) {
+		modal.style.display = 'none';
+	}
+});
+
 
