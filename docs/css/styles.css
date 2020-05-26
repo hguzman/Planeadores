@@ -178,3 +178,22 @@ header nav a:hover {
 .Card1 h1 {
     margin-top: 20px;
 }
+body div h1 {
+    color: #3591FF;
+}
+body div h3 {
+    color: #3591FF;
+    margin-top: 15px;
+}
+body div h4 {
+    color: #3591FF;
+    margin-top: 15px;
+}
+body div p {
+    margin-top: 10px;
+}
+.plan {
+    margin: auto;
+    width: 90%;
+
+}
