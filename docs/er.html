@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Requerimientos Funcionales</title>
+    <link rel="stylesheet" href="css/er.css">
+  </head>
+  <body>
+    <header>
+      <div class="toggleMenu">
+    			<div id="symbol">&#x232f;</div>
+    	</div> <!-- toggleMenu -->
+    	<nav>
+    		<a href="https://hguzman.github.io/Planeadores/">Home</a>
+        <a href="documentacion.html">Documentación</a>
+        <a href="diagramas.html">Diagramas</a>
+        <a href="#">Galería</a>
+    	</nav>
+    </header>
+
+    <div class="container">
+      <h1>Implementación de un software para el manejo de clientes en la empresa Planeadores (SRS)</h1>
+      <p>SENA</p>
+      <p>Version 1.0.0</p>
+
+      <table border="1">
+        <thead>
+          <th>Fecha</th>
+          <th>Versión</th>
+          <th>Descripción</th>
+          <th>Autor</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>27/05/2020</td>
+            <td>1.0.0</td>
+            <td>Se revisó como trabaja el equipo de trabajo</td>
+            <td>Cristian Julio</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1>Especificación de requerimientos</h1>
+
+      <h3>1. Introducción</h2>
+
+      <p>Este documento corresponde a las Especificaión de Requerimientos del software para el manejo de clientes en la prensa Planeadores. Esta especificación se ha estructurado basándose en las directrices dadas por el estándar IEEE Práctica Recomendada para Especificacipnes de Requisitos de Software ANSI/IEEE 830/1998</p>
+
+      <h4>1.1 Proposito</h4>
+
+      <p>Para este documento el principal proposito es definir los requerimientos funcionales, los no funcionales, y los individuos involucrados en el software para el manejo de clientes el cual tiene variias especificaciones que deben ser definidas en el documento, de tal manera que se pueden evidenciar enel producto final que es el sistema funcional, también debe estar orientado para que pueda ser leido por cualquier persona que desee informarse con respecto al software.</p>
+
+      <h4>1.2 Alcance</h4>
+
+      <p>Para el desarrollo del programa de analizó el posible alcance con respecto a futuros proyectos relacionados con el software de manejo de clientes. Ahora al tratarse de un software lo que se espera de este proyecto es que logre traer eficiencia a la empresa planeadores al tener guardado la información de los clientes en una Base de Datos y no en una libreta</p>
+
+      <h4>1.3 Personal involucrado</h4>
+
+      <table border="1" width="100%">
+        <thead>
+          <th>Nombre</th>
+          <th>Rol</th>
+          <th>Responsabilidad</th>
+          <th>Información de Contacto</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cristian Andres Julio Cantillo</td>
+            <td>Analista, diseñador y programador</td>
+            <td>Análisis de información, diseño y programación del sistema</td>
+            <td>cristianandres2001julio@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table border="1" width="100%">
+        <thead>
+          <th>Nombre</th>
+          <th>Rol</th>
+          <th>Responsabilidad</th>
+          <th>Información de Contacto</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jhan Carlos Bastidas Martinez</td>
+            <td>Analista, diseñador y programador</td>
+            <td>Análisis de información, diseño y programación del sistema</td>
+            <td>bastidasmartinezj@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table border="1" width="100%">
+        <thead>
+          <th>Nombre</th>
+          <th>Rol</th>
+          <th>Responsabilidad</th>
+          <th>Información de Contacto</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zohair Castro</td>
+            <td>Analista, diseñador y programador</td>
+            <td>Análisis de información, diseño y programación del sistema</td>
+            <td>zohaircastro2999algo@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>1.4 Definiciones, acrónimos y abreviaturas</h4>
+
+      <table border="1">
+        <thead>
+          <th>Nombre</th>
+          <th>Definición</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Agente educativo</td>
+            <td>Persona que será registrada como cliente</td>
+          </tr>
+          <tr>
+            <td>Base de datos (BD)</td>
+            <td>Lugar donde se encuntra la información de los clientes</td>
+          </tr>
+          <tr>
+            <td>Registro</td>
+            <td>Es la acción de registrar un cliente en la BD</td>
+          </tr>
+          <tr>
+            <td>Actualizar</td>
+            <td>Es la acción de actualizar la información del cliente</td>
+          </tr>
+          <tr>
+            <td>Buscar</td>
+            <td>Es la acción de buscar un clientes en la BD</td>
+          </tr>
+          <tr>
+            <td>Eliminar</td>
+            <td>Es la acción de eliminar un clientes y su información de la BD</td>
+          </tr>
+          <tr>
+            <td>Login/Ingresar</td>
+            <td>Es la acción de ingresar un usuario y contraseña para poder accerder a la interfaz principal del software</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>1.5 Referencias</h4>
+
+      <table border="1">
+        <thead>
+          <th>Titulo del Documento</th>
+          <th>Referencia</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Standard IEEE - 1998</td>
+            <td>IEEE</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>1.6 Resumen</h4>
+
+      <p>El siguiente documento cuenta con 3 secciones. para la primera sección de realiza una introducción del documento, con partes del sistema cuenta, terminología que se va a usar, en sí muestra una visión general de lo que abarca  principalmente el programa, con sus respectivas descripciones para que sea comprendido por el cliente.</p>
+
+      <p>Para la segunda parte del documento se podrá visualizar la descripción general del producto, la perspectiva  del producto, los usuarios que intervienen en el proceso, las restricciones, suposiciones y dependencia, además de los datos que van a estar involucrados en el sistema sin entrar en mucho detalle.</p>
+
+      <p>Mientras la tercera parte obtendrá los requerimientos funcionales y los no funcionales que estarán involucrados en el sistema que deben ser incluidos en el sistema.</p>
+
+      <h3>2. Descripción general</h3>
+
+      <h4>2.1 Perspectiva del producto</h4>
+
+      <p>El producto presentado se desarrollará en una interfaz gráfica que está diseñado para ser utilizado en un ordenador en el cual se manipulará la información de los clientes, esto hará que cuente con una base de datos disponible para que sea actualizada.</p>
+
+      <h4>2.2 Funcionalidad del producto</h4>
+
+      <div class="diagramas">
+        <a href="diagramas.html" target="blank_">Diagramas</a>
+      </div>
+
+      <h4>2.3 Caracteristicas de los usuarios</h4>
+
+      <table border="1">
+        <thead>
+          <th>Tipo de usuario</th>
+          <th>Actividades</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Administrador del sistema</td>
+            <td>Control y manejo del sistema en general</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table border="1">
+        <thead>
+          <th>Tipo de usuario</th>
+          <th>Actividades</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Usuario del sistema</td>
+            <td>Control y manejo de clientes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>2.4 Restricciones</h4>
+
+      <div class="listas">
+        <ul>
+          <li>Para su manejo Optimo se requiere que conste con los SO base ya sea MS Windows, IOS o Linux.</li>
+          <li>El lenguaje de programación que se usará es JAVA, y en cuanto al manejo de la base de datos se realizara en MySQL</li>
+          <li>Se debe contar con un servidor estable que atienda a varios terminales conectados al mismo tiempo y que puede desenvolverse correctamente</li>
+          <li>Como parte de los productos debe estar implementada una interfaz gráfica amigable para todos los usuarios involucrados en el sistema</li>
+        </ul>
+      </div> <!-- listas -->
+
+      <h4>2.5 Suposiciones y dependencias</h4>
+
+      <div class="listas">
+        <ul>
+          <li>Las restricciones antes planteadas deben ser cumplidas para que el funcionamiento del sistema sea optimo</li>
+          <li>Se trata de un servicio que se enfoca en la venta de productos (Planeaciones)<!-- , es por esto que debe contar con un registro de ventas de planeaciones --></li>
+        </ul>
+      </div> <!-- listas -->
+
+      <h3>Requsitos específicos</h3>
+
+      <h4>Requerimientos Funcionales</h4>
+
+      <div class="listas">
+        <ol>
+          <li>Sistema de login</li>
+          <li>Registrar clientes</li>
+          <li>Actualizar Información de clientes</li>
+          <li>Buscar clientes</li>
+          <li>Eliminar clientes</li>
+        </ol>
+      </div> <!-- listas -->
+
+      <!-- <table border="1">
+        <thead>
+          <tr>
+            <th colspan="12">Sistema de login</th>
+          </tr>
+          <th>Función</th>
+          <th>Descripción</th>
+          <th>Entradas</th>
+          <th>Fuentes</th>
+          <th>Salidas</th>
+          <th>Proceso</th>
+          <th>Restricciones</th>
+          <th>Precondiciones</th>
+          <th>Pos condiciones</th>
+          <th>Efectos colaterales</th>
+          <th>Contactos</th>
+          <th>Fecha</th>
+        </thead>
+      </table> -->
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Sistema de login</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+        </tr>
+      </table>
+    </div> <!-- container -->
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
