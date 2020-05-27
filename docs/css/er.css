@@ -1,0 +1,68 @@
+@import url(header.css); /* Estilos para el header */
+
+.container {
+	margin:0 auto;
+	width: 95%;
+}
+
+	.container h1 {
+		font-size: 20pt;
+	}
+
+	.container h3, h1 {
+		margin-bottom: 10px;
+	}
+
+	.container h1, h3, h4, p {
+		color: #333;
+	}
+
+	.container p {
+		font-weight: normal;
+		margin: 15px 0;
+		line-height: 20px;
+		letter-spacing: 0.3px;
+		opacity: 0.9;
+	}
+
+	.container table {
+		border-collapse: collapse;
+		margin: 30px 0;
+	}
+
+		.container table thead {
+			background: pink;
+			font-weight: bold;
+		}
+
+			.container table thead th, tbody tr td {
+				padding: 10px 15px;
+			}
+
+		.container table .th {
+			color: #333;
+			font-weight: bold;
+		}
+
+		.container table .tituloRF {
+			background: pink;
+		}
+
+		.container .diagramas {
+			margin: 20px 0;
+			text-align: center;
+			width: 150px;
+		}
+
+			.container .diagramas a {
+				background: pink;
+				border: 1px solid #333;
+				border-radius: 5px;
+				color: #333;
+				display: block;
+				padding: 10px 15px;
+				text-decoration: none;
+			}
+	.container .listas ul li, ol li {
+		margin: 15px 0 15px 15px;
+	}

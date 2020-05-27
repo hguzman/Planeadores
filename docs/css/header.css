@@ -1,0 +1,89 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: helvetica, neue;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	margin-bottom: 100px;
+
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+	overflow: hidden;
+}
+
+	header .toggleMenu {
+		background: #f4f4f4;
+		border-radius: 50%;
+		color: #333;
+		cursor: pointer;
+		height: 47px;
+		line-height: 40px;
+		position: fixed;
+		right: 10px;
+		text-align: center;
+		top: 25px;
+		width: 47px;
+	}
+
+		header .toggleMenu #symbol {
+			font-size: 50pt;
+		}
+
+	header nav {
+		margin-left: -600px;
+		transition: all .3s ease;
+		width: 100%;
+	}
+
+		header nav a {
+			color: #fff;
+			margin-left: 20px;
+			text-decoration: none;
+			transition: all 0.3s;
+		}
+
+		header nav a:hover {
+			color: #333;
+		}
+
+	header .textos {
+		color: #f4f4f4;
+		width: 50%;
+	}
+
+		header .textos h1 {
+			font-size: 40pt;
+			font-weight: normal;
+			margin-left: 50px;
+			width: 100%;
+		}
+
+		header .textos p {
+			font-size: 15pt;
+			margin-left: 50px;
+			margin-top: 30px;
+		}
+
+	header .images {
+		width: 50%;
+	}
+
+		header .images img {
+			border-radius: 10px;
+			height: 70%;
+			object-fit: cover;
+			width: 70%;
+		}
