@@ -87,3 +87,17 @@ header {
 			object-fit: cover;
 			width: 70%;
 		}
+
+
+footer {
+	position: relative;
+	margin-top: 100px;
+	text-align: center;
+	background: #333;
+	padding: 20px 0;
+}
+
+	footer p {
+		color: #f4f4f4;
+		letter-spacing: 1px;
+	}
