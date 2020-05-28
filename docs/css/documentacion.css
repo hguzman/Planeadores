@@ -1,0 +1,62 @@
+@import url(header.css);
+
+.Card {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 90%;
+    background: #f4f4f4;
+    padding: 10px 25px;
+    border-radius: 20px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+    .Card h1 {
+        font-size: 20pt;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .Card h2 {
+        font-size: 15pt;
+        margin-bottom: 25px;
+        color: #333;
+        width: 100%;
+    }
+    
+    .Card p {
+        letter-spacing: .7px;
+        line-height: 25px;
+        font-weight: normal;
+        opacity: 0.7;
+        margin-bottom: 30px;
+    }
+
+    .Card table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+.link {
+    width: 111px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+    .link .Vm {
+        background: #333;
+        color: #f4f4f4;
+        transition: all .3s;
+        cursor: pointer;
+        display: block;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+
+    .link .Vm:hover {
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        color: #f4f4f4;
+    }
