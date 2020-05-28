@@ -3,7 +3,7 @@
 var menuActive = false;
 
 document.querySelector('.toggleMenu').addEventListener('click', function(e) {
-
+	location.href = '#header';
 	if (menuActive == false) {
 		document.querySelector('nav').style.marginLeft = '50px';
 		menuActive = true;	

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/srs.css">
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="toggleMenu">
     			<div id="symbol">&#x232f;</div>
     	</div> <!-- toggleMenu -->
@@ -243,77 +243,273 @@
         </ol>
       </div> <!-- listas -->
 
-      <!-- <table border="1">
-        <thead>
-          <tr>
-            <th colspan="12">Sistema de login</th>
-          </tr>
-          <th>Función</th>
-          <th>Descripción</th>
-          <th>Entradas</th>
-          <th>Fuentes</th>
-          <th>Salidas</th>
-          <th>Proceso</th>
-          <th>Restricciones</th>
-          <th>Precondiciones</th>
-          <th>Pos condiciones</th>
-          <th>Efectos colaterales</th>
-          <th>Contactos</th>
-          <th>Fecha</th>
-        </thead>
-      </table> -->
-
       <table border="1">
         <tr>
           <td colspan="2" class="tituloRF th" align="center">Sistema de login</td>
         </tr>
         <tr>
           <td class="th">Función</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>Permitir a los usuarios ingresar a la interfaz principal del programa a través de un login</td>
         </tr>
         <tr>
           <td class="th">Descripción</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>El usuario ingresa su username, contraseña y su rol para poder ingresar</td>
         </tr>
         <tr>
           <td class="th">Entradas</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>Usuario, rol y contraseña</td>
         </tr>
         <tr>
           <td class="th">Fuentes</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>Teclado</td>
         </tr>
         <tr>
           <td class="th">Salidas</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>Mensaje confirmacion de ingreso</td>
         </tr>
         <tr>
           <td class="th">Proceso</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>En un formulario de ingreso el usuario ingresa sus datos</td>
         </tr>
         <tr>
           <td class="th">Restricciones</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>Deben de haber validaciones para el ingreso de datos</td>
         </tr>
         <tr>
           <td class="th">Precondiciones</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>El usuario debe de estar registrado en la base de datos</td>
         </tr>
         <tr>
           <td class="th">Pos condiciones</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>Ninguna</td>
         </tr>
         <tr>
           <td class="th">Efectos colaterales</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>Se muestra la interfaz principal del programa y se puede empezar a trabajar</td>
         </tr>
         <tr>
           <td class="th">Contactos</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>Ninguno</td>
         </tr>
         <tr>
           <td class="th">Fecha</td>
-          <td>Lorem ipsum santium. Lorem ipsum santium.</td>
+          <td>Ninguno</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Registrar clientes</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Registrar clientes en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>se ingresan los datos del cliente para ser guardados en la BD</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Primer nombre, segundo apellido, primer apellido, nombre UDS, modalidad, correo, formato, tematica y estado</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Confirmación de registro exitoso</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>En un formulario de registro se ingresan los datos del cliente y luego el programa los guarda enla BD</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>El correo debe ser ingresado correctamente ya que este se verificara y no pueden existir dos clientes con el mismo correo</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>El cliente no debe de existir en la base de datos antes de ser registrado</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Se registran los datos del cliente y esta información puede ser usada por los usuarios</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>El cliente queda registrado en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguno</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguno</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Actualizar Información de clientes</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir actualizar la información de los clientes</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se modifica la información del cliente a través de un formulario</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Primer nombre, segundo apellido, primer apellido, nombre UDS, modalidad, correo, formato, tematica y estado</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje confirmacion de actualización</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Aparece un campo en cual se ingresa el correo del cliente, luego aparece un formulario en el cual se ingresarán los nuevos datos</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>El correo debe ser ingresado correctamente ya que este se verificara y no pueden existir dos clientes con el mismo correo</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>El usuario debe de estar registrado en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Se registran los datos del cliente y esta información puede ser usada por los usuarios</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Los datos del cliente se actualizan</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguno</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguno</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Buscar clientes</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir buscar clientes</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se busca al cliente y se muestra su información</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Correo</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmación de usuario encontrado</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Aparece un campo en cual se ingresa el correo del cliente, luego aparece una ventana con toda la información del cliente</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>El correo debe ser ingresado correctamente ya que este el que servirá para buscar al cliente</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>El usuario debe de estar registrado en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Los datos del cliente se mustran en una nueva ventana</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguno</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguno</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Eliminar clientes</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir eliminar clientes de la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se busca al cliente y luego se elimina</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Correo</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmación de usuario Eliminado</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Aparece un campo en cual se ingresa el correo del cliente, luego el programa elimina a el cliente de la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>El correo debe ser ingresado correctamente ya que este el que servirá para buscar y eliminar al cliente</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>El usuario debe de estar registrado en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>El cliente se elimina de la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguno</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguno</td>
         </tr>
       </table>
     </div> <!-- container -->
