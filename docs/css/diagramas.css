@@ -1,3 +1,5 @@
+@import url(header.css);
+
 .modal {
 	position: fixed;
 	top: 0;
@@ -32,14 +34,6 @@
 		top: 10px;
 		right: 10px;
 	}
-
-header {
-	height: 80px;
-}
-
-header .toggleMenu {
-		top: 20px;
-}
 
 #galeriaDiagramas {
 	display: flex;

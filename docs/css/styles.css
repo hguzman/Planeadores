@@ -103,97 +103,22 @@ header nav a:hover {
 
 .link {
     width: 111px;
-    height: 40px;
-    background: #333;
-    padding: 10px 25px;
-    border-radius: 5px;
-    transition: all .3s;
     text-align: center;
-    cursor: pointer;
     margin-top: 30px;
 }
 
 .link .Vm {
-    text-decoration: none;
-    font-weight: normal;
+    background: #333;
     color: #f4f4f4;
+    transition: all .3s;
+    cursor: pointer;
     display: block;
+    padding: 10px 0;
+    border-radius: 5px;
 }
 
-.link:hover {
+.link .Vm:hover {
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     color: #f4f4f4;
-}
-
-.RF h2 {
-    color: #3591FF;
-    margin-top: 20px;
-}
-.RF h4 {
-    color: #3591FF;
-    margin-top: 20px;
-}
-.RF h5 {
-    color: #3591FF;
-    margin-top: 20px;
-}
-.RF p {
-    margin-top: 20px;
-}
-.RF li {
-    margin-top: 10px;
-}
-.RF table {
-    margin-top: 20px;
-}
-
-
-
-.RF {
-    margin: auto;
-    width: 90%;
-}
-.RF .Tbl {
-    margin-top: -3px;
-    border-collapse: collapse;
-}
-.RF table {
-    border-collapse: collapse;
-}
-.Tb1 {
-    margin-left: 150px;
-}
-.Tb1 table {
-    margin-top: 30px;
-    border-collapse: collapse;
-}
-.Tb1 h2 {
-    color: #3591FF;
-}
-.Tb1 h3 {
-    color: #3591FF;
-    margin-top: 30px;
-}
-.Card1 h1 {
-    margin-top: 20px;
-}
-body div h1 {
-    color: #3591FF;
-}
-body div h3 {
-    color: #3591FF;
-    margin-top: 15px;
-}
-body div h4 {
-    color: #3591FF;
-    margin-top: 15px;
-}
-body div p {
-    margin-top: 10px;
-}
-.plan {
-    margin: auto;
-    width: 90%;
-
 }
