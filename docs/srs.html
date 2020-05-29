@@ -13,7 +13,7 @@
     	<nav>
     		<a href="https://hguzman.github.io/Planeadores/">Home</a>
         <a href="documentacion.html">Documentación</a>
-        <a href="diagramas.html">Diagramas</a>
+        <a href="diagrams.html">Diagramas</a>
         <a href="#">Galería</a>
     	</nav>
     </header>
@@ -178,7 +178,7 @@
       <h4>2.2 Funcionalidad del producto</h4>
 
       <div class="diagramas">
-        <a href="diagramas.html" target="blank_">Diagramas</a>
+        <a href="diagrams.html" target="blank_">Diagramas</a>
       </div>
 
       <h4>2.3 Caracteristicas de los usuarios</h4>
@@ -244,14 +244,19 @@
           <li>Actualizar usuario</li>
           <li>Buscar usuario</li>
           <li>Eliminar usuario</li>
+          <li>Registrar nueva planeación</li>
+          <li>Actualizar nueva planeación</li>
+          <li>Buscar planeación</li>
+          <li>Eliminar planeación</li>
           <li>Ver planeaciones listas</li>
           <li>Ver planeaciones en progreso</li>
           <li>Ver planeaciones pendientes</li>
+          <li>Eliminar planeación</li>
           <li>Registrar nueva venta</li>
+          <li>Actualizar registro de venta</li>
           <li>Buscar registro de venta</li>
           <li>Eliminar registro de venta</li>
           <li>Ver registro de ventas</li>
-          <li>Ver estadisticas de ventas</li>
         </ol>
       </div> <!-- listas -->
 
@@ -397,7 +402,7 @@
         </tr>
         <tr>
           <td class="th">Precondiciones</td>
-          <td>El usuario debe de estar registrado en la base de datos</td>
+          <td>El cliente debe de estar registrado en la base de datos</td>
         </tr>
         <tr>
           <td class="th">Pos condiciones</td>
@@ -439,7 +444,7 @@
         </tr>
         <tr>
           <td class="th">Salidas</td>
-          <td>Mensaje de confirmación de usuario encontrado</td>
+          <td>Mensaje de confirmación de cliente encontrado</td>
         </tr>
         <tr>
           <td class="th">Proceso</td>
@@ -451,7 +456,7 @@
         </tr>
         <tr>
           <td class="th">Precondiciones</td>
-          <td>El usuario debe de estar registrado en la base de datos</td>
+          <td>El cliente debe de estar registrado en la base de datos</td>
         </tr>
         <tr>
           <td class="th">Pos condiciones</td>
@@ -493,7 +498,7 @@
         </tr>
         <tr>
           <td class="th">Salidas</td>
-          <td>Mensaje de confirmación de usuario Eliminado</td>
+          <td>Mensaje de confirmación de cliente Eliminado</td>
         </tr>
         <tr>
           <td class="th">Proceso</td>
@@ -505,7 +510,7 @@
         </tr>
         <tr>
           <td class="th">Precondiciones</td>
-          <td>El usuario debe de estar registrado en la base de datos</td>
+          <td>El cliente debe de estar registrado en la base de datos</td>
         </tr>
         <tr>
           <td class="th">Pos condiciones</td>
@@ -514,6 +519,222 @@
         <tr>
           <td class="th">Efectos colaterales</td>
           <td>El cliente se elimina de la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguno</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguno</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Agregar usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir agregar un nuevo usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se ingresan los datos del usuario para se registrados en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Primer nombre, segundo Nombre, primer Apellido, segundo apellido, username, contraseña y rol</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Confirmación de registro de usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>En un formulario se ingresan los datos del nuevo usuario para que el programa los ingrese a la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>El username debe ingresarse correctamente ya que este es el que servira para identificar al usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>El username no debe de existir en la base de datos antes de ingresarse ya que no pueden haber username repetidos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Se guardan los datos del nuevo usuario y quedan registrados en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>El usuario queda registrado</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguno</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguno</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Actualizar Usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir actualizar la información de un usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se modifica la información del usuario a través de un formulario</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Primer nombre, segundo Nombre, primer Apellido, segundo apellido, username, contraseña y rol</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmación de actualización</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Aparece un campo en cual se ingresa el username del usuario luego aparece un formulario en el cual se ingresarán los nuevos datos</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>El username debe ser ingresado correctamente porque con este es que se buscará al usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>El usuario bede de existir en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Los nuevos datos del usuario se registran en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Los datos del usuario se actualizan</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguno</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguno</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Buscar Usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir buscar un usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se busca a un usuario por medio de su username y se muestra su información</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Username</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmación de usuario encontrado</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Aparece un campo en cual se ingresa el username del usuario luego aparece una ventana con toda la información del usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>El username debe ser ingresado correctamente porque con este es que se buscará al usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>El usuario debe de estar registrado en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Se podrá visualizar la información del usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Se muestra la información del usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguno</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguno</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Eliminar Usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir eliminar usuarios de la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se busca al usuario y luego se elimina</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Username</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmación de eliminación del usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Aparece un campo en cual se ingresa el username del usuario luego el programa elimina al usuario de la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>El username debe ser ingresado correctamente porque con este es que se buscará al usuario</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>El usuario debe de estar registrado en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>El usuario se elimina de la base de datos</td>
         </tr>
         <tr>
           <td class="th">Contactos</td>
