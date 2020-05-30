@@ -1,0 +1,25 @@
+@import url(header.css);
+
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+	width: 90%;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 18pt;
+}
+
+	table tr td {
+		padding: 5px 10px;
+		background: 
+	}
+
+	table tr .title {
+		font-weight: bold;
+		background: pink;
+	}
