@@ -745,6 +745,654 @@
           <td>Ninguno</td>
         </tr>
       </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Registrar nueva planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir registrar una nueva planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se registran los datos de la nueva planeacion y luego se guardan en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Formato, Tematica, Estado, Nombre cliente, correo cliente, nombre de usuario que la va a realizar</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmación de registro de planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>En un formulario se ingresan los datos de la planeación para que el programa los ingrese en una base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>Los datos del cliente y el usuario deben de ser ingresados correctamente</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>La planeación queda registrada en la base de datos y queda asociada al cliente</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Actualizar Planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir actualizar los datos de una planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se busca la planeación y se actualizan sus datos</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Formato, Tematica, Estado, Nombre cliente, correo cliente, nombre de usuario que la va a realizar</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Confirmación de planeación actualizada</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Primero se busca al cliente dueño de la planeación luego en la ventana que aparece habrá una opción para ver planeaciones luego de entrar a esta opción aparecerá otra ventana donde saldrá la opción de actualizar donde se podran ingresar los nuevos datos</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>el correo del cliente se bede ingresar correctamente ya que este es el que se usará para buscar las planeaciones</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>La planeación debe se existir en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Se actualizan los datos de la planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Buscar Planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir buscar planeaciones</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se busca la planeación luego se muetra su información</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Correo del cliente dueño de la planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmación de cliente encontrado</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>En un formulario se ingresa el correo del dueño de la planeación después una tabla aparecen todas las planeaciones que le pertenecen separadas por estado</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>El correo del dueño de la planeación debe ser ingresado correctamente</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>La planeación debe de existir en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Se muestra la información de la planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Eliminar planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir eliminar planeaciones de la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se busca la planeación luego se elimina</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Correo del cliente dueño de la planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmación de eliminación de planeación</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Primero se busca al cliente dueño de la planeación luego en la ventana que aparece habrá una opción para ver planeaciones luego de entrar a esta opción aparecerá otra ventana donde saldrá la opción de eliminar.</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>La planeación debe de existir en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>La planeación se elimina de la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Ver planeaciones listas</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir ver la planeaciones que ya fueron terminadas</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Aparece una tabla con una lista de la planeaciones terminadas</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Mouse</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Ventana con la tabla donde están las planeaciones</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Aparece una ventana con una tabla, luego el programa buscará en la base de datos la planeaciones que tengan el estado de "terminadas" y llenará la tabla con los datos correspondientes</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>Deben de haber planeaciones ya terminadas para que aparezcan</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Se podrá ver la información de las planeaciones terminadas</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Aparece una ventana con la información de las planeaciones</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Ver planeaciones en progreso</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir ver la planeaciones que están en proceso de ser terminadas</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Aparece una tabla con una lista de la planeaciones en progreso</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Mouse</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Ventana con la tabla donde están las planeaciones</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Aparece una ventana con una tabla, luego el programa buscará en la base de datos la planeaciones que tengan el estado de "En progreso" y llenará la tabla con los datos correspondientes</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>Deben de haber planeaciones en progreso para que aparezcan</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Se podrá ver la información de las planeaciones en progreso</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Aparece una ventana con la información de las planeaciones</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Ver planeaciones pendientes</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir ver la planeaciones que están pendientes por terminar</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Aparece una tabla con una lista de la planeaciones pendientes</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Mouse</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Ventana con la tabla donde están las planeaciones</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Aparece una ventana con una tabla, luego el programa buscará en la base de datos la planeaciones que tengan el estado de "Pendientes" y llenará la tabla con los datos correspondientes</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>Deben de haber planeaciones pendientes para que aparezcan</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Se podrá ver la información de las planeaciones pendientes</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Aparece una ventana con la información de las planeaciones</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Registrar nueva venta</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir registrar una venta</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se registran los datos de la venta para ser registrado en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Valor, Fecha, Nombre del cliente, Correo del cliente, Nombre de usuario que registra la venta, medio de pago</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmación de registro de venta</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>En un formulario se ingresan los datos de la venta para que el programa los registre en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>Los datos del cliente y del usuario se deben de reistrar correctamente</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>La planeación debe de estar lista</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>La planeación queda registrada en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Actualizar registro de venta</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir actualizar registros de ventas</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se modifica la información del registro de la venta a través de un formulario</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Valor, Fecha, Nombre del cliente, Correo del cliente, Nombre de usuario que registra la venta, medio de pago</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmacion de actualización</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Primero se busca al cliente al cual se le realizó la venta luego en la ventana que aparece habrá una opción para ver los registro de ventas luego de entrar a esta opción aparecerá otra ventana donde saldrá la opción de actualizar el registro donde ingresarán los nuevos datos</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>El correo del cliente y el username del usuario deben ser ingresados correctamente</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>La venta debe de estar registrada en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>La información de la venta queda modificada</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Buscar registro de venta</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir buscar registros de ventas</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se busca el registro de venta a través del cliente al que se le realizó</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Correo del cliente al que se le realizó la venta</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Primero se busca al cliente al cual se le realizó la venta luego en la ventana que aparece habrá una opción para ver los registro de ventas luego de entrar a esta opción aparecerá otra ventana donde saldrán todas las ventas que se le realizarón al cliente</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>Al momento de buscar al cliente se debe ingresar el correo correctamente</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>La venta debe de estar registrada en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Se muestra la información de la venta</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Eliminar registro de venta</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir eliminar registros de ventas</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se busca el registro de venta y se elimina</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Correo del cliente al que se le realizó la venta</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Teclado</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Mensaje de confirmación de eliminación de registro de venta</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Primero se busca al cliente dueño de la planeación luego en la ventana que aparece habrá una opción para ver planeaciones luego de entrar a esta opción aparecerá otra ventana donde saldrá la opción de eliminar.</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>Al momento de buscar al cliente se debe ingresar el correo correctamente</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>La venta debe de estar registrada en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>La planeación se elimina de la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td colspan="2" class="tituloRF th" align="center">Ver registro de ventas</td>
+        </tr>
+        <tr>
+          <td class="th">Función</td>
+          <td>Permitir ver los registros de ventas</td>
+        </tr>
+        <tr>
+          <td class="th">Descripción</td>
+          <td>Se muestra una tabla con los registros de ventas</td>
+        </tr>
+        <tr>
+          <td class="th">Entradas</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fuentes</td>
+          <td>Mouse</td>
+        </tr>
+        <tr>
+          <td class="th">Salidas</td>
+          <td>Tabla con todos los registros de ventas</td>
+        </tr>
+        <tr>
+          <td class="th">Proceso</td>
+          <td>Se muestra una tabla la cual será llenada con información de la base de datos que será traida por el mismo software</td>
+        </tr>
+        <tr>
+          <td class="th">Restricciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Precondiciones</td>
+          <td>Deben de haber registros de ventas en la base de datos</td>
+        </tr>
+        <tr>
+          <td class="th">Pos condiciones</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Efectos colaterales</td>
+          <td>Se muestran todos los registros de ventas</td>
+        </tr>
+        <tr>
+          <td class="th">Contactos</td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td class="th">Fecha</td>
+          <td>Ninguna</td>
+        </tr>
+      </table>
     </div> <!-- container -->
 
     <footer>
