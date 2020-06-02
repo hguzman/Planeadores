@@ -33,6 +33,8 @@
 
 	.modal img {
 		height: 90%;
+		cursor: zoom-in;
+		transition: all .3s;
 	}
 
 #galeriaDiagramas {

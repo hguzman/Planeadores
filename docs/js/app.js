@@ -38,4 +38,17 @@ window.addEventListener('keyup', function(e) {
 	}
 });
 
-
+//Zoom
+var zoom = false;
+var imgModal = document.querySelector('.modal img');
+imgModal.addEventListener('click', function(e) {
+	if (zoom == false) {
+		zoom = true
+		imgModal.style.cursor = 'zoom-out';
+		imgModal.style.transform = 'scale(1.5)';
+	} else {
+		zoom = false;
+		imgModal.style.cursor = 'zoom-in';
+		imgModal.style.transform = 'scale(1)';
+	}
+});
