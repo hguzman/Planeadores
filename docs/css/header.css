@@ -47,8 +47,12 @@ header {
 		}
 
 	header nav {
-		margin-left: -600px;
+		margin-left: -675px;
 		transition: all .3s ease;
+		width: 100%;
+	}
+
+	.nav {
 		width: 100%;
 	}
 

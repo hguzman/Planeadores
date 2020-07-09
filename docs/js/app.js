@@ -6,9 +6,11 @@ document.querySelector('.toggleMenu').addEventListener('click', function(e) {
 	location.href = '#header';
 	if (menuActive == false) {
 		document.querySelector('nav').style.marginLeft = '50px';
+		// document.querySelector('header nav').style.display = 'none';
 		menuActive = true;	
 	} else {
-		document.querySelector('nav').style.marginLeft = '-600px';
+		document.querySelector('nav').style.marginLeft = '-675px';
+		// document.querySelector('header nav').style.display = 'flex';
 		menuActive = false;
 	}
 });
