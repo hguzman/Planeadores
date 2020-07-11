@@ -1,22 +1,30 @@
-//Menú
+// Variables
+let menuActive = false;
+let zoom = false;
+const lis = document.querySelectorAll('#galeriaDiagramas ul li');
+const modal = document.querySelector('.modal');
+const imgModal = document.querySelector('.modal img');
 
-var menuActive = false;
+// EventListeners
+document.querySelector('.toggleMenu').addEventListener('click', toggleMenu);
+document.querySelector('.cerrar').addEventListener('click', cerrarModal);
+window.addEventListener('keyup', cerrarModal);
+imgModal.addEventListener('click',zoomImg);
 
-document.querySelector('.toggleMenu').addEventListener('click', function(e) {
+// Funciones
+function toggleMenu() {
 	location.href = '#header';
+
 	if (menuActive == false) {
 		document.querySelector('nav').style.marginLeft = '50px';
+		// document.querySelector('header nav').style.display = 'none';
 		menuActive = true;	
 	} else {
-		document.querySelector('nav').style.marginLeft = '-600px';
+		document.querySelector('nav').style.marginLeft = '-675px';
+		// document.querySelector('header nav').style.display = 'flex';
 		menuActive = false;
 	}
-});
-
-// Galería diagrmas 
-
-var lis = document.querySelectorAll('#galeriaDiagramas ul li');
-var modal = document.querySelector('.modal');
+}
 
 lis.forEach(function(li) {
 	li.addEventListener('click', function(e) {
@@ -28,20 +36,15 @@ lis.forEach(function(li) {
 	});
 });
 
-document.querySelector('.cerrar').addEventListener('click', function(e) {
+function cerrarModal(e) {
 	modal.style.display = 'none';
-});
 
-window.addEventListener('keyup', function(e) {
 	if (e.keyCode == 27) {
 		modal.style.display = 'none';
 	}
-});
+}
 
-//Zoom
-var zoom = false;
-var imgModal = document.querySelector('.modal img');
-imgModal.addEventListener('click', function(e) {
+function zoomImg() {
 	if (zoom == false) {
 		zoom = true
 		imgModal.style.cursor = 'zoom-out';
@@ -51,4 +54,4 @@ imgModal.addEventListener('click', function(e) {
 		imgModal.style.cursor = 'zoom-in';
 		imgModal.style.transform = 'scale(1)';
 	}
-});
+}
