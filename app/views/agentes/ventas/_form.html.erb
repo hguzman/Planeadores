@@ -1,0 +1,8 @@
+<div class="formulario">
+  <%= simple_form_for [@agente, @venta] do |f| %>
+    <%= f.input :valor, input_html: { autocomplete: "off", autofocus: "on" } %>
+    <%= f.input :fechaVenta, input_html: { autocomplete: "off" } %>
+   	<%= f.input :medioPago, input_html: { autocomplete: "off" } %>
+    <%= f.button :submit %>
+  <% end %>
+</div>

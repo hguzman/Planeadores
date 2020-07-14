@@ -1,0 +1,7 @@
+<tr>
+	<td><%= link_to venta.valor, agente_venta_path(@agente, venta) %></td>
+	<td><%= venta.fechaVenta %></td>
+	<td><%= venta.medioPago %></td>
+	<td><%= link_to 'Editar', edit_agente_venta_path(@agente, venta) %></td>
+	<td><%= link_to 'Eliminar', agente_venta_path(@agente, venta), method: :delete, data: {confirm: "Estás seguro?"} %></td>
+</tr>

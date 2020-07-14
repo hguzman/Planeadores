@@ -1,0 +1,19 @@
+<table border="1">
+	<thead>
+		<th>Email</th>
+		<th>Primer Nombre</th>
+		<th>Segundo Nombre</th>
+		<th>Primer Apellido</th>
+		<th>Editar</th>
+		<th>Eliminar</th>
+	</thead>
+	<tbody>
+		<%= render @usuarios %>
+	</tbody>
+</table>
+
+<div class="links">
+	<a>Menu</a>
+	<%= link_to 'Nuevo Usuario', new_usuario_path %>
+	<%= link_to 'Ver Agentes', agentes_path %>
+</div>

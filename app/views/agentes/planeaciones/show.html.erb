@@ -1,0 +1,20 @@
+<table border="1">
+	<thead>
+		<th>Formato</th>
+		<th>Tematica</th>
+		<th>Estado</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= @planeacion.formato %></td>
+			<td><%= @planeacion.tematica %></td>
+			<td><%= @planeacion.estado %></td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="links">
+	<a>Menu</a>
+	<%= link_to 'Ver Todas', agente_planeaciones_path(@agente) %>
+	<%= link_to 'Editar', edit_agente_planeacion_path(@agente, @planeacion) %>
+</div>

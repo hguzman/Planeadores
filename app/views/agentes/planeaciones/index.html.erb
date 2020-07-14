@@ -1,0 +1,30 @@
+<div class="filtro">
+	<label for="filtro">Buscar por:</label>
+	<select id="filtro">
+		<option value="todas" selected>Todas</option>
+		<option value="pendiente">Pendiente</option>
+		<option value="enProceso">En Proceso</option>
+		<option value="lista">Lista</option>
+	</select>
+</div>
+
+<table border="1">
+	<thead>
+		<th>Formato</th>
+		<th>Tematica</th>
+		<th>Estado</th>
+		<th>Editar</th>
+		<th>Eliminar</th>
+	</thead>
+	<tbody id="bodyTable">
+		<%= render @planeaciones %>
+	</tbody>
+</table>
+
+<div class="links">
+	<a>Menu</a>
+	<%= link_to 'Nueva Planeacion', new_agente_planeacion_path(@agente) %>
+	<%= link_to 'Ver Agente', agente_path(@agente) %>
+</div>
+
+<%= javascript_pack_tag 'app' %>

@@ -1,0 +1,22 @@
+<table border="1">
+	<thead>
+		<th>Email</th>
+		<th>Primer Nombre</th>
+		<th>Segundo Nombre</th>
+		<th>Primer Apellido</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= @usuario.email %></td>
+			<td><%= @usuario.primerNombre %></td>
+			<td><%= @usuario.segundoNombre %></td>
+			<td><%= @usuario.primerApellido %></td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="links">
+	<a>Menu</a>
+	<%= link_to 'Ver Todos', usuarios_path %>
+	<%= link_to 'Editar', edit_usuario_path(@usuario) %>
+</div>
