@@ -1,0 +1,10 @@
+<tr>
+	<td><%= link_to agente.primerNombre, agente_path(agente) %></td>
+	<td><%= agente.segundoNombre %></td>
+	<td><%= agente.primerApellido %></td>
+	<td><%= agente.nombreUds %></td>
+	<td><%= agente.modalidad %></td>
+	<td><%= agente.correo %></td>
+	<td><%= link_to 'Editar', edit_agente_path(agente) %></td>
+	<td><%= link_to 'Eliminar', agente_path(agente), method: :delete, data: {confirm: "Estás seguro?"} %></td>
+</tr>

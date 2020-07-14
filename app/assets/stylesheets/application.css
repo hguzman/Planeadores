@@ -1,0 +1,322 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+i {
+  min-width: 20px;
+}
+
+body, html {
+  font-family: verdana, helvetica, neue;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.filtro {
+  width: 100px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    header .container a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+      transition: all .3s;
+    }
+
+    header .container a:hover {
+      color: lightgreen;
+    }
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  border-color: #333;
+}
+
+  table thead th {
+    padding: 5px;
+  }
+
+  table tbody tr td {
+    padding: 5px 10px;
+    text-align: center;
+    transition: all .2s;
+  }
+
+  table tbody tr td:hover {
+    background: lightgray;
+  }
+
+    table tbody tr td a {
+      color: #006973;
+    }
+
+.links {
+  /* background: #333; */
+  min-height: 300px;
+  max-height: 300px;
+  min-width: 210px;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  /* border-radius: 5px; */
+  transition: all .2s;
+  border: 1px solid #333;
+}
+
+/* .links:hover {
+  min-height: 226px;
+  max-height: 226px;
+}
+
+.linksAgente:hover {
+  min-height: 265px;
+  max-height: 265px;
+} */
+
+  .links a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    transition: all .3s;
+  }
+
+  .links a:nth-child(1) {
+    background: #333;
+    color: #ffff;
+  }
+
+  .links a:nth-child(5) {
+    padding: 10px 15px 0 15px;
+  }
+
+  .links a:hover {
+    color: #00B3C3;
+  }
+
+  /* Formularios */
+
+  .formulario {
+    width: 40%;
+  }
+
+  .formulario form {
+    /* background: lightgray; */
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .formulario form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+    .formulario form div label {
+      width: 150px;
+      text-align: left;
+      margin-right: 25px;
+    }
+
+    .formulario form div select {
+      width: 102px;
+    }
+
+    .formulario form div input[type="text"], input[type="password"], input[type="email"],input[type="number"] {
+      width: 300px;
+      outline: none;
+      border: 1px solid #333;
+      padding: 2px;
+      transition: all .3s;
+    }
+
+    .formulario form div input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus,input[type="number"]:focus {
+      box-shadow: 2px 2px 2px #333;
+    }
+
+    .formulario form input[type="submit"] {
+      background: #00B3C3;
+      padding: 5px 10px;
+      border: 1px solid #333;
+      color: #fff;
+      outline: none;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 150px;
+      transition: all .3s;
+    }
+
+    .formulario form input[type="submit"]:hover {
+      box-shadow: 2px 2px 2px #333;
+    }
+
+/* Formulario Login */
+
+.formularioLogin {
+  /* background: lightgray; */
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.formularioLogin form div div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+  .formularioLogin h2 {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .formularioLogin label {
+    width: 100%;;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .formularioLogin input[type="email"], .formularioLogin input[type="password"] {
+    /* width: 200px; */
+    width: 95%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #333;
+    transition: all .3s;
+  }
+
+  .formularioLogin input[type="email"],.formularioLogin input[type="password"]:focus {
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .formularioLogin input[type="submit"] {
+    background: #00B3C3;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 150px;
+    transition: all .3s;
+  }
+
+  .formularioLogin .form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formularioLogin input[type="submit"]:hover {
+    box-shadow: 2px 2px 2px #333;
+  }
+
+  .formularioLogin input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  .formularioLogin a {
+    color: #333;
+    display: block;
+    font-family: arial;
+    letter-spacing: .5px;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .enlaces {
+    margin-top: 10px;
+  }
+
+  /* Menú */
+
+.nav ul {
+  list-style: none;
+}
+
+.nav .menu > li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav .menu:hover .submenu {
+  display: block;
+}
+
+.nav .menu .submenu {
+  position: absolute;
+  background: #f4f4f4;
+  padding: 5px 10px;
+  display: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #333;
+}
+
+.nav .menu .submenu > li a {
+  display: block;
+  color: #000;
+}
+
+.nav .menu .submenu > li a:hover {
+  color: #00B3C3;
+}
+
+.nav .menu .submenu li {
+  width: 200px;
+  margin-top: 10px;
+}

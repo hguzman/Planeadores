@@ -1,0 +1,18 @@
+<table border="1">
+	<thead>
+		<th>Valor</th>
+		<th>Fecha Venta</th>
+		<th>Medio Pago</th>
+		<th>Editar</th>
+		<th>Eliminar</th>
+	</thead>
+	<tbody>
+		<%= render @ventas %>
+	</tbody>
+</table>
+
+<div class="links">
+	<a>Menu</a>
+	<%= link_to 'Nueva Venta', new_agente_venta_path(@agente) %>
+	<%= link_to 'Ver Agente', agente_path(@agente) %>
+</div>
