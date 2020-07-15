@@ -1,0 +1,8 @@
+<div class="formulario">
+  <%= simple_form_for [@agente, @planeacion] do |f| %>
+    <%= f.input :formato, input_html: { autocomplete: "off", autofocus: "on" } %>
+    <%= f.input :tematica, input_html: { autocomplete: "off" } %>
+   	<%= f.input :estado, input_html: { autocomplete: "off" } %>
+    <%= f.button :submit %>
+  <% end %>
+</div>

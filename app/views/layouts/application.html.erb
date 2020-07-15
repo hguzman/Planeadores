@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% if usuario_signed_in? %>
+      <title><%= @title %></title>
+    <% else %>
+      <title>Proyecto Planeadores</title>
+    <% end %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <% if usuario_signed_in? %>
+          <h1><%= @title %></h1>
+        <% else %>
+          <h1>Proyecto Planeadores</h1>
+        <% end %>
+
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+
+        <% if usuario_signed_in? %>
+          <nav class="nav">
+            <ul class="menu">
+              <li id="btnSubmenu">
+                <a>Menu <%= fa_icon "caret-down", class: "icon" %></a>
+                <ul class="submenu">
+                  <% if usuario_signed_in? %>
+                    <li>
+                      <% if current_usuario.rol? %>
+                        <%= link_to 'Usuarios', usuarios_path %>
+                      <% end %>
+                    </li>
+                    <li>
+                      <%= link_to "Cerrar session", destroy_usuario_session_path, method: :delete %>
+                    </li>
+                  <% end %>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        <% end %>
+      </div>
+    </header>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

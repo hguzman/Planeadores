@@ -1,0 +1,2 @@
+module Agentes::VentasHelper
+end

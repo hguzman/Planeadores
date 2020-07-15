@@ -1,0 +1,8 @@
+<tr>
+	<td><%= link_to usuario.email, usuario_path(usuario) %></td>
+	<td><%= usuario.primerNombre %></td>
+	<td><%= usuario.segundoNombre %></td>
+	<td><%= usuario.primerApellido %></td>
+	<td><%= link_to 'Editar', edit_usuario_path(usuario) %></td>
+	<td><%= link_to 'Eliminar', usuario_path(usuario), method: :delete, data: {confirm: "Estás seguro?"} %></td>
+</tr>
