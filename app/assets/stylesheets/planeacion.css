@@ -1,0 +1,26 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	font-size: 11pt;
+	font-family: arial;
+}
+
+.pdf table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.pdf table tr td {
+	padding: 5px;
+}
+
+.pdf {
+	margin-bottom: 10px;
+}
+.anexo {
+	margin-bottom: 100px;
+}
