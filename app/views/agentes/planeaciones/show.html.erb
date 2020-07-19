@@ -13,7 +13,11 @@
 	</tbody>
 </table> -->
 
-<%= render 'formato1' %>
+<% if @planeacion.formato == 'formato 1' %>
+	<%= render 'formato1' %>
+<% else %>
+	<%= render 'formato2' %>
+<% end %>
 
 <!-- <div class="links">
 	<a>Menu</a>
