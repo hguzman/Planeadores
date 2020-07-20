@@ -45,13 +45,13 @@ class Agentes::PlaneacionesController < ApplicationController
 
   def destroy
   	@planeacion.destroy
-  	redirect_to agente_planeaciones_path  	
+  	redirect_to agente_planeaciones_path
   end
 
   private
 
   def find_agente
-  	@agente = Agente.find(params[:agente_id])  	
+  	@agente = Agente.find(params[:agente_id])
   end
 
   def find_planeacion

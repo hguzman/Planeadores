@@ -2,7 +2,7 @@
   <%= simple_form_for [@agente, @venta] do |f| %>
     <%= f.input :valor, input_html: { autocomplete: "off", autofocus: "on" } %>
     <%= f.input :fechaVenta, input_html: { autocomplete: "off" } %>
-    <label for="medioPago">Medios de Pago</label><%=f.select :medioPago,([['Efecty'], ['Daviplata'], ['SuperGiros'], ['Bacolombia']])%>
+    <label class="MPago" for="medioPago">Medios de Pago</label><%=f.select :medioPago,([['Efecty'], ['Daviplata'], ['SuperGiros'], ['Bacolombia']])%>
     <%= f.button :submit, :class => 'Btn' %>
   <% end %>
 </div>

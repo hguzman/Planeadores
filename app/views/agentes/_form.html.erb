@@ -4,8 +4,8 @@
     <%= f.input :segundoNombre, input_html: { autocomplete: "off" } %>
    	<%= f.input :primerApellido, input_html: { autocomplete: "off" } %>
    	<%= f.input :nombreUds, input_html: { autocomplete: "off" } %>
-   	<%= f.input :modalidad, input_html: { autocomplete: "off" } %>
+  <label class="Mod" for="modalidad">Modalidad</label><div class="Modalidad"><%=f.select :modalidad,([['Efecty'], ['Daviplata']]), :class => 'Sel'%></div>
    	<%= f.input :correo, input_html: { autocomplete: "off" } %>
-    <%= f.button :submit %>
+    <%= f.button :submit, :class => 'BtnAgente'%>
   <% end %>
 </div>
