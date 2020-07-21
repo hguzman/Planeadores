@@ -59,6 +59,6 @@ class Agentes::PlaneacionesController < ApplicationController
   end
 
   def planeacion_params
- 		params.require(:planeacion).permit(:formato, :nombre, :tematica, :estado) 	
+ 		params.require(:planeacion).permit(:formato, :tematica, :estado) 	
   end
 end
