@@ -5,11 +5,7 @@ class Agentes::PlaneacionesController < ApplicationController
   layout :false, only: [:pdf]
 
   def index
-    if params[:estado]
-      @planeaciones = @agente.planeaciones.where(estado: params[:estado])
-    else
-      @planeaciones = @agente.planeaciones
-    end
+    @planeaciones = @agente.planeaciones
     @title = "Lista de Planeaciones"
   end
 
@@ -69,6 +65,6 @@ class Agentes::PlaneacionesController < ApplicationController
   end
 
   def planeacion_params
- 		params.require(:planeacion).permit(:formato, :tematica, :estado) 	
+ 		params.require(:planeacion).permit(:formato, :tematica, :estado, :fecha_de_creacion) 	
   end
 end

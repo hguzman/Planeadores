@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_22_050612) do
+ActiveRecord::Schema.define(version: 2020_07_22_230138) do
 
   create_table "agentes", force: :cascade do |t|
     t.string "primerNombre"
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 2020_07_22_050612) do
     t.string "correo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "cedula"
+    t.index ["cedula"], name: "index_agentes_on_cedula"
   end
 
   create_table "planeaciones", force: :cascade do |t|
@@ -29,6 +31,7 @@ ActiveRecord::Schema.define(version: 2020_07_22_050612) do
     t.integer "agente_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.date "fecha_de_creacion"
     t.index ["agente_id"], name: "index_planeaciones_on_agente_id"
   end
 
