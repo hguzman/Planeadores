@@ -2,7 +2,6 @@
   <%= simple_form_for [@agente, @planeacion] do |f| %>
     <label class="Format" for="formato">Formato</label><div class="TipoF"><%= f.select :formato, ([['Formato 1'], ['Formato 2']]) %></div>
     <%= f.input :tematica, input_html: { autocomplete: "off" } %>
-   	<%= f.input :estado, input_html: { autocomplete: "off" } %>
     <%= f.button :submit, :class => 'BtnP' %>
   <% end %>
 

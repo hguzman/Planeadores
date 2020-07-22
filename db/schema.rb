@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_20_032722) do
+ActiveRecord::Schema.define(version: 2020_07_22_050612) do
 
   create_table "agentes", force: :cascade do |t|
     t.string "primerNombre"
@@ -26,11 +26,9 @@ ActiveRecord::Schema.define(version: 2020_07_20_032722) do
   create_table "planeaciones", force: :cascade do |t|
     t.string "formato"
     t.string "tematica"
-    t.string "estado"
     t.integer "agente_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "nombre"
     t.index ["agente_id"], name: "index_planeaciones_on_agente_id"
   end
 

@@ -1,8 +1,8 @@
 <tr>
 	<!-- # <td><%= link_to planeacion.formato, agente_planeacion_path(@agente, planeacion) %></td> -->
-	<td><a href="/agentes/<%= @agente.id %>/planeaciones/<%= planeacion.id %>" target="_blank"><%= planeacion.formato %></a></td>
-	<td><%= planeacion.tematica %></td>
-	<td><%= planeacion.estado %></td>
+	<td><a href="/agentes/<%= @agente.id %>/planeaciones/<%= planeacion.id %>" target="_blank"><%= planeacion.formato.capitalize %></a></td>
+	<td><%= planeacion.tematica.capitalize %></td>
+	<td><%= planeacion.created_at %></td>
 	<td><%= link_to 'Editar', edit_agente_planeacion_path(@agente, planeacion) %></td>
 	<td><%= link_to 'Eliminar', agente_planeacion_path(@agente, planeacion), method: :delete, data: {confirm: 'Estás seguro?'} %></td>
 </tr>

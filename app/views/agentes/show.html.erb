@@ -1,23 +1,13 @@
-<table border="1">
-	<thead>
-		<th>Primer Nombre</th>
-		<th>Segundo Nombre</th>
-		<th>Primer Apellido</th>
-		<th>Nombre UDS</th>
-		<th>Modalidad</th>
-		<th>Correo</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td><%= @agente.primerNombre %></td>
-			<td><%= @agente.segundoNombre %></td>
-			<td><%= @agente.primerApellido %></td>
-			<td><%= @agente.nombreUds %></td>
-			<td><%= @agente.modalidad %></td>
-			<td><%= @agente.correo %></td>
-		</tr>
-	</tbody>
-</table>
+<div class="listaShow">
+	<ul>
+		<li><span class="listaTitle">Primer Nombre:</span> <%= @agente.primerNombre.capitalize %></li>
+		<li><span class="listaTitle">Segundo Nombre:</span> <%= @agente.segundoNombre.capitalize %></li>
+		<li><span class="listaTitle">Primer Apellido:</span> <%= @agente.primerApellido.capitalize %></li>
+		<li><span class="listaTitle">Nombre UDS:</span> <%= @agente.nombreUds.capitalize %></li>
+		<li><span class="listaTitle">Modalidad:</span> <%= @agente.modalidad.capitalize %></li>
+		<li><span class="listaTitle">Correo:</span> <%= @agente.correo.capitalize %></li>
+	</ul>
+</div>
 
 <div class="links linksAgente">
 	<a>Menu</a>

@@ -8,14 +8,13 @@
 		<tr>
 			<td><%= @planeacion.formato %></td>
 			<td><%= @planeacion.tematica %></td>
-			<td><%= @planeacion.estado %></td>
 		</tr>
 	</tbody>
 </table> -->
 
-<% if @planeacion.formato == 'formato 1' %>
+<% if @planeacion.formato == 'Formato 1' %>
 	<%= render 'formato1' %>
-<% else %>
+<% elsif @planeacion.formato == 'Formato 2' %>
 	<%= render 'formato2' %>
 <% end %>
 

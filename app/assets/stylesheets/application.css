@@ -327,3 +327,19 @@ table {
   width: 150px;
   margin-top: 10px;
 }
+
+/* Lista Show */
+
+.listaShow ul {
+  list-style: none;
+  font-size: 15pt;
+}
+
+.listaShow ul li {
+  margin-bottom: 30px;
+}
+
+.listaShow .listaTitle {
+  font-weight: bold;
+  margin-right: 5px;
+}
