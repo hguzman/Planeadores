@@ -1,5 +1,6 @@
 <tr>
-	<td><%= link_to planeacion.formato, agente_planeacion_path(@agente, planeacion) %></td>
+	<!-- # <td><%= link_to planeacion.formato, agente_planeacion_path(@agente, planeacion) %></td> -->
+	<td><a href="/agentes/<%= @agente.id %>/planeaciones/<%= planeacion.id %>" target="_blank"><%= planeacion.formato %></a></td>
 	<td><%= planeacion.tematica %></td>
 	<td><%= planeacion.estado %></td>
 	<td><%= link_to 'Editar', edit_agente_planeacion_path(@agente, planeacion) %></td>
