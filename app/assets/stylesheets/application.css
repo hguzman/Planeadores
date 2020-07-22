@@ -51,6 +51,7 @@ header {
   color: #fff;
   padding: 10px;
   margin-bottom: 25px;
+  height: 45px;
 }
 
   header .container {
@@ -69,6 +70,10 @@ header {
     header .container a:hover {
       color: lightgreen;
     }
+#Men1{
+  font-size: 45px;
+  margin-top: -10px;
+}
 
 table {
   width: 70%;
@@ -290,7 +295,7 @@ table {
 
 .nav .menu > li {
   display: inline-block;
-  padding: 10px;
+  padding: 7px;
 }
 
 .nav .menu:hover .submenu {
@@ -305,6 +310,8 @@ table {
   border-radius: 5px;
   margin-top: 10px;
   border: 1px solid #333;
+  font-size: 13px;
+  right: 25px;
 }
 
 .nav .menu .submenu > li a {
@@ -317,6 +324,6 @@ table {
 }
 
 .nav .menu .submenu li {
-  width: 200px;
+  width: 150px;
   margin-top: 10px;
 }
