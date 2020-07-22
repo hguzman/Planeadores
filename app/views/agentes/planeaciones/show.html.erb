@@ -1,25 +1,15 @@
-<!-- <table border="1">
-	<thead>
-		<th>Formato</th>
-		<th>Tematica</th>
-		<th>Estado</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td><%= @planeacion.formato %></td>
-			<td><%= @planeacion.tematica %></td>
-		</tr>
-	</tbody>
-</table> -->
+<div class="listaShow">
+	<ul>
+		<li><span class="listaTitle">Formato</span> <%= @planeacion.formato.capitalize %></li>
+		<li><span class="listaTitle">Temática</span> <%= @planeacion.tematica.capitalize %></li>
+		<li><span class="listaTitle">Fecha de creción</span> <%= @planeacion.created_at %></li>
+	</ul>
+</div>
 
-<% if @planeacion.formato == 'Formato 1' %>
-	<%= render 'formato1' %>
-<% elsif @planeacion.formato == 'Formato 2' %>
-	<%= render 'formato2' %>
-<% end %>
-
-<!-- <div class="links">
+<div class="links">
 	<a>Menu</a>
 	<%= link_to 'Ver Todas', agente_planeaciones_path(@agente) %>
 	<%= link_to 'Editar', edit_agente_planeacion_path(@agente, @planeacion) %>
-</div> -->
+	
+	<a href="/agentes/<%= @agente.id %>/planeaciones/<%= @planeacion.id %>.pdf" target="_blank">Generar PDF</a>
+</div>

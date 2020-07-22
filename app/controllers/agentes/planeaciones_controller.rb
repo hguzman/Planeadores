@@ -2,7 +2,7 @@ class Agentes::PlaneacionesController < ApplicationController
   before_action :authenticate_usuario!
   before_action :find_agente
   before_action :find_planeacion, only: [:show,:edit,:update,:destroy]
-  layout 'planeacion', only: [:show]
+  layout :false, only: [:pdf]
 
   def index
     if params[:estado]
@@ -20,6 +20,15 @@ class Agentes::PlaneacionesController < ApplicationController
 
   def show
     @title = "Mostrar Planeacion"
+
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "Documento",
+        template: "agentes/planeaciones/pdf.html.erb",
+        orientation: 'landscape'
+      end
+    end
   end
 
   def edit
