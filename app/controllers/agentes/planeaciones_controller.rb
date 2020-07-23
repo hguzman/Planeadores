@@ -2,6 +2,7 @@ class Agentes::PlaneacionesController < ApplicationController
   before_action :authenticate_usuario!
   before_action :find_agente
   before_action :find_planeacion, only: [:show,:edit,:update,:destroy]
+  layout 'planeacion', only: [:show]
 
   def index
     if params[:estado]

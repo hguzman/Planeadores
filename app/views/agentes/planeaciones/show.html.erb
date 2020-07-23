@@ -1,4 +1,4 @@
-<table border="1">
+<!-- <table border="1">
 	<thead>
 		<th>Formato</th>
 		<th>Tematica</th>
@@ -11,10 +11,16 @@
 			<td><%= @planeacion.estado %></td>
 		</tr>
 	</tbody>
-</table>
+</table> -->
 
-<div class="links">
+<% if @planeacion.formato == 'formato 1' %>
+	<%= render 'formato1' %>
+<% else %>
+	<%= render 'formato2' %>
+<% end %>
+
+<!-- <div class="links">
 	<a>Menu</a>
 	<%= link_to 'Ver Todas', agente_planeaciones_path(@agente) %>
 	<%= link_to 'Editar', edit_agente_planeacion_path(@agente, @planeacion) %>
-</div>
+</div> -->
