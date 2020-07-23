@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  valor: 1
+  medio_de_pago: MyString
+  fecha_de_pago: 2020-07-23
+  agente: one
+
+two:
+  valor: 1
+  medio_de_pago: MyString
+  fecha_de_pago: 2020-07-23
+  agente: two

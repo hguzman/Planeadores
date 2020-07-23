@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_22_230138) do
+ActiveRecord::Schema.define(version: 2020_07_23_193006) do
 
   create_table "agentes", force: :cascade do |t|
     t.string "primerNombre"
@@ -35,6 +35,16 @@ ActiveRecord::Schema.define(version: 2020_07_22_230138) do
     t.index ["agente_id"], name: "index_planeaciones_on_agente_id"
   end
 
+  create_table "transacciones", force: :cascade do |t|
+    t.integer "valor"
+    t.string "medio_de_pago"
+    t.date "fecha_de_pago"
+    t.integer "agente_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["agente_id"], name: "index_transacciones_on_agente_id"
+  end
+
   create_table "usuarios", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -51,16 +61,6 @@ ActiveRecord::Schema.define(version: 2020_07_22_230138) do
     t.index ["reset_password_token"], name: "index_usuarios_on_reset_password_token", unique: true
   end
 
-  create_table "ventas", force: :cascade do |t|
-    t.integer "valor"
-    t.date "fechaVenta"
-    t.string "medioPago"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "agente_id", null: false
-    t.index ["agente_id"], name: "index_ventas_on_agente_id"
-  end
-
   add_foreign_key "planeaciones", "agentes"
-  add_foreign_key "ventas", "agentes"
+  add_foreign_key "transacciones", "agentes"
 end

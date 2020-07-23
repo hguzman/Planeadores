@@ -1,0 +1,8 @@
+<div class="formulario">
+	<%= simple_form_for [@agente, @transaccion] do |f| %>
+		<%= f.input :valor %>
+		<%= f.input :medio_de_pago %>
+		<%= f.input :fecha_de_pago %>
+		<%= f.button :submit %>
+	<% end %>
+</div>
