@@ -25,6 +25,7 @@ class AgentesController < ApplicationController
 
   	if @agente.save
   		redirect_to agente_path(@agente)
+      flash.notice = 'Agente creado'
   	else
   		render :new
   	end
@@ -33,6 +34,7 @@ class AgentesController < ApplicationController
   def update
   	if @agente.update(agente_params)
   		redirect_to agente_path(@agente)
+      flash.notice = 'Agente actualizado'
   	else
   		render :edit
   	end
@@ -41,6 +43,7 @@ class AgentesController < ApplicationController
   def destroy
     @agente.destroy
     redirect_to agentes_path
+    flash.notice = 'Agente eliminado'
   end
 
   private

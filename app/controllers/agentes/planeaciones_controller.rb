@@ -36,6 +36,7 @@ class Agentes::PlaneacionesController < ApplicationController
 
 		if @planeacion.save
 			redirect_to agente_planeacion_path(@agente,@planeacion)
+      flash.notice = 'Planeacion creada'
 		else
 			render :new
 		end
@@ -44,6 +45,7 @@ class Agentes::PlaneacionesController < ApplicationController
   def update
   	if @planeacion.update(planeacion_params)
   		redirect_to agente_planeacion_path(@agente,@planeacion)
+      flash.notice = 'Planeacion actualizada'
   	else
   		render :edit
   	end
@@ -52,6 +54,7 @@ class Agentes::PlaneacionesController < ApplicationController
   def destroy
   	@planeacion.destroy
   	redirect_to agente_planeaciones_path
+    flash.notice = 'Planeacion eliminada'
   end
 
   private

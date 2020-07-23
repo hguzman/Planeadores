@@ -23,8 +23,10 @@ class Agentes::TransaccionesController < ApplicationController
   def create
     @transaccion = @agente.transacciones.new(transaccion_params)
 
+
   	if @transaccion.save
   		redirect_to agente_transaccion_path(@agente, @transaccion)
+      flash.notice = 'Transaccion creada'
   	else
   		render :new
   	end
@@ -33,6 +35,7 @@ class Agentes::TransaccionesController < ApplicationController
   def update
   	if @transaccion.update(transaccion_params)
   		redirect_to agente_transaccion_path(@agente, @transaccion)
+      flash.notice = 'Transaccion actualizada'
   	else
   		render :edit
   	end
@@ -41,6 +44,7 @@ class Agentes::TransaccionesController < ApplicationController
   def destroy
   	@transaccion.destroy
   	redirect_to agente_transacciones_path
+    flash.notice = 'Transaccion eliminada'
   end
 
   private
