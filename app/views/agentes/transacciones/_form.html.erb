@@ -1,8 +1,8 @@
 <div class="formulario">
 	<%= simple_form_for [@agente, @transaccion] do |f| %>
 		<%= f.input :valor %>
-		<%= f.input :medio_de_pago %>
+		<label class="medio_de_pago" for="medio_de_pago">Medio de Pago</label><div class="MedioP"><%= f.select :medio_de_pago, [["Daviplata"], ["SuperGiros"], ["Bancolombia"], ["Efecty"]] %></div>
 		<%= f.input :fecha_de_pago %>
-		<%= f.button :submit %>
+		<%= f.button :submit, :class => "BtnT" %>
 	<% end %>
 </div>
