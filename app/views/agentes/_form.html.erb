@@ -6,6 +6,7 @@
    	<%= f.input :nombreUds, input_html: { autocomplete: "off" } %>
   <label class="Mod" for="modalidad">Modalidad</label><div class="Modalidad"><%=f.select :modalidad,([['Tradicional'], ['Institucional'], ['Familiar'], ['Propia']]), :class => 'Sel'%></div>
    	<%= f.input :correo, input_html: { autocomplete: "off" } %>
+   	<%= f.input :cedula %>
     <%= f.button :submit, :class => 'BtnAgente'%>
   <% end %>
 </div>

@@ -343,3 +343,41 @@ table {
   font-weight: bold;
   margin-right: 5px;
 }
+
+/* Mensajes Flash */
+
+@keyframes flashMessage {
+  0% {
+    top: 0px;
+    opacity: 0;
+  } 100% {
+    top: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes quitarMessage {
+  0% {
+    top: 100px;
+    opacity: 1;
+  } 100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+.notice {
+  position: absolute;
+  top: 100px;
+  left: 30%;
+
+  border: 2px solid #0096D3;
+  width: 30%;
+  text-align: center;
+  padding: 10px 15px;
+  background: #C1EDFF;
+  border-radius: 10px;
+  color: #0096D3;
+
+  display: none;
+}

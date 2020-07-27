@@ -5,6 +5,7 @@
 	<td><%= agente.nombreUds.capitalize %></td>
 	<td><%= agente.modalidad.capitalize %></td>
 	<td><%= agente.correo.capitalize %></td>
+	<td><%= agente.cedula %></td>
 	<td><%= link_to 'Editar', edit_agente_path(agente) %></td>
 	<td><%= link_to 'Eliminar', agente_path(agente), method: :delete, data: {confirm: "Estás seguro?"} %></td>
 </tr>

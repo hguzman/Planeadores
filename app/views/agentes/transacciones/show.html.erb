@@ -1,0 +1,13 @@
+<div class="listaShow">
+	<ul>
+		<li><span class="listaTitle">Valor:</span> <%= @transaccion.valor %></li>
+		<li><span class="listaTitle">Medio de Pago:</span> <%= @transaccion.medio_de_pago.capitalize %></li>
+		<li><span class="listaTitle">Fecha de Pago:</span> <%= @transaccion.fecha_de_pago %></li>
+	</ul>
+</div>
+
+<div class="links">
+	<a>Menu</a>
+	<%= link_to 'Ver todas', agente_transacciones_path %>
+	<%= link_to 'Editar', edit_agente_transaccion_path(@agente, @transaccion) %>
+</div>
