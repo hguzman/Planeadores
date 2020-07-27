@@ -366,7 +366,7 @@ table {
   }
 }
 
-.notice {
+.notice, .alert, .error {
   position: absolute;
   top: 100px;
   left: 30%;
