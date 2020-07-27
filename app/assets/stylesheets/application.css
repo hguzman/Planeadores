@@ -298,9 +298,9 @@ table {
   padding: 7px;
 }
 
-.nav .menu:hover .submenu {
+/*.nav .menu:hover .submenu {
   display: block;
-}
+}*/
 
 .nav .menu .submenu {
   position: absolute;
