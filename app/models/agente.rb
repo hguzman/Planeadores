@@ -7,5 +7,4 @@ class Agente < ApplicationRecord
 	validates :cedula, uniqueness: true
 	validates :cedula, numericality: true
 	validates :cedula, length: {maximum: 10}
-  validates :cedula, length: {minimum: 10}
 end
