@@ -17,7 +17,7 @@ if (messageAlert.innerHTML !== '') {
 try {
 	if (messageError.innerHTML !== '') {
 		colocarMessage(messageError);
-		messageError.innerHTML = `La cédula ingresada ya está registrada o hay campos vacios`;
+		messageError.innerHTML = `La cédula ingresada ya está registrada o los campos están mal`;
 	}
 } catch(error) {
 	console.log(`Error: ${error}`);
