@@ -291,6 +291,7 @@ table {
 
 .nav ul {
   list-style: none;
+  cursor: pointer;
 }
 
 .nav .menu > li {
@@ -298,20 +299,30 @@ table {
   padding: 7px;
 }
 
-.nav .menu:hover .submenu {
+/*.nav .menu:hover .submenu {
   display: block;
-}
+}*/
 
 .nav .menu .submenu {
   position: absolute;
-  background: #f4f4f4;
+  border: 1px solid #000;
+  background: #fff;
   padding: 5px 10px;
   display: none;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   margin-top: 5px;
-  border: 1px solid #333;
   font-size: 13px;
-  right: 25px;
+  top: 55px;
+  /*right: 325px;*/
+  animation: menuAnimacion .1s ease-in;
+}
+
+@keyframes menuAnimacion {
+  0% {
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+  }
 }
 
 .nav .menu .submenu > li a {
@@ -320,11 +331,11 @@ table {
 }
 
 .nav .menu .submenu > li a:hover {
-  color: #00B3C3;
+  color: #006973;
 }
 
 .nav .menu .submenu li {
-  width: 150px;
+  width: 125px;
   margin-top: 10px;
 }
 
@@ -366,7 +377,7 @@ table {
   }
 }
 
-.notice {
+.notice, .alert, .error {
   position: absolute;
   top: 100px;
   left: 30%;
