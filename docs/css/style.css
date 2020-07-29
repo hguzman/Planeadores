@@ -113,6 +113,7 @@ header {
 		margin-top: 25px;
 		padding: 10px 25px;
 		border-radius: 10px;
+		cursor: pointer;
 	}
 
 		#integrantes .info h2 {
@@ -135,3 +136,115 @@ footer {
 	padding: 20px 0;
 	letter-spacing: 1px;
 }
+
+/* Curriculum */
+
+div.modal div.cerrar {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #f4f4f4;
+	color: #333;
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 18pt;
+	cursor: pointer;
+
+	position: fixed;
+	top: 10px;
+	left: 10px;
+
+	z-index: 100;
+}
+
+div.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+
+	background: rgba(0,0,0,.5);
+
+	width: 100%;
+	height: 100%;
+
+	z-index: 100;
+}
+
+div.modal section.curriculum {
+	background: #fff;
+	width: 80%;
+	height: 90%;
+	border: 1px solid #333;
+	border-radius: 5px;
+	padding: 10px;
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	overflow: scroll;
+}
+
+	div.modal section.curriculum div.titulo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 90%;
+	}
+		div.modal section.curriculum div.titulo img {
+			width: 20%;
+		}
+
+		div.modal section.curriculum div.titulo h2 {
+			width: 75%;
+			text-align: center;
+		}
+
+		div.modal section.curriculum h2 {
+			width: 90%;
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		div.modal section.curriculum div.infoCurriculum {
+			width: 90%;
+		}
+
+		div.modal section.curriculum div.infoCurriculum h4 {
+			margin-top: 10px;
+		}
+
+		div.modal section.curriculum table {
+			width: 100%;
+			margin-top: 20px;
+			border-collapse: collapse;
+		}
+
+		div.modal section.curriculum table tr td {
+			padding: 5px;
+		}
+
+		.btnInfo {
+			background: #333;
+		    color: #f4f4f4;
+		    transition: all .3s;
+		    cursor: pointer;
+		    display: block;
+		    padding: 10px 15px;
+		    border-radius: 5px;
+		    border: none;
+		    margin-top: 10px;
+		    outline: none;
+		}
+
+		.btnInfo:hover {
+			background: rgb(238,174,202);
+	        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	        color: #f4f4f4;
+		}
