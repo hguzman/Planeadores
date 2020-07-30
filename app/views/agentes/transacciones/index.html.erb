@@ -1,0 +1,20 @@
+<table border="1">
+	<thead>
+		<tr>
+			<th>Valor</th>
+			<th>Medio de Pago</th>
+			<th>Fecha de Pago</th>
+			<th>Editar</th>
+			<th>Eliminar</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%= render @transacciones %>
+	</tbody>
+</table>
+
+<div class="links">
+	<a>Menu</a>
+	<%= link_to 'Nueva Transaccion', new_agente_transaccion_path(@agente) %>
+	<%= link_to 'Ver Agente', agente_path(@agente) %>
+</div>

@@ -4,11 +4,7 @@ class Agentes::PlaneacionesController < ApplicationController
   before_action :find_planeacion, only: [:show,:edit,:update,:destroy]
 
   def index
-    if params[:estado]
-      @planeaciones = @agente.planeaciones.where(estado: params[:estado])
-    else
-      @planeaciones = @agente.planeaciones
-    end
+    @planeaciones = @agente.planeaciones
     @title = "Lista de Planeaciones"
   end
 
@@ -19,6 +15,15 @@ class Agentes::PlaneacionesController < ApplicationController
 
   def show
     @title = "Mostrar Planeacion"
+
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "Documento",
+        template: "agentes/planeaciones/pdf.html.erb",
+        orientation: 'landscape'
+      end
+    end
   end
 
   def edit
@@ -30,6 +35,7 @@ class Agentes::PlaneacionesController < ApplicationController
 
 		if @planeacion.save
 			redirect_to agente_planeacion_path(@agente,@planeacion)
+      flash.notice = 'Planeacion creada'
 		else
 			render :new
 		end
@@ -38,6 +44,7 @@ class Agentes::PlaneacionesController < ApplicationController
   def update
   	if @planeacion.update(planeacion_params)
   		redirect_to agente_planeacion_path(@agente,@planeacion)
+      flash.notice = 'Planeacion actualizada'
   	else
   		render :edit
   	end
@@ -46,6 +53,7 @@ class Agentes::PlaneacionesController < ApplicationController
   def destroy
   	@planeacion.destroy
   	redirect_to agente_planeaciones_path
+    flash.notice = 'Planeacion eliminada'
   end
 
   private
@@ -59,6 +67,6 @@ class Agentes::PlaneacionesController < ApplicationController
   end
 
   def planeacion_params
- 		params.require(:planeacion).permit(:formato, :nombre, :tematica, :estado) 	
+ 		params.require(:planeacion).permit(:formato, :tematica, :estado, :fecha_de_creacion) 	
   end
 end

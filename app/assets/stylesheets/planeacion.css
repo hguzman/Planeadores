@@ -1,0 +1,72 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	font-size: 11pt;
+	font-family: arial;
+}
+
+.pdf table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.pdf table tr td {
+	padding: 5px;
+}
+
+.pdf {
+	width: 98%;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 900px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.anexo {
+	/*margin-bottom: 1000px;
+	margin-top: 100px;*/
+}
+
+/* Formato 2 */
+
+.pdf2 {
+	width: 98%;
+	margin: 0 auto;
+	margin-bottom: 300px;
+}
+
+.pdf2 table {
+	width: 100%;
+	/*margin-bottom: 50px;*/
+}
+
+.pdf2 table tr td {
+	padding: 5px;
+}
+
+.anexo2 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.anexo2 img {
+	margin-top: 100px;
+}
+
+#centrado {
+	text-align: center;
+}
+
+#table2 tr td {
+	text-align: center;
+}

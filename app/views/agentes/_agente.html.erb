@@ -1,10 +1,11 @@
 <tr>
-	<td><%= link_to agente.primerNombre, agente_path(agente) %></td>
-	<td><%= agente.segundoNombre %></td>
-	<td><%= agente.primerApellido %></td>
-	<td><%= agente.nombreUds %></td>
-	<td><%= agente.modalidad %></td>
-	<td><%= agente.correo %></td>
+	<td><%= link_to agente.primerNombre.capitalize, agente_path(agente) %></td>
+	<td><%= agente.segundoNombre.capitalize %></td>
+	<td><%= agente.primerApellido.capitalize %></td>
+	<td><%= agente.nombreUds.capitalize %></td>
+	<td><%= agente.modalidad.capitalize %></td>
+	<td><%= agente.correo.capitalize %></td>
+	<td><%= agente.cedula %></td>
 	<td><%= link_to 'Editar', edit_agente_path(agente) %></td>
 	<td><%= link_to 'Eliminar', agente_path(agente), method: :delete, data: {confirm: "Estás seguro?"} %></td>
 </tr>

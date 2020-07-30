@@ -51,3 +51,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'simple_form'
 gem 'devise'
 gem "font-awesome-rails"
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
