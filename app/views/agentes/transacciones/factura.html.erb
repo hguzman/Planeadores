@@ -1,0 +1,29 @@
+<table>
+	<tr>
+		<th>Factura Planeación</th>
+	</tr>
+	<tr>
+		<td>Valor: </td>
+		<td><%= @transaccion.valor %></td>
+	</tr>
+	<tr>
+		<td>Medio de Pago: </td>
+		<td><%= @transaccion.medio_de_pago %></td>
+	</tr>
+	<tr>
+		<td>Fecha de Transacción: </td>
+		<td><%= @transaccion.fecha_de_pago %></td>
+	</tr>
+	<tr>
+		<td>Nombre del Agente Educativo:</td>
+		<td><%= "#{@agente.primerNombre.capitalize} #{@agente.primerApellido.capitalize}" %></td>
+	</tr>
+	<tr>
+		<td>Nombre UDS: </td>
+		<td><%= @agente.nombreUds %></td>
+	</tr>
+	<tr>
+		<td>Cédula</td>
+		<td><%= @agente.cedula %></td>
+	</tr>
+</table>

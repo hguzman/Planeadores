@@ -14,6 +14,16 @@ class Agentes::TransaccionesController < ApplicationController
 
   def show
   	@title = 'Informacion de Transaccion'
+
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "Documento",
+        template: "agentes/transacciones/factura.html.erb",
+        orientation: 'landscape',
+        encoding: "UTF-8"
+      end
+    end
   end
 
   def edit
