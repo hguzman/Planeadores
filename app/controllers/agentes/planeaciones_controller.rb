@@ -21,7 +21,12 @@ class Agentes::PlaneacionesController < ApplicationController
       format.pdf do
         render pdf: "Documento",
         template: "agentes/planeaciones/pdf.html.erb",
-        orientation: 'landscape'
+        orientation: 'landscape',
+        encoding: "UTF-8",
+        page_size: "Letter",
+        layout: "pdf",
+        font_name: "HELVETICA",
+        font_size: 10
       end
     end
   end
