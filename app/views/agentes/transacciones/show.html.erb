@@ -10,4 +10,5 @@
 	<a>Menu</a>
 	<%= link_to 'Ver todas', agente_transacciones_path %>
 	<%= link_to 'Editar', edit_agente_transaccion_path(@agente, @transaccion) %>
+	<a href="/agentes/<%= @agente.id %>/transacciones/<%= @transaccion.id %>.pdf" target="_blank">Generar PDF</a>
 </div>

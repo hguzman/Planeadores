@@ -567,7 +567,7 @@
 											"top": 303,
 											"width": 114.54345703125,
 											"height": 13,
-											"text": "Venta"
+											"text": "Transaccion"
 										},
 										{
 											"_type": "LabelView",
@@ -1188,9 +1188,9 @@
 										"$ref": "AAAAAAFzNeZa+zPmkPM="
 									},
 									"font": "Arial;13;0",
-									"left": 443,
+									"left": 442,
 									"top": 126,
-									"width": 5.05908203125,
+									"width": 6.5,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -1355,9 +1355,9 @@
 										"$ref": "AAAAAAFzNeZtiTQoijE="
 									},
 									"font": "Arial;13;0",
-									"left": 266,
+									"left": 243,
 									"top": 210,
-									"width": 45.8935546875,
+									"width": 91.6474609375,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -1365,7 +1365,7 @@
 										"$ref": "AAAAAAFzNeZtiTQrUtY="
 									},
 									"edgePosition": 2,
-									"text": "+ventas"
+									"text": "+Transacciones"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1461,9 +1461,9 @@
 										"$ref": "AAAAAAFzNeZtiTQp8mU="
 									},
 									"font": "Arial;13;0",
-									"left": 444,
+									"left": 443,
 									"top": 308,
-									"width": 5.05908203125,
+									"width": 6.5,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -1671,9 +1671,9 @@
 										"$ref": "AAAAAAFzNeZ6KjR6eaI="
 									},
 									"font": "Arial;13;0",
-									"left": 605,
+									"left": 604,
 									"top": 150,
-									"width": 5.05908203125,
+									"width": 6.5,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -1872,7 +1872,7 @@
 								"_parent": {
 									"$ref": "AAAAAAFzNeZtiTQnoug="
 								},
-								"name": "ventas",
+								"name": "Transacciones",
 								"reference": {
 									"$ref": "AAAAAAFzNd9cUjK+jcQ="
 								},
@@ -2028,7 +2028,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Venta",
+					"name": "Transaccion",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
