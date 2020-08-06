@@ -66,20 +66,3 @@
 	.container .listas ul li, ol li {
 		margin: 15px 0 15px 15px;
 	}
-
-	.info{
-		float: right;
-		margin-right: 80px;
-		color: #f4f4f4;
-	}
-
-		.img{
-		height: 30px;
-		width: 30px;
-	}
-
-	.icono{
-		width: 150px;
-		margin: auto;
-		margin-top: -30px;
-	}

@@ -28,32 +28,16 @@ header {
 	overflow: hidden;
 }
 
-	header .toggleMenu {
-		background: #f4f4f4;
-		border-radius: 50%;
-		color: #333;
-		cursor: pointer;
-		height: 47px;
-		line-height: 40px;
-		position: fixed;
-		right: 10px;
-		text-align: center;
-		top: 25px;
-		width: 47px;
-	}
-
-		header .toggleMenu #symbol {
-			font-size: 50pt;
-		}
-
 	header nav {
-		margin-left: -675px;
+		margin-left: 20px;
 		transition: all .3s ease;
 		width: 100%;
 	}
 
 	.nav {
 		width: 100%;
+		display: flex;
+		align-items: center;
 	}
 
 		header nav a {
@@ -102,27 +86,41 @@ footer {
 	margin-top: 100px;
 	text-align: center;
 	background: #333;
+	color: #f4f4f4;
 	padding: 20px 0;
+	letter-spacing: 1px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-	footer p {
-		color: #f4f4f4;
-		letter-spacing: 1px;
+	footer h3 {
+		margin-bottom: 10px;
 	}
 
-	.info{
-		float: right;
-		margin-right: 80px;
-		color: #f4f4f4;
+	footer ul a {
+		text-decoration: none;
+		color: #fff;
+		font-weight: bold;
 	}
 
-		.img{
-		height: 30px;
-		width: 30px;
+	footer ul {
+		list-style: none;
+		text-align: left;
 	}
 
-	.icono{
-		width: 150px;
-		margin: auto;
-		margin-top: -30px;
+	footer ul li {
+		margin-bottom: 10px;
+	}
+
+	footer #redes a {
+		display: inline-block;
+		margin-right: 20px;
+	}
+
+	i {
+		color: white;
+		font-size: 20pt;
 	}

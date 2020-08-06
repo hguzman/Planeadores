@@ -1,5 +1,4 @@
 // Variables
-let menuActive = false;
 let zoom = false;
 const lis = document.querySelectorAll('#galeriaDiagramas ul li');
 const modal = document.querySelector('.modal');
@@ -12,7 +11,6 @@ let curriculumZohair;
 let curriculumMelissa;
 
 // EventListeners
-document.querySelector('.toggleMenu').addEventListener('click', toggleMenu);
 
 try {
 	document.querySelector('.cerrar').addEventListener('click', cerrarModal);
@@ -31,19 +29,6 @@ try {
 integrantes.addEventListener('click', abrirCurriculum);
 
 // Funciones
-function toggleMenu() {
-	location.href = '#header';
-
-	if (menuActive == false) {
-		document.querySelector('nav').style.marginLeft = '50px';
-		// document.querySelector('header nav').style.display = 'none';
-		menuActive = true;	
-	} else {
-		document.querySelector('nav').style.marginLeft = '-675px';
-		// document.querySelector('header nav').style.display = 'flex';
-		menuActive = false;
-	}
-}
 
 lis.forEach(function(li) {
 	li.addEventListener('click', function(e) {
