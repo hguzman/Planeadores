@@ -27,27 +27,10 @@
 		margin-right: 200px;
 	}
 
-	.container ol li, ul li {
+	.container ol li, > ul li {
 		padding: 10px 15px;
 		list-style: none;
 	}.container h5 {
     margin-top: 15px;
 
-}
-
-.info{
-	float: right;
-	margin-right: 80px;
-	color: #f4f4f4;
-}
-
-	.img{
-	height: 30px;
-	width: 30px;
-}
-
-.icono{
-	width: 150px;
-	margin: auto;
-	margin-top: -30px;
 }

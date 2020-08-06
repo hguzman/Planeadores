@@ -27,20 +27,3 @@ table {
 				padding: 5px 10px;
 				list-style-type: none;
 			}
-
-			.info{
-				float: right;
-				margin-right: 80px;
-				color: #f4f4f4;
-			}
-
-				.img{
-				height: 30px;
-				width: 30px;
-			}
-
-			.icono{
-				width: 150px;
-				margin: auto;
-				margin-top: -30px;
-			}
