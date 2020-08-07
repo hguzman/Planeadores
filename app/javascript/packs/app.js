@@ -54,3 +54,12 @@ function mostrarMenu() {
 		subMenu.style.display = 'none';
 	}
 }
+
+// DataTables
+
+$(document).ready(function() {
+	$('#agentes').dataTable();
+	$('#planeaciones').dataTable();
+	$('#transacciones').dataTable();
+	$('#usuarios').dataTable();
+});
