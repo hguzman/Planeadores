@@ -53,3 +53,5 @@ gem 'devise'
 gem "font-awesome-rails"
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
+gem 'bootstrap', '~> 4.5.0'
+gem 'jquery-rails'

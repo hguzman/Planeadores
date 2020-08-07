@@ -1,8 +1,13 @@
-<div class="formulario">
-	<%= simple_form_for [@agente, @transaccion] do |f| %>
-		<%= f.input :valor %>
-		<label class="medio_de_pago" for="medio_de_pago">Medio de Pago</label><div class="MedioP"><%= f.select :medio_de_pago, [["Daviplata"], ["SuperGiros"], ["Bancolombia"], ["Efecty"]] %></div>
-		<%= f.input :fecha_de_pago %>
-		<%= f.button :submit, :class => "BtnT" %>
-	<% end %>
+<div class="form-group">
+	<div class="row">
+		<div class="col-sm-12">
+			<%= simple_form_for [@agente, @transaccion] do |f| %>
+				<%= f.input :valor, input_html: { :class => 'inputValor' }, label_html: { :class => 'labelValor' } %>
+				<label class="medio_de_pago" for="medio_de_pago">Medio de Pago</label><div class="inputMedioP"><%= f.select :medio_de_pago, [["Daviplata"], ["SuperGiros"], ["Bancolombia"], ["Efecty"]] %></div>
+				<%= f.input :fecha_de_pago %>
+				<%= f.button :submit, :class => "btn btn-primary", :id => 'btnT' %>
+			<% end %>
+		</div>
+
+	</div>
 </div>

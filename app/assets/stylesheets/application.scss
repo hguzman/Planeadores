@@ -1,19 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- *= require font-awesome
- */
+ @import "bootstrap";
 
 * {
   padding: 0;
@@ -38,13 +23,16 @@ a {
   min-width: 1200px;
   max-width: 1200px;
   margin: 0 auto;
-
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: -15px;
 }
 
 .filtro {
   width: 100px;
+  position: relative;
+  right: 18px;
 }
 
 header {
@@ -385,7 +373,7 @@ table {
   left: 30%;
 
   border: 2px solid #0096D3;
-  width: 30%;
+  width: 36%;
   text-align: center;
   padding: 10px 15px;
   background: #C1EDFF;
@@ -393,4 +381,72 @@ table {
   color: #0096D3;
 
   display: none;
+}
+/*Formulario Agentes*/
+.form-group{
+  min-width: 50%;
+  max-width: 50%;
+}
+.nombreUDS{
+  margin-left: 23px;
+}
+.Mod{
+  margin-top: 5px;
+}
+.Modalidad{
+  margin-left: 130px;
+  position: relative;
+  top: -35px;
+}
+.correoCedula{
+  position: relative;
+  top: -30px;
+}
+.correocedulaInput{
+  margin-left: 78px;
+}
+.btn-primary{
+  margin-left: 133px;
+}
+/*Formulario Planeaciones*/
+.labelFormato{
+  position: relative;
+  top: 29px;
+}
+.selectFormato{
+  margin-left: 145px;
+  position: relative;
+  top: -5px;
+}
+.inputTematica{
+  margin-left: 56px;
+}
+#btnP{
+  margin-top: 13px;
+  margin-left: 145px;
+}
+
+/*Formulario Transaccion*/
+.labelValor{
+  position: relative;
+  top: 8px;
+}
+.inputValor{
+  margin-left: 65px;
+  position: relative;
+  top: 8px;
+}
+.inputMedioP{
+  position: relative;
+  left: 120px;
+  top: -15px;
+}
+.medio_de_pago{
+  position: relative;
+  top: 22px;
+}
+#btnT{
+    position: relative;
+    right: 15px;
+    top: 15px;
 }
