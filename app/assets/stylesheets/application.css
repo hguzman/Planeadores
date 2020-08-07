@@ -77,7 +77,6 @@ header {
 }
 
 table {
-  width: 70%;
   border-collapse: collapse;
 }
 
@@ -393,4 +392,10 @@ table {
   color: #0096D3;
 
   display: none;
+}
+
+/* DataTables */
+
+.dataTables_length, #usuarios_filter {
+  margin-bottom: 10px;
 }
