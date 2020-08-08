@@ -11,9 +11,12 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
   </head>
 
@@ -30,25 +33,15 @@
         <p class="alert"><%= alert %></p>
 
         <% if usuario_signed_in? %>
-          <nav class="nav">
-            <ul class="menu">
-              <li id="btnSubmenu">
-                <a >Menu <%= fa_icon "caret-down", :class => "icon" %></a>
-                <ul class="submenu">
-                  <% if usuario_signed_in? %>
-                    <li>
-                      <% if current_usuario.rol? %>
-                        <%= link_to 'Usuarios', usuarios_path %>
-                      <% end %>
-                    </li>
-                    <li>
-                      <%= link_to "Cerrar session", destroy_usuario_session_path, method: :delete %>
-                    </li>
-                  <% end %>
-                </ul>
-              </li>
-            </ul>
-          </nav>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menú</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <% if current_usuario.rol? %>
+                <%= link_to 'Usuarios', usuarios_path, class: "dropdown-item" %>
+              <% end %>
+              <%= link_to "Cerrar session", destroy_usuario_session_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </div>
         <% end %>
       </div>
     </header>

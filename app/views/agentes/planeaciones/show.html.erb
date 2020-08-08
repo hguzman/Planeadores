@@ -1,14 +1,30 @@
-<div class="listaShow">
-	<ul>
-		<li><span class="listaTitle">Formato</span> <%= @planeacion.formato.capitalize %></li>
-		<li><span class="listaTitle">Temática</span> <%= @planeacion.tematica.capitalize %></li>
-		<li><span class="listaTitle">Fecha de creción</span> <%= @planeacion.fecha_de_creacion %></li>
+<div class="show">
+	<ul class="nav nav-tabs">
+	  <li class="nav-item">
+	    <%= link_to 'Ver Todas', agente_planeaciones_path(@agente), class: "nav-link" %>
+	  </li>
+	  <li class="nav-item">
+	    <%= link_to 'Editar', edit_agente_planeacion_path(@agente, @planeacion), class: "nav-link" %>
+	  </li>
+	  <li class="nav-item">
+	    <a href="/agentes/<%= @agente.id %>/planeaciones/<%= @planeacion.id %>.pdf" target="_blank" class="nav-link">Generar PDF</a>
+	  </li>
 	</ul>
-</div>
 
-<div class="links">
-	<a>Menu</a>
-	<%= link_to 'Ver Todas', agente_planeaciones_path(@agente) %>
-	<%= link_to 'Editar', edit_agente_planeacion_path(@agente, @planeacion) %>
-	<a href="/agentes/<%= @agente.id %>/planeaciones/<%= @planeacion.id %>.pdf" target="_blank">Generar PDF</a>
+	<table class="table">
+	  <tbody>
+			<tr>
+		  	<td><span class="listaTitle">Formato</span></td>
+				<td><%= @planeacion.formato.capitalize %></td>
+		  </tr>
+			<tr>
+				<td><span class="listaTitle">Temática</span></td>
+				<td><%= @planeacion.tematica.capitalize %></td>
+			</tr>
+			<tr>
+				<td><span class="listaTitle">Fecha de creción</span></td>
+				<td><%= @planeacion.fecha_de_creacion %></td>
+			</tr>
+	  </tbody>
+	</table>
 </div>

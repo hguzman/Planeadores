@@ -1,6 +1,9 @@
 <%= render 'form' %>
 
-<div class="links">
-	<a>Menu</a>
-	<%= link_to 'Regresar', agente_planeaciones_path(@agente) %>
+<div class="dropdown">
+  <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acciones</a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+		<%= link_to 'Regresar', agente_planeaciones_path(@agente), class: "dropdown-item" %>
+  </div>
 </div>
