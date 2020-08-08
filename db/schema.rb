@@ -61,17 +61,6 @@ ActiveRecord::Schema.define(version: 2020_07_23_191803) do
     t.index ["reset_password_token"], name: "index_usuarios_on_reset_password_token", unique: true
   end
 
-  create_table "ventas", force: :cascade do |t|
-    t.integer "valor"
-    t.date "fechaVenta"
-    t.string "medioPago"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "agente_id", null: false
-    t.index ["agente_id"], name: "index_ventas_on_agente_id"
-  end
-
   add_foreign_key "planeaciones", "agentes"
   add_foreign_key "transacciones", "agentes"
-  add_foreign_key "ventas", "agentes"
 end

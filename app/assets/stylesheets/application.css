@@ -399,3 +399,18 @@ table {
 .dataTables_length, #usuarios_filter {
   margin-bottom: 10px;
 }
+
+/*Iconos Tablas*/
+
+.fa-trash{
+  color: rgb(236, 9, 9)
+}
+.fa-edit{
+  color: rgb(22, 134, 224)
+}
+.editar{
+  color: rgb(22, 134, 224)
+}
+.eliminar{
+  color: rgb(236, 9, 9)
+}
