@@ -1,12 +1,12 @@
 <div class="formulario">
   <%= simple_form_for @agente do |f| %>
-    <%= f.input :primerNombre, input_html: { autocomplete: "off", autofocus: "on" } %>
-    <%= f.input :segundoNombre, input_html: { autocomplete: "off" } %>
-   	<%= f.input :primerApellido, input_html: { autocomplete: "off" } %>
-   	<%= f.input :nombreUds, input_html: { autocomplete: "off" } %>
-  <label class="Mod" for="modalidad">Modalidad</label><div class="Modalidad"><%=f.select :modalidad,([['Tradicional'], ['Institucional'], ['Familiar'], ['Propia']]), :class => 'Sel'%></div>
-   	<%= f.input :correo, input_html: { autocomplete: "off" } %>
-   	<%= f.input :cedula %>
-    <%= f.button :submit, :class => 'BtnAgente'%>
+    <%= f.input :primerNombre, input_html: { autocomplete: "off", autofocus: "on", :class => "inputPrimerNombre", :style => 'width: 225px'} %>
+    <div class="segundoNombre"><%= f.input :segundoNombre, input_html: { autocomplete: "off", :class => "inputSegundoNombre", :style => 'width: 225px'} %></div>
+   	<div class="primerApellido"><%= f.input :primerApellido, input_html: { autocomplete: "off", :class => "inputPrimerApellido", :style => 'width: 225px' } %></div>
+    <div class="nombreUDS"><%= f.input :nombreUds, input_html: { autocomplete: "off", :class => "inputNombreUDS", :style => 'width: 225px' } %></div>
+    <div class="modalidad"><label class="Mod" for="modalidad">Modalidad</label><div class="selectModalidad"><%=f.select :modalidad,([['Tradicional'], ['Institucional'], ['Familiar'], ['Propia']])%></div></div>
+   	<div class="correo"><%= f.input :correo, input_html: { autocomplete: "off", :class => "inputCorreo", :style => 'width: 225px' } %></div>
+   	<div class="cedula"><%= f.input :cedula, input_html: { autocomplete: "off", :class => "inputCedula", :style => 'width: 225px'} %></div>
+    <%= f.button :submit, :class => 'btnAgente'%>
   <% end %>
 </div>
