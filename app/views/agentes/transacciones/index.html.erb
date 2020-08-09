@@ -13,8 +13,11 @@
 	</tbody>
 </table>
 
-<div class="links">
-	<a>Menu</a>
-	<%= link_to 'Nueva Transaccion', new_agente_transaccion_path(@agente) %>
-	<%= link_to 'Ver Agente', agente_path(@agente) %>
+<div class="dropdown">
+  <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acciones</a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+		<%= link_to 'Nueva Transaccion', new_agente_transaccion_path(@agente), class: "dropdown-item" %>
+		<%= link_to 'Ver Agente', agente_path(@agente), class: "dropdown-item" %>
+  </div>
 </div>

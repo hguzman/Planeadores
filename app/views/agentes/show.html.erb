@@ -1,19 +1,49 @@
-<div class="listaShow">
-	<ul>
-		<li><span class="listaTitle">Primer Nombre:</span> <%= @agente.primerNombre.capitalize %></li>
-		<li><span class="listaTitle">Segundo Nombre:</span> <%= @agente.segundoNombre.capitalize %></li>
-		<li><span class="listaTitle">Primer Apellido:</span> <%= @agente.primerApellido.capitalize %></li>
-		<li><span class="listaTitle">Nombre UDS:</span> <%= @agente.nombreUds.capitalize %></li>
-		<li><span class="listaTitle">Modalidad:</span> <%= @agente.modalidad.capitalize %></li>
-		<li><span class="listaTitle">Correo:</span> <%= @agente.correo.capitalize %></li>
-		<li><span class="listaTitle">Cedula:</span> <%= @agente.cedula %></li>
+<div class="show">
+	<ul class="nav nav-tabs">
+	  <li class="nav-item">
+	    <%= link_to 'Ver todos', agentes_path, class: "nav-link" %>
+	  </li>
+	  <li class="nav-item">
+	    <%= link_to 'Editar', edit_agente_path(@agente), class: "nav-link" %>
+	  </li>
+	  <li class="nav-item">
+	    <%= link_to 'Ver Planeaciones', agente_planeaciones_path(@agente), class: "nav-link" %>
+	  </li>
+	  <li class="nav-item">
+	    <%= link_to 'Ver Transacciones', agente_transacciones_path(@agente), class: "nav-link" %>
+	  </li>
 	</ul>
-</div>
 
-<div class="links linksAgente">
-	<a>Menu</a>
-	<%= link_to 'Ver todos', agentes_path %>
-	<%= link_to 'Editar', edit_agente_path(@agente) %>
-	<%= link_to 'Ver Planeaciones', agente_planeaciones_path(@agente) %>
-	<%= link_to 'Ver Transacciones', agente_transacciones_path(@agente) %>
+	<table class="table">
+	  <tbody>
+			<tr>
+		  	<td><span class="listaTitle">Primer Nombre:</span></td>
+				<td><%= @agente.primerNombre.capitalize %></td>
+		  </tr>
+			<tr>
+				<td><span class="listaTitle">Segundo Nombre:</span></td>
+				<td><%= @agente.segundoNombre.capitalize %></td>
+			</tr>
+			<tr>
+				<td><span class="listaTitle">Primer Apellido:</span></td>
+				<td><%= @agente.primerApellido.capitalize %></td>
+			</tr>
+			<tr>
+				<td><span class="listaTitle">Nombre UDS:</span></td>
+				<td><%= @agente.nombreUds.capitalize %></td>
+			</tr>
+			<tr>
+				<td><span class="listaTitle">Modalidad:</span></td>
+				<td><%= @agente.modalidad.capitalize %></td>
+			</tr>
+			<tr>
+				<td><span class="listaTitle">Correo:</span></td>
+				<td><%= @agente.correo.capitalize %></td>
+			</tr>
+			<tr>
+				<td><span class="listaTitle">Cedula:</span></td>
+				<td><%= @agente.cedula %></td>
+			</tr>
+	  </tbody>
+	</table>
 </div>

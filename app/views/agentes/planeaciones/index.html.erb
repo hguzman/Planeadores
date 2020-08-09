@@ -1,18 +1,21 @@
-<table border="1" id="planeaciones">
-	<thead>
-		<th>Formato</th>
-		<th>Tematica</th>
-		<th>Fecha de creacion</th>
-		<th>Editar</th>
-		<th>Eliminar</th>
+<table border="1" id="planeaciones" class="table">
+	<thead class="thead-dark">
+		<th scope="col">Formato</th>
+		<th scope="col">Tematica</th>
+		<th scope="col">Fecha de creacion</th>
+		<th scope="col">Editar</th>
+		<th scope="col">Eliminar</th>
 	</thead>
 	<tbody id="bodyTable">
 		<%= render @planeaciones %>
 	</tbody>
 </table>
 
-<div class="links">
-	<a>Menu</a>
-	<%= link_to 'Nueva Planeacion', new_agente_planeacion_path(@agente) %>
-	<%= link_to 'Ver Agente', agente_path(@agente) %>
+<div class="dropdown">
+  <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acciones</a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+		<%= link_to 'Nueva Planeacion', new_agente_planeacion_path(@agente), class: "dropdown-item" %>
+		<%= link_to 'Ver Agente', agente_path(@agente), class: "dropdown-item" %>
+  </div>
 </div>
