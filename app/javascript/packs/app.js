@@ -2,7 +2,6 @@
 const message = document.querySelector('.notice');
 const messageAlert = document.querySelector('.alert');
 const messageError = document.querySelector('.error');
-const menu = document.getElementById('btnSubmenu');
 
 // EventListeners
 if (message.innerHTML !== '') {
@@ -22,8 +21,6 @@ try {
 	console.log(`Error: ${error}`);
 }
 
-menu.addEventListener('click', mostrarMenu);
-
 // Funciones
 function colocarMessage(elemento, tipo) {
 	elemento.style.display = 'block';
@@ -42,17 +39,6 @@ function colocarMessage(elemento, tipo) {
 			elemento.style.display = 'none';
 		}, 800);
 	}, 4000);
-}
-
-function mostrarMenu() {
-	const subMenu = document.querySelector('.submenu');
-	subMenu.classList.toggle('activo');
-
-	if (subMenu.classList.contains('activo')) {
-		subMenu.style.display = 'block';
-	} else {
-		subMenu.style.display = 'none';
-	}
 }
 
 // DataTables

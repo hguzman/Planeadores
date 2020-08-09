@@ -31,6 +31,7 @@ body, html {
 a {
   font-weight: bold;
   text-decoration: none;
+  color: #17a2b8;
 }
 
 .container {
@@ -43,16 +44,23 @@ a {
   justify-content: space-between;
 }
 
-.filtro {
-  width: 100px;
-}
-
 header {
   background: #333;
   color: #fff;
   padding: 10px;
   margin-bottom: 25px;
-  height: 45px;
+}
+
+.show {
+  display: block;
+}
+
+.show > ul {
+  margin-bottom: 25px;
+}
+
+.show a {
+  color: #17a2b8;
 }
 
   header .container {
@@ -61,16 +69,10 @@ header {
     align-items: center;
   }
 
-    header .container a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 10px;
-      transition: all .3s;
-    }
+  header .container > .nav {
+    display: none;
+  }
 
-    header .container a:hover {
-      color: lightgreen;
-    }
 #Men1{
   font-size: 45px;
   margin-top: -10px;
@@ -471,71 +473,8 @@ table {
 
   /* Menú */
 
-.nav ul {
-  list-style: none;
-  cursor: pointer;
-}
-
-.nav .menu > li {
-  display: inline-block;
-  padding: 7px;
-}
-
-/*.nav .menu:hover .submenu {
-  display: block;
-}*/
-
-.nav .menu .submenu {
-  position: absolute;
-  border: 1px solid #000;
-  background: #fff;
-  padding: 5px 10px;
-  display: none;
-  /*border-radius: 5px;*/
-  margin-top: 5px;
-  font-size: 13px;
-  top: 55px;
-  /*right: 325px;*/
-  animation: menuAnimacion .1s ease-in;
-}
-
-@keyframes menuAnimacion {
-  0% {
-    opacity: 0;
-  } 100% {
-    opacity: 1;
-  }
-}
-
-.nav .menu .submenu > li a {
-  display: block;
-  color: #000;
-}
-
-.nav .menu .submenu > li a:hover {
-  color: #006973;
-}
-
-.nav .menu .submenu li {
-  width: 125px;
-  margin-top: 10px;
-}
 
 /* Lista Show */
-
-.listaShow ul {
-  list-style: none;
-  font-size: 15pt;
-}
-
-.listaShow ul li {
-  margin-bottom: 30px;
-}
-
-.listaShow .listaTitle {
-  font-weight: bold;
-  margin-right: 5px;
-}
 
 /* Mensajes Flash */
 
