@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+.container {
+	width: 1200px;
+}
+
 body, html {
 	font-family: helvetica, neue;
 }
@@ -124,11 +128,7 @@ footer {
 	color: #f4f4f4;
 	padding: 20px 0;
 	letter-spacing: 1px;
-
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+	width: 100%;
 }
 
 	footer h3 {
@@ -287,5 +287,5 @@ div.modal section.curriculum {
 		background-image: url('../img/bg3.jpg');
 		background-size: cover;
 	background-repeat: no-repeat;
-	} 
+	}
 }
