@@ -69,25 +69,12 @@ header {
     align-items: center;
   }
 
-  header .container > .nav {
-    display: none;
-  }
-
 #Men1{
   font-size: 45px;
   margin-top: -10px;
 }
 
-table {
-  border-collapse: collapse;
-}
-
-  table thead th {
-    padding: 5px;
-  }
-
   table tbody tr td {
-    padding: 5px 10px;
     text-align: center;
     transition: all .2s;
   }
@@ -100,52 +87,6 @@ table {
       color: #006973;
     }
 
-.links {
-  /* background: #333; */
-  min-height: 300px;
-  max-height: 300px;
-  min-width: 250px;
-  max-width: 250px;
-  border-radius: 10px;
-  text-align: center;
-  overflow: hidden;
-  /* border-radius: 5px; */
-  transition: all .2s;
-  border: 1px solid #333;
-  margin-left: 10px;
-}
-
-/* .links:hover {
-  min-height: 226px;
-  max-height: 226px;
-}
-
-.linksAgente:hover {
-  min-height: 265px;
-  max-height: 265px;
-} */
-
-  .links a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    margin-bottom: 15px;
-    padding: 10px 15px;
-    transition: all .3s;
-  }
-
-  .links a:nth-child(1) {
-    background: #333;
-    color: #ffff;
-  }
-
-  .links a:nth-child(5) {
-    padding: 10px 15px 0 15px;
-  }
-
-  .links a:hover {
-    color: #00B3C3;
-  }
   /* Formulario Agentes  */
   .inputPrimerNombre{
   height: 25px;
@@ -512,6 +453,7 @@ table {
   color: #0096D3;
 
   display: none;
+  z-index: 100;
 }
 
 /* DataTables */
