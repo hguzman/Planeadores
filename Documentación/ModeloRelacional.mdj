@@ -297,10 +297,10 @@
 									},
 									"font": "Arial;13;1",
 									"left": 304,
-									"top": 277,
+									"top": 269,
 									"width": 137.6181640625,
 									"height": 13,
-									"text": "ventas"
+									"text": "transacciones"
 								},
 								{
 									"_type": "ERDColumnCompartmentView",
@@ -323,7 +323,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 300,
+											"top": 292,
 											"width": 127.6181640625,
 											"height": 13
 										},
@@ -338,7 +338,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 315,
+											"top": 307,
 											"width": 127.6181640625,
 											"height": 13
 										},
@@ -353,21 +353,21 @@
 											},
 											"font": "Arial;13;0",
 											"left": 309,
-											"top": 330,
+											"top": 322,
 											"width": 127.6181640625,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 304,
-									"top": 295,
+									"top": 287,
 									"width": 137.6181640625,
 									"height": 53
 								}
 							],
 							"font": "Arial;13;0",
 							"left": 304,
-							"top": 272,
+							"top": 264,
 							"width": 137.6181640625,
 							"height": 76,
 							"nameLabel": {
@@ -651,87 +651,6 @@
 							"headNameLabel": {
 								"$ref": "AAAAAAFzNghaX2UvQ5c="
 							}
-						},
-						{
-							"_type": "ERDRelationshipView",
-							"_id": "AAAAAAFzNgiTR2VDtMM=",
-							"_parent": {
-								"$ref": "AAAAAAFzNfeVmmQoo8Q="
-							},
-							"model": {
-								"$ref": "AAAAAAFzNgiTRWU/4is="
-							},
-							"subViews": [
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAFzNgiTR2VE4S8=",
-									"_parent": {
-										"$ref": "AAAAAAFzNgiTR2VDtMM="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 608,
-									"top": 142,
-									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 15,
-									"hostEdge": {
-										"$ref": "AAAAAAFzNgiTR2VDtMM="
-									},
-									"edgePosition": 1
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAFzNgiTR2VFccU=",
-									"_parent": {
-										"$ref": "AAAAAAFzNgiTR2VDtMM="
-									},
-									"font": "Arial;13;0",
-									"left": 646,
-									"top": 141,
-									"height": 13,
-									"alpha": 0.5235987755982988,
-									"distance": 30,
-									"hostEdge": {
-										"$ref": "AAAAAAFzNgiTR2VDtMM="
-									},
-									"edgePosition": 2
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAFzNgiTSGVGSY4=",
-									"_parent": {
-										"$ref": "AAAAAAFzNgiTR2VDtMM="
-									},
-									"font": "Arial;13;0",
-									"left": 571,
-									"top": 141,
-									"height": 13,
-									"alpha": -0.5235987755982988,
-									"distance": 30,
-									"hostEdge": {
-										"$ref": "AAAAAAFzNgiTR2VDtMM="
-									}
-								}
-							],
-							"font": "Arial;13;0",
-							"head": {
-								"$ref": "AAAAAAFzNfmT7mRRA8A="
-							},
-							"tail": {
-								"$ref": "AAAAAAFzNfnQiGRrmEM="
-							},
-							"lineStyle": 2,
-							"points": "672:133;546:133",
-							"nameLabel": {
-								"$ref": "AAAAAAFzNgiTR2VE4S8="
-							},
-							"tailNameLabel": {
-								"$ref": "AAAAAAFzNgiTR2VFccU="
-							},
-							"headNameLabel": {
-								"$ref": "AAAAAAFzNgiTSGVGSY4="
-							}
 						}
 					]
 				},
@@ -909,7 +828,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFzNfeVmWQniU8="
 					},
-					"name": "ventas",
+					"name": "transacciones",
 					"columns": [
 						{
 							"_type": "ERDColumn",
@@ -950,36 +869,6 @@
 						"$ref": "AAAAAAFzNfeVmWQniU8="
 					},
 					"name": "usuarios",
-					"ownedElements": [
-						{
-							"_type": "ERDRelationship",
-							"_id": "AAAAAAFzNgiTRWU/4is=",
-							"_parent": {
-								"$ref": "AAAAAAFzNfnQiGRpD30="
-							},
-							"end1": {
-								"_type": "ERDRelationshipEnd",
-								"_id": "AAAAAAFzNgiTRmVAVUg=",
-								"_parent": {
-									"$ref": "AAAAAAFzNgiTRWU/4is="
-								},
-								"reference": {
-									"$ref": "AAAAAAFzNfnQiGRpD30="
-								}
-							},
-							"end2": {
-								"_type": "ERDRelationshipEnd",
-								"_id": "AAAAAAFzNgiTRmVBEeA=",
-								"_parent": {
-									"$ref": "AAAAAAFzNgiTRWU/4is="
-								},
-								"reference": {
-									"$ref": "AAAAAAFzNfmT7mRPQuM="
-								},
-								"cardinality": "0..*"
-							}
-						}
-					],
 					"columns": [
 						{
 							"_type": "ERDColumn",
