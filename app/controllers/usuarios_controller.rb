@@ -52,7 +52,7 @@ class UsuariosController < ApplicationController
 
   def validar_session
     if usuario_signed_in?
-      if current_usuario.rol? == false then redirect_to agentes_path end
+      if !current_usuario.has_role? :admin then redirect_to agentes_path end
     end
   end
 
