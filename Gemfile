@@ -53,3 +53,5 @@ gem 'devise'
 gem "font-awesome-rails"
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
+gem "chartkick"
+gem 'groupdate', '~> 5.1'

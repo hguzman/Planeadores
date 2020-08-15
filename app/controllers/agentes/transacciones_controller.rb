@@ -5,7 +5,8 @@ class Agentes::TransaccionesController < ApplicationController
   def index
   	@transacciones = @agente.transacciones
   	@title = 'Lista de Transacciones'
-  end
+		@data = Transaccion.group_by_month(:fecha_de_pago).count
+	end
 
   def new
   	@transaccion = @agente.transacciones.new
