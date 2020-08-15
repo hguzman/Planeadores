@@ -53,9 +53,7 @@ ActiveRecord::Schema.define(version: 2020_08_13_193633) do
     t.bigint "agente_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "planeacion_id", null: false
     t.index ["agente_id"], name: "index_transacciones_on_agente_id"
-    t.index ["planeacion_id"], name: "index_transacciones_on_planeacion_id"
   end
 
   create_table "usuarios", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
