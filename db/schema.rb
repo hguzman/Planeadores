@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_08_13_193633) do
 
-  create_table "agentes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "agentes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "primerNombre"
     t.string "segundoNombre"
     t.string "primerApellido"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2020_08_13_193633) do
     t.index ["cedula"], name: "index_agentes_on_cedula"
   end
 
-  create_table "planeaciones", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "planeaciones", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "formato"
     t.string "tematica"
     t.bigint "agente_id", null: false
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2020_08_13_193633) do
     t.index ["agente_id"], name: "index_planeaciones_on_agente_id"
   end
 
-  create_table "roles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "roles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "resource_type"
     t.bigint "resource_id"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2020_08_13_193633) do
     t.index ["resource_type", "resource_id"], name: "index_roles_on_resource_type_and_resource_id"
   end
 
-  create_table "transacciones", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "transacciones", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "valor"
     t.string "medio_de_pago"
     t.date "fecha_de_pago"
@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 2020_08_13_193633) do
     t.index ["agente_id"], name: "index_transacciones_on_agente_id"
   end
 
-  create_table "usuarios", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "usuarios", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 2020_08_13_193633) do
     t.index ["reset_password_token"], name: "index_usuarios_on_reset_password_token", unique: true
   end
 
-  create_table "usuarios_roles", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "usuarios_roles", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "usuario_id"
     t.bigint "role_id"
     t.index ["role_id"], name: "index_usuarios_roles_on_role_id"
