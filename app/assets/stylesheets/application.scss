@@ -28,20 +28,80 @@ body, html {
   font-family: verdana, helvetica, neue;
 }
 
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#header #btnNav {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+#header .dropdown {
+  margin-right: 60px;
+}
+
+#header2 {
+  height: 90px;
+  border: 1px solid red;
+  margin-bottom: 25px;
+}
+
+#menuLateral {
+    width: 120%;
+    height: 95vh;
+    position: fixed;
+    top: 90px;
+    left: -300px;
+    z-index: 100;
+    transition: all .3s;
+    background: none;
+    overflow: hidden;
+    display: none;
+}
+
+    #menuLateral ul {
+        background: #333;
+        border-top: 1px solid #fff;
+        width: 300px;
+        height: 95vh;
+    }
+
+    #menuLateral ul li {
+        border-bottom: 1px solid #fff;
+        padding: 20px 15px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #menuLateral ul li a {
+        color: #fff;
+        display: b;
+        text-decoration: none;
+    }
+
+    #menuLateral ul li i {
+      color: #fff;
+      margin-right: 3px;
+    }
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 25px;
+}
+
+
 a {
   font-weight: bold;
   text-decoration: none;
   color: #17a2b8;
-}
-
-.container {
-  width: 1200px;
-  min-width: 1200px;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
 }
 
 header {

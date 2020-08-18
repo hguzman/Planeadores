@@ -1,3 +1,16 @@
+<h2>Lista de Agentes</h2>
+
+<nav id="menuLateral">
+		<ul id="ul">
+				<!-- <li class="activo"><a href=""><i class="fas fa-home"></i> Inicio</a></li> -->
+				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+				<li><i class="fas fa-plus"></i> <%= link_to 'Nuevo Agente', new_agente_path %></li>
+				<% if current_usuario.has_role? :admin %>
+					<li><i class="fas fa-user"></i> <%= link_to 'Usuarios', usuarios_path %></li>
+				<% end %>
+		</ul>
+</nav>
+
 <table border="1" id="agentes" class="table">
 	<thead class="thead-dark">
 		<th>Primer Nombre</th>
@@ -11,11 +24,3 @@
 		<%= render @agentes %>
 	</tbody>
 </table>
-
-<div class="dropdown">
-  <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acciones</a>
-
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <%= link_to 'Nuevo Agente', new_agente_path, class: "dropdown-item" %>
-  </div>
-</div>
