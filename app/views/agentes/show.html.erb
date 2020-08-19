@@ -1,18 +1,17 @@
-<div class="show">
-	<ul class="nav nav-tabs">
-	  <li class="nav-item">
-	    <%= link_to 'Ver todos', agentes_path, class: "nav-link" %>
-	  </li>
-	  <li class="nav-item">
-	    <%= link_to 'Editar', edit_agente_path(@agente), class: "nav-link" %>
-	  </li>
-	  <li class="nav-item">
-	    <%= link_to 'Ver Planeaciones', agente_planeaciones_path(@agente), class: "nav-link" %>
-	  </li>
-	  <li class="nav-item">
-	    <%= link_to 'Ver Transacciones', agente_transacciones_path(@agente), class: "nav-link" %>
-	  </li>
-	</ul>
+<h2>Información de Agente</h2>
+
+<nav id="menuLateral">
+		<ul id="ul">
+				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+				<% if current_usuario.has_role? :admin %>
+					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
+				<% end %>
+				<li> <i class="fas fa-user-tie"></i> <%= link_to 'Ver todos', agentes_path %></li>
+				<li> <i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_path(@agente) %></li>
+				<li> <i class="fas fa-book"></i> <%= link_to 'Ver Planeaciones', agente_planeaciones_path(@agente) %></li>
+				<li> <i class="fas fa-dollar-sign"></i> <%= link_to 'Ver Transacciones', agente_transacciones_path(@agente) %></li>
+		</ul>
+</nav>
 
 	<table class="table">
 	  <tbody>
@@ -46,4 +45,3 @@
 			</tr>
 	  </tbody>
 	</table>
-</div>

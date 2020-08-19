@@ -41,9 +41,6 @@
             <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuario <i class="fas fa-user"></i></button>
           <% end %>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <% if current_usuario.has_role? :admin %>
-              <%= link_to 'Usuarios', usuarios_path, class: "dropdown-item" %>
-            <% end %>
             <%= link_to "Cerrar session", destroy_usuario_session_path, method: :delete, class: "dropdown-item" %>
           </div>
         </div>

@@ -3,7 +3,7 @@
     <label class="Format" for="formato">Formato</label><div class="selectFormato"><%= f.select :formato, ([['Formato 1'], ['Formato 2']]) %></div>
     <div class="tematica"><%= f.input :tematica, input_html: { autocomplete: "off", :class => "inputTematica", :style => 'width: 255px' } %></div>
     <div class="fecha"><%= f.input :fecha_de_creacion, input_html: { :class => "inputFecha" } %></div>
-    <%= f.button :submit, :class => 'btnPlaneaciones' %>
+    <%= f.button :submit %>
   <% end %>
 
 </div>

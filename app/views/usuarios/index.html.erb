@@ -1,3 +1,14 @@
+<h2>Usuarios</h2>
+
+<nav id="menuLateral">
+		<ul id="ul">
+				<!-- <li class="activo"><a href=""><i class="fas fa-home"></i> Inicio</a></li> -->
+				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+				<li><i class="fas fa-user-tie"></i><%= link_to 'Agentes', agentes_path %></li>
+				<li><i class="fas fa-plus"></i><%= link_to 'Nuevo Usuario', new_usuario_path %></li>
+		</ul>
+</nav>
+
 <table border="1" id="usuarios" class="table">
 	<thead class="thead-dark">
 		<th>Email</th>
@@ -15,7 +26,7 @@
   <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acciones</a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <%= link_to 'Nuevo Usuario', new_usuario_path, class: "dropdown-item" %>
-		<%= link_to 'Ver Agentes', agentes_path, class: "dropdown-item" %>
+
+
   </div>
 </div>
