@@ -8,7 +8,7 @@
 				<% end %>
 				<li><i class="fas fa-dollar-sign"></i><%= link_to 'Ver todas', agente_transacciones_path %></li>
 				<li><i class="fas fa-user-edit"></i><%= link_to 'Editar', edit_agente_transaccion_path(@agente, @transaccion) %></li>
-				<li><i class="fas fa-file-pdf"></i><a href="/agentes/<%= @agente.id %>/transacciones/<%= @transaccion.id %>.pdf" target="_blank">Generar PDF</a></li>
+				<li><i class="fas fa-file-pdf"></i><a href="/agentes/<%= @agente.id %>/transacciones/<%= @transaccion.id %>.pdf" target="_blank">Generar Factura</a></li>
 		</ul>
 </nav>
 
