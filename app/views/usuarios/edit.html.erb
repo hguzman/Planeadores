@@ -1,6 +1,13 @@
-<%= render 'form' %>
+<h2>Actualizar datos de Usuario</h2>
 
-<div class="links">
-	<a>Menu</a>
-	<%= link_to 'Regresar', usuarios_path %>
-</div>
+<nav id="menuLateral">
+		<ul id="ul">
+				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+				<% if current_usuario.has_role? :admin %>
+					<li><i class="fas fa-user-tie"></i> <%= link_to 'Agentes', agentes_path %></li>
+				<% end %>
+				<li><i class="fas fa-undo-alt"></i><%= link_to 'Regresar', usuarios_path %></li>
+		</ul>
+</nav>
+
+<%= render 'form' %>

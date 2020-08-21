@@ -1,12 +1,15 @@
-<div class="show">
-	<ul class="nav nav-tabs">
-	  <li class="nav-item">
-	    <%= link_to 'Ver Todos', usuarios_path, class: "nav-link" %>
-	  </li>
-	  <li class="nav-item">
-	    <%= link_to 'Editar', edit_usuario_path(@usuario), class: "nav-link" %>
-	  </li>
-	</ul>
+<h2>Información de Usuario</h2>
+
+<nav id="menuLateral">
+		<ul id="ul">
+				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+				<% if current_usuario.has_role? :admin %>
+					<li><i class="fas fa-user-tie"></i> <%= link_to 'Agentes', agentes_path %></li>
+				<% end %>
+				<li><i class="fas fa-users"></i><%= link_to 'Ver Todos', usuarios_path %></li>
+				<li><i class="fa fa-edit"></i><%= link_to 'Editar', edit_usuario_path(@usuario) %></li>
+		</ul>
+</nav>
 
 	<table class="table">
 	  <tbody>
@@ -28,4 +31,3 @@
 			</tr>
 	  </tbody>
 	</table>
-</div>

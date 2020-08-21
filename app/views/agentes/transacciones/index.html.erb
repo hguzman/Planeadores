@@ -1,3 +1,16 @@
+<h2>Transacciones</h2>
+
+<nav id="menuLateral">
+		<ul id="ul">
+				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+				<% if current_usuario.has_role? :admin %>
+					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
+				<% end %>
+				<li><i class="fas fa-plus"></i><%= link_to 'Nueva Transaccion', new_agente_transaccion_path(@agente) %></li>
+				<li><i class="fas fa-user-tie"></i><%= link_to 'Ver Agente', agente_path(@agente) %></li>
+		</ul>
+</nav>
+
 <table border="1" id="transacciones" class="table">
 	<thead class="thead-dark">
 		<tr>
@@ -16,13 +29,4 @@
 <div class="grafica" id="hh">
 	<h1>Estadistica de Transacciones</h1>
 	<%= area_chart(@data) %>
-</div>
-
-<div class="dropdown">
-  <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acciones</a>
-
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-		<%= link_to 'Nueva Transaccion', new_agente_transaccion_path(@agente), class: "dropdown-item" %>
-		<%= link_to 'Ver Agente', agente_path(@agente), class: "dropdown-item" %>
-  </div>
 </div>

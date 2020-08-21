@@ -20,10 +20,6 @@
   margin: 0;
 }
 
-i {
-  min-width: 20px;
-}
-
 body, html {
   font-family: verdana, helvetica, neue;
 }
@@ -81,8 +77,10 @@ body, html {
 
     #menuLateral ul li a {
         color: #fff;
-        display: b;
         text-decoration: none;
+        display: block;
+        width: 100%;
+        margin-left: 5px;
     }
 
     #menuLateral ul li i {

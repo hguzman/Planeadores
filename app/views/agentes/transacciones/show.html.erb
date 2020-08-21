@@ -1,15 +1,16 @@
-<div class="show">
-	<ul class="nav nav-tabs">
-	  <li class="nav-item">
-	    <%= link_to 'Ver todas', agente_transacciones_path, class: "nav-link" %>
-	  </li>
-	  <li class="nav-item">
-	    <%= link_to 'Editar', edit_agente_transaccion_path(@agente, @transaccion), class: "nav-link" %>
-	  </li>
-	  <li class="nav-item">
-	    <a href="/agentes/<%= @agente.id %>/transacciones/<%= @transaccion.id %>.pdf" target="_blank" class="nav-link">Generar PDF</a>
-	  </li>
-	</ul>
+<h2>Información de Transacción</h2>
+
+<nav id="menuLateral">
+		<ul id="ul">
+				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+				<% if current_usuario.has_role? :admin %>
+					<li> <i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
+				<% end %>
+				<li><i class="fas fa-dollar-sign"></i><%= link_to 'Ver todas', agente_transacciones_path %></li>
+				<li><i class="fas fa-user-edit"></i><%= link_to 'Editar', edit_agente_transaccion_path(@agente, @transaccion) %></li>
+				<li><i class="fas fa-file-pdf"></i><a href="/agentes/<%= @agente.id %>/transacciones/<%= @transaccion.id %>.pdf" target="_blank">Generar Factura</a></li>
+		</ul>
+</nav>
 
 	<table class="table">
 	  <tbody>
@@ -27,4 +28,3 @@
 			</tr>
 	  </tbody>
 	</table>
-</div>
