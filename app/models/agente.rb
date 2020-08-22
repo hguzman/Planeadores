@@ -1,6 +1,6 @@
 class Agente < ApplicationRecord
-	has_many :planeaciones
-	has_many :transacciones
+	has_many :planeaciones, dependent: :destroy
+	has_many :transacciones, dependent: :destroy
 
 	validates :primerNombre, :primerApellido, :nombreUds, presence: true
 	validates_format_of :correo,  :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
