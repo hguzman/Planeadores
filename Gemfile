@@ -56,3 +56,4 @@ gem 'wkhtmltopdf-binary'
 gem "rolify"
 gem "chartkick"
 gem 'groupdate', '~> 5.1'
+gem 'delayed_job_active_record'
