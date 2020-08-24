@@ -13,7 +13,7 @@ development:
   <<: *default
   database: planeadores
   username: root
-  password: root
+  password:
   host: localhost
 
 
