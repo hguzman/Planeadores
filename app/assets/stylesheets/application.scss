@@ -93,6 +93,9 @@ footer {
   color: #fff;
   padding: 10px 0;
   margin-top: 25px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 
@@ -498,10 +501,10 @@ header {
   }
 }
 
-.notice, .alert, .error {
+.notice, .error {
   position: absolute;
   top: 100px;
-  left: 10%;
+  left: 40%;
 
   border: 2px solid #0096D3;
   width: 25%;
@@ -514,7 +517,22 @@ header {
   display: none;
   z-index: 100;
 }
+.alert{
+  position: absolute;
+  top: 100px;
+  left: 0%;
 
+  border: 2px solid #0096D3;
+  width: 25%;
+  text-align: center;
+  padding: 10px 15px;
+  background: #C1EDFF;
+  border-radius: 10px;
+  color: #0096D3;
+
+  display: none;
+  z-index: 100;
+}
 /* DataTables */
 
 .dataTables_length, #usuarios_filter {

@@ -13,7 +13,7 @@ development:
   <<: *default
   database: planeadores
   username: root
-  password: root
+  password: locheMC1
   host: localhost
 
 
@@ -24,7 +24,7 @@ test:
   <<: *default
   database: planeadores_test
   username: root
-  password: root
+  password: locheMC1
   host: localhost
 
 production:
