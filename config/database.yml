@@ -8,8 +8,13 @@ default: &default
   adapter: mysql2
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+<<<<<<< HEAD
   username: <%= ENV['DATABASE_USER'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
+=======
+  username: ENV['DATABASE_USER']
+  password: ENV['DATABASE_PASSWORD']
+>>>>>>> ee706608869e096d26cdee4188953ce0900372af
 
 development:
   <<: *default
