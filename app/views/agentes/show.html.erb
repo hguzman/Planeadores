@@ -1,5 +1,3 @@
-<h2>Información de Agente</h2>
-
 <nav id="menuLateral">
 		<ul id="ul">
 				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
@@ -13,35 +11,39 @@
 		</ul>
 </nav>
 
-	<table class="table">
+<div class="list-group">
+ <h2 class="list-group-item list-group-item-dark">Información de Agente</h2>
+
+	<table class="table table-stripe" id="tableAgente">
 	  <tbody>
-			<tr>
-		  	<td><span class="listaTitle">Primer Nombre:</span></td>
+			<tr class="list-group-item">
+		  	<th><span class="listaTitle">Primer Nombre:</span></th>
 				<td><%= @agente.primerNombre.capitalize %></td>
 		  </tr>
-			<tr>
-				<td><span class="listaTitle">Segundo Nombre:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Segundo Nombre:</span></th>
 				<td><%= @agente.segundoNombre.capitalize %></td>
 			</tr>
-			<tr>
-				<td><span class="listaTitle">Primer Apellido:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Primer Apellido:</span></th>
 				<td><%= @agente.primerApellido.capitalize %></td>
 			</tr>
-			<tr>
-				<td><span class="listaTitle">Nombre UDS:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Nombre UDS:</span></th>
 				<td><%= @agente.nombreUds.capitalize %></td>
 			</tr>
-			<tr>
-				<td><span class="listaTitle">Modalidad:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Modalidad:</span></th>
 				<td><%= @agente.modalidad.capitalize %></td>
 			</tr>
-			<tr>
-				<td><span class="listaTitle">Correo:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Correo:</span></th>
 				<td><%= @agente.correo.capitalize %></td>
 			</tr>
-			<tr>
-				<td><span class="listaTitle">Cedula:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Cedula:</span></th>
 				<td><%= @agente.cedula %></td>
 			</tr>
 	  </tbody>
 	</table>
+</div>
