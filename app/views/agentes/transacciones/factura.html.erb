@@ -1,29 +1,62 @@
 <table>
-	<tr>
-		<th>Factura Planeación</th>
+		<tr>
+			<th><section class="iconFactura" id="iconF">
+				<%= image_tag wicked_pdf_asset_base64('Icon.png') %>
+			</section></th>
+			<th><h2>Planeadores</h2></th>
+		</tr>
+		<tr>
+			<th>ID de Factura:</th>
+			<th><%= @transaccion.id %></th>
+		</tr>
+		<tr>
+			<th>Fecha de Transacción: </th>
+			<th><%= @transaccion.created_at %></th>
+		</tr>
+		<tr>
+			<th>Atendido: </th>
+			<th>Administrador</th>
+		</tr>
+		<tr>
+			<th><hr width="200px"></th>
+			<th><hr width="100px"></th>
+		</tr>
+		<th><h3>Factura Planeacion</h3></th>
+		<tr>
+			<tr>
+				<th>Agente Educativo:</th>
+				<th><%= "#{@agente.primerNombre.capitalize} #{@agente.primerApellido.capitalize}" %></th>
+			</tr>
+			<tr>
+			<th>Cédula</th>
+			<th><%= @agente.cedula %></th>
+		</tr>
+			<tr>
+				<th>Nombre UDS: </th>
+				<th><%= @agente.nombreUds %></th>
+			</tr>
+			<tr>
+				<th><hr width="200px"></th>
+				<th><hr width="100px"></th>
+			</tr>
+			<tr>
+			<th>Valor: </th>
+			<th><%= @transaccion.valor %></th>
+		</tr>
+		<tr>
+			<th>---------------------------------------</th>
+			<th>--------------------</th>
+		</tr>
+		<tr>
+		<th><h3>Total:</h3></th>
+		<th><h3><%= @transaccion.valor %></h3></th>
 	</tr>
 	<tr>
-		<td>Valor: </td>
-		<td><%= @transaccion.valor %></td>
+		<th><hr width="200px"></th>
+		<th><hr width="100px"></th>
 	</tr>
-	<tr>
-		<td>Medio de Pago: </td>
-		<td><%= @transaccion.medio_de_pago %></td>
-	</tr>
-	<tr>
-		<td>Fecha de Transacción: </td>
-		<td><%= @transaccion.fecha_de_pago %></td>
-	</tr>
-	<tr>
-		<td>Nombre del Agente Educativo:</td>
-		<td><%= "#{@agente.primerNombre.capitalize} #{@agente.primerApellido.capitalize}" %></td>
-	</tr>
-	<tr>
-		<td>Nombre UDS: </td>
-		<td><%= @agente.nombreUds %></td>
-	</tr>
-	<tr>
-		<td>Cédula</td>
-		<td><%= @agente.cedula %></td>
-	</tr>
-</table>
+		<tr>
+			<th>Medio de Pago: </th>
+			<th><%= @transaccion.medio_de_pago %></th>
+		</tr>
+	</table>
