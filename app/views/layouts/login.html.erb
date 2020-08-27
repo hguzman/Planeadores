@@ -15,10 +15,13 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <div class="bg">
       <div class="container">
         <%= yield %>
       </div>
     </div>
+    <%= javascript_pack_tag 'app'%>
   </body>
 </html>
