@@ -41,8 +41,7 @@ body, html {
 }
 
 #header2 {
-  height: 90px;
-  border: 1px solid red;
+  height: 77px;
   margin-bottom: 25px;
 }
 
@@ -50,7 +49,7 @@ body, html {
     width: 120%;
     height: 95vh;
     position: fixed;
-    top: 90px;
+    top: 76px;
     left: -300px;
     z-index: 100;
     transition: all .3s;
@@ -92,6 +91,7 @@ footer {
   color: #fff;
   padding: 10px 0;
   margin-top: 25px;
+
 }
 
 
@@ -497,10 +497,27 @@ header {
   }
 }
 
-.notice, .alert, .error {
+.notice, .error {
   position: absolute;
   top: 100px;
-  left: 10%;
+  left: 40%;
+
+  border: 2px solid #0096D3;
+  width: 25%;
+  text-align: center;
+  padding: 10px 15px;
+  background: #C1EDFF;
+  border-radius: 10px;
+  color: #0096D3;
+
+  display: none;
+  z-index: 100;
+}
+
+.alert{
+  position: absolute;
+  top: 100px;
+  right: 38%;
 
   border: 2px solid #0096D3;
   width: 25%;
