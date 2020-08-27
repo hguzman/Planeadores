@@ -108,3 +108,43 @@ $(document).ready(function() {
 	$('#transacciones').dataTable();
 	$('#usuarios').dataTable();
 });
+
+
+// menuLateral
+// Variables
+const btnNav = document.getElementById('btnNav');
+const menuLateral = document.getElementById('menuLateral');
+let menuLateralSw = false;
+
+// EventListeners
+btnNav.addEventListener('click', mostrarMenuLateral);
+document.addEventListener('keyup', quitarMenu);
+
+// Funciones
+function mostrarMenuLateral() {
+
+    if(menuLateralSw === false) {
+        menuLateralSw = true;
+        menuLateral.style.display = 'block';
+        setTimeout(function(){
+            menuLateral.style.left = '0';
+            menuLateral.style.background = 'rgba(0,0,0,.5)';
+            document.querySelector('.dropdown').disabled = true;
+        }, 100);
+    } else {
+        menuLateral.style.left = '-300px';
+        menuLateralSw = false;
+        menuLateral.style.background = 'none';
+        setTimeout(function() {
+            menuLateral.style.display = 'none';
+            document.querySelector('.dropdown').disabled = false;
+        }, 100);
+    }
+}
+
+function quitarMenu(e) {
+    if(menuLateralSw === true && e.which == 27) {
+        mostrarMenuLateral();
+        menuLateralSw = false;
+    }
+}

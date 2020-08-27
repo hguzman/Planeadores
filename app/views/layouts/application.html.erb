@@ -11,6 +11,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/348c72a25c.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Jquery -->
   	<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script> <!-- Jquery DataTables -->
   	<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script> <!-- DataTables Boostrap js -->
@@ -21,34 +22,43 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <% if usuario_signed_in? %>
-          <h1><%= @title %></h1>
-        <% else %>
-          <h1>Proyecto Planeadores</h1>
-        <% end %>
-
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
-
-        <% if usuario_signed_in? %>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menú</button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <% if current_usuario.rol? %>
-                <%= link_to 'Usuarios', usuarios_path, class: "dropdown-item" %>
-              <% end %>
-              <%= link_to "Cerrar session", destroy_usuario_session_path, method: :delete, class: "dropdown-item" %>
-            </div>
+    <header class="d-flex justify-content-between align-items-center" id="header">
+      <div class="title d-flex align-items-center">
+          <div id="btnNav" class="btnNav">
+              <i class="fas fa-bars"></i>
           </div>
-        <% end %>
+          <h1>Proyecto Planeadores</h1>
       </div>
+
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <% if usuario_signed_in? %>
+      <div class="dropdown">
+          <% if current_usuario.has_role? :admin %>
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin <i class="fas fa-user"></i></button>
+          <% else %>
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuario <i class="fas fa-user"></i></button>
+          <% end %>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <%= link_to "Cerrar session", destroy_usuario_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
+        </div>
+      <% end %>
     </header>
+
+    <div id="header2"></div>
 
     <div class="container">
       <%= yield %>
     </div>
+
+    <footer>
+      <div class="container d-flex justify-content-between align-items-center">
+        <p>Proyecto Planeadores</p>
+        <p>Version 1.7.0</p>
+      </div>
+    </footer>
 
     <%= javascript_pack_tag 'app'%>
   </body>

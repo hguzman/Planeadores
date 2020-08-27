@@ -1,0 +1,157 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body, html {
+	font-family: verdana, arial, sans-serif;
+
+	/*background: url(https://i.pinimg.com/originals/87/22/19/872219e39469e56ff5742581122212bf.jpg);*/
+	background: url(https://i2.wp.com/sociallover.net/wp-content/uploads/2019/04/Mountain-1080p-wallpaper.png);
+	background-size: cover;
+}
+
+.bg {
+	background: rgba(0,0,0,.5);
+	height: 100vh;
+	width: 100%;
+}
+
+.container {
+	width: 98%;
+	height: 100vh;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container .formularioLogin {
+	background: #E8E8E8;
+	border-radius: 10px;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+	.formularioLogin form {
+		width: 90%;
+	}
+
+	.formularioLogin h2 {
+		text-align: center;
+		border-radius: 10px 10px 0 0;
+		margin-bottom: 25px;
+		background: #483D8B;
+		color: #fff;
+		padding: 10px 15px;
+		width: 100%;
+	}
+
+	.formularioLogin form label {
+		margin-bottom: 10px;
+		display: block;
+		width: 100%;
+	}	
+
+	.formularioLogin input[type="email"], input[type="password"] {
+		margin-bottom: 25px;
+		padding: 5px 10px;
+		width: 95%;
+		border: none;
+		border-bottom: 1px solid #333;
+		background: none;
+		outline: none;
+	}
+
+	.formularioLogin input[type="checkbox"] {
+		margin-right: 10px;
+	}
+
+	.formularioLogin .form-actions {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.formularioLogin .form-actions button {
+		background: #483D8B;
+		color: #fff;
+		outline: none;
+		border: 1px solid #333;
+		border-radius: 5px;
+		padding: 10px 0;
+		width: 100px;
+		margin: 25px 0;
+		font-size: 15pt;
+		cursor: pointer;
+	}
+	
+	.enlaces {
+		width: 100%;
+		padding: 10px 15px;
+		text-align: center;
+		/*background: #9370DB;*/
+	}
+
+	.enlaces a {
+		color: #333;
+		text-decoration: none;
+	}
+
+@keyframes flashMessage {
+  0% {
+    top: 0px;
+    opacity: 0;
+  } 100% {
+    top: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes quitarMessage {
+  0% {
+    top: 100px;
+    opacity: 1;
+  } 100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+.notice, .error {
+  position: absolute;
+  top: 100px;
+  left: 40%;
+
+  border: 2px solid #0096D3;
+  width: 30%;
+  text-align: center;
+  padding: 10px 15px;
+  background: #C1EDFF;
+  border-radius: 10px;
+  color: #0096D3;
+
+  display: none;
+  z-index: 100;
+}
+
+.alert{
+  position: absolute;
+  top: 100px;
+  right: 35%;
+
+  border: 2px solid #0096D3;
+  width: 30%;
+  text-align: center;
+  padding: 10px 15px;
+  background: #C1EDFF;
+  border-radius: 10px;
+  color: #0096D3;
+
+  display: none;
+  z-index: 100;
+}

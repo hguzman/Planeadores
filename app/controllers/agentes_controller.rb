@@ -24,6 +24,8 @@ class AgentesController < ApplicationController
   	@agente = Agente.new(agente_params)
 
   	if @agente.save
+      NotificacionMailer.nuevo(@agente).deliver
+
   		redirect_to agente_path(@agente)
       flash.notice = 'Agente creado'
   	else
@@ -33,6 +35,7 @@ class AgentesController < ApplicationController
 
   def update
   	if @agente.update(agente_params)
+      NotificacionMailer.actualizacion(@agente).deliver
   		redirect_to agente_path(@agente)
       flash.notice = 'Agente actualizado'
   	else
@@ -41,6 +44,7 @@ class AgentesController < ApplicationController
   end
 
   def destroy
+    NotificacionMailer.borrado(@agente).deliver
     @agente.destroy
     redirect_to agentes_path
     flash.notice = 'Agente eliminado'

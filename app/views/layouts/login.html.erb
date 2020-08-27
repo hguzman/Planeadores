@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% if usuario_signed_in? %>
+      <title><%= @title %></title>
+    <% else %>
+      <title>Proyecto Planeadores</title>
+    <% end %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'login' %>
+    <%= javascript_pack_tag 'login' %>
+    <script src="https://kit.fontawesome.com/348c72a25c.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="bg">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+    <%= javascript_pack_tag 'app'%>
+  </body>
+</html>
