@@ -2,22 +2,22 @@ require 'test_helper'
 
 class AgentesControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get agentes_index_url
+    get agentes_path
     assert_response :success
   end
 
   test "should get new" do
-    get agentes_new_url
+    get new_agente_path
     assert_response :success
   end
 
   test "should get show" do
-    get agentes_show_url
+    get agente_path(:one)
     assert_response :success
   end
 
   test "should get edit" do
-    get agentes_edit_url
+    get edit_agente_path(:one)
     assert_response :success
   end
 

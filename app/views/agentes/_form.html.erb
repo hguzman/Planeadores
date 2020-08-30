@@ -1,12 +1,55 @@
-<div class="formulario">
   <%= simple_form_for @agente do |f| %>
-    <%= f.input :primerNombre, input_html: { autocomplete: "off", autofocus: "on", :class => "inputPrimerNombre", :style => 'width: 225px'} %>
-    <div class="segundoNombre"><%= f.input :segundoNombre, input_html: { autocomplete: "off", :class => "inputSegundoNombre", :style => 'width: 225px'} %></div>
-   	<div class="primerApellido"><%= f.input :primerApellido, input_html: { autocomplete: "off", :class => "inputPrimerApellido", :style => 'width: 225px' } %></div>
-    <div class="nombreUDS"><%= f.input :nombreUds, input_html: { autocomplete: "off", :class => "inputNombreUDS", :style => 'width: 225px' } %></div>
-    <div class="modalidad"><label class="Mod" for="modalidad">Modalidad</label><div class="selectModalidad"><%=f.select :modalidad,([['Tradicional'], ['Institucional'], ['Familiar'], ['Propia']])%></div></div>
-   	<div class="correo"><%= f.input :correo, input_html: { autocomplete: "off", :class => "inputCorreo", :style => 'width: 225px' } %></div>
-   	<div class="cedula"><%= f.input :cedula, input_html: { autocomplete: "off", :class => "inputCedula", :style => 'width: 225px'} %></div>
-    <%= f.button :submit, :class => 'btnAgente'%>
+    <table class="formulario_table">
+        <tr>
+          <div class="input string required agente_primerNombre">
+            <td><label class="string required" for="agente_primerNombre">Primer Nombre <abbr title="required">*</abbr></label></td>
+            <td><input autocomplete="off" autofocus="autofocus" class="string required" type="text" name="agente[primerNombre]" id="agente_primerNombre" /></td>
+          </div>
+        </tr>
+        <tr>
+          <div class="input string optional agente_segundoNombre">
+            <td><label class="string optional" for="agente_segundoNombre">Segundo Nombre</label></td>
+            <td><input autocomplete="off" class="string optional" type="text" name="agente[segundoNombre]" id="agente_segundoNombre" /></td>
+          </div>
+        </tr>
+        <tr>
+          <div class="input string required agente_primerApellido">
+            <td><label class="string required" for="agente_primerApellido">Primerapellido <abbr title="required">*</abbr></label></td>
+            <td><input autocomplete="off" class="string required" type="text" name="agente[primerApellido]" id="agente_primerApellido" /></td>
+          </div>
+        </tr>
+        <tr>
+          <div class="input string required agente_nombreUds">
+            <td><label class="string required" for="agente_nombreUds">Nombreuds <abbr title="required">*</abbr></label></td>
+            <td><input autocomplete="off" class="string required" type="text" name="agente[nombreUds]" id="agente_nombreUds" /></td>
+          </div>
+        </tr>
+        <tr>
+          <td><label for="agente_modalidad">Modalidad</label></td>
+          <td>
+            <select name="agente[modalidad]" id="agente_modalidad">
+              <option value="Tradicional">Tradicional</option>
+              <option value="Institucional">Institucional</option>
+              <option value="Familiar">Familiar</option>
+              <option value="Propia">Propia</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <div class="input string optional agente_correo">
+            <td><label class="string optional" for="agente_correo">Correo</label></td>
+            <td><input autocomplete="off" class="string optional" type="text" name="agente[correo]" id="agente_correo" /></td>
+          </div>
+        </tr>
+        <tr>
+          <div class="input string optional agente_cedula">
+            <td><label class="string optional" for="agente_cedula">Cedula</label></td>
+            <td><input autocomplete="off" class="string optional" type="text" name="agente[cedula]" id="agente_cedula" /></td>
+          </div>
+        </tr>
+        <tr>
+          <td colspan="2"><input id="btnSubmit" type="submit" name="commit" value="Create Agente" class="btn" data-disable-with="Create Agente" /></td>
+        </tr>
+    </table>
   <% end %>
 </div>

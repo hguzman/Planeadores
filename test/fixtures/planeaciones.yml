@@ -3,11 +3,9 @@
 one:
   formato: MyString
   tematica: MyString
-  estado: MyString
   agente: one
 
 two:
   formato: MyString
   tematica: MyString
-  estado: MyString
   agente: two
