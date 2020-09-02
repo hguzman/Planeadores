@@ -117,7 +117,11 @@ const menuLateral = document.getElementById('menuLateral');
 let menuLateralSw = false;
 
 // EventListeners
-btnNav.addEventListener('click', mostrarMenuLateral);
+try {
+    btnNav.addEventListener('click', mostrarMenuLateral);
+} catch(error) {
+    console.log(error);
+}
 document.addEventListener('keyup', quitarMenu);
 
 // Funciones

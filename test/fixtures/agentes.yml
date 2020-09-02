@@ -1,17 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  primerNombre: MyString
-  segundoNombre: MyString
-  primerApellido: MyString
-  nombreUds: MyString
-  modalidad: MyString
-  correo: MyString
+  primerNombre: cristian
+  segundoNombre: andres
+  primerApellido: julio
+  nombreUds: nombreUds1
+  modalidad: modalidad1
+  correo: correo1@gmail.com
 
 two:
-  primerNombre: MyString
-  segundoNombre: MyString
-  primerApellido: MyString
-  nombreUds: MyString
-  modalidad: MyString
-  correo: MyString
+  primerNombre: laura
+  segundoNombre: andrea
+  primerApellido: dabila
+  nombreUds: nombreUds2
+  modalidad: modalidad2
+  correo: correo2@gmail.com

@@ -1,106 +1,195 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
-body, html {
-	font-family: verdana, arial, sans-serif;
-
-	/*background: url(https://i.pinimg.com/originals/87/22/19/872219e39469e56ff5742581122212bf.jpg);*/
-	background: url(https://i2.wp.com/sociallover.net/wp-content/uploads/2019/04/Mountain-1080p-wallpaper.png);
-	background-size: cover;
+body {
+	font-family: 'Poppins', sans-serif;
 }
 
-.bg {
-	background: rgba(0,0,0,.5);
-	height: 100vh;
-	width: 100%;
+.wave {
+	position: fixed;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
 }
 
 .container {
-	width: 98%;
+	width: 1200px;
 	height: 100vh;
 	margin: 0 auto;
+	/*display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 7rem,*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+}
 
+.img {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login-content {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+form {
+	width: 360px;
+}
+
+.img img {
+	width: 500px;
+}
+
+.avatar {
+	width: 100px;
+}
+
+form h2 {
+	font-size: 2.9rem;
+	text-transform: uppercase;
+	margin: 15px 0;
+	color: #333;
+}
+
+.input-div {
+	position: relative;
+	display: grid;
+	grid-template-columns: 7% 93%;
+	margin: 25px 0;
+	padding: 5px 0;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+.input-div:after, .input-div:before {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0;
+	height: 2px;
+	background-color: #333;
+	transition: 0.3s;
+}
+
+.input-div:after {
+	right: 50%;
+}
+
+.input-div:before {
+	left: 50%;
+}
+
+.input.div.one {
+	margin-top: 0;
+}
+
+.input-div.one.focus .i i {
+	color: #333;
+}
+
+.input-div.focus div label {
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus:after, .input-div.focus:before {
+	width: 50%;
+}
+
+.input-div.pass {
+	margin-bottom: 4px;
+}
+
+.i {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
 }
 
-.container .formularioLogin {
-	background: #E8E8E8;
-	border-radius: 10px;
-
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+.i i {
+	color: #333;
+	transition: .3s;
 }
 
-	.formularioLogin form {
-		width: 90%;
-	}
+.input-div > div {
+	position: relative;
+	height: 45px;
+}
 
-	.formularioLogin h2 {
-		text-align: center;
-		border-radius: 10px 10px 0 0;
-		margin-bottom: 25px;
-		background: #483D8B;
-		color: #fff;
-		padding: 10px 15px;
-		width: 100%;
-	}
+.input-div > div label {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 19px;
+	transition: .3s;
+}
 
-	.formularioLogin form label {
-		margin-bottom: 10px;
-		display: block;
-		width: 100%;
-	}	
+.input2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0.5rem 0.7rem;
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 1.2rem;
+	color: #555;
+	width: 100%;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+}
 
-	.formularioLogin input[type="email"], input[type="password"] {
-		margin-bottom: 25px;
-		padding: 5px 10px;
-		width: 95%;
-		border: none;
-		border-bottom: 1px solid #333;
-		background: none;
-		outline: none;
-	}
+a {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
 
-	.formularioLogin input[type="checkbox"] {
-		margin-right: 10px;
-	}
+a:hover {
+	color: #38d39f;
+}
 
-	.formularioLogin .form-actions {
-		display: flex;
-		justify-content: center;
-		width: 100%;
-	}
+.usuario_remember_me {
+	display: none;
+}
 
-	.formularioLogin .form-actions button {
-		background: #483D8B;
-		color: #fff;
-		outline: none;
-		border: 1px solid #333;
-		border-radius: 5px;
-		padding: 10px 0;
-		width: 100px;
-		margin: 25px 0;
-		font-size: 15pt;
-		cursor: pointer;
-	}
-	
-	.enlaces {
-		width: 100%;
-		padding: 10px 15px;
-		text-align: center;
-		/*background: #9370DB;*/
-	}
+.btn {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	margin: 1rem 0;
+	font-size: 1.2rem;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #4B4B4B, #333, #4B4B4B);
+	/*background: #333;*/
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+	background-size: 200%;
+	transition: .5s;
+}
 
-	.enlaces a {
-		color: #333;
-		text-decoration: none;
-	}
+.btn:hover {
+	background-position: right;
+}
+
+/* Mensajes Flash */
 
 @keyframes flashMessage {
   0% {
@@ -128,7 +217,7 @@ body, html {
   left: 40%;
 
   border: 2px solid #0096D3;
-  width: 30%;
+  width: 25%;
   text-align: center;
   padding: 10px 15px;
   background: #C1EDFF;
@@ -142,10 +231,10 @@ body, html {
 .alert{
   position: absolute;
   top: 100px;
-  right: 35%;
+  right: 38%;
 
   border: 2px solid #0096D3;
-  width: 30%;
+  width: 25%;
   text-align: center;
   padding: 10px 15px;
   background: #C1EDFF;
@@ -154,4 +243,19 @@ body, html {
 
   display: none;
   z-index: 100;
+}
+
+@media screen and (min-width: 1920px) {
+	.container {
+		width: 1500px;
+	}
+
+	.img img {
+		width: 650px;
+	}
+
+	form {
+		width: 460px;
+	}
+
 }

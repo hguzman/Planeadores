@@ -1,11 +1,12 @@
 class Agentes::TransaccionesController < ApplicationController
-	before_action :find_agente
+	before_action :authenticate_usuario!
+  before_action :find_agente
 	before_action :find_transaccion, only: [:show, :edit, :update, :destroy]
 
   def index
   	@transacciones = @agente.transacciones
   	@title = 'Lista de Transacciones'
-	@data = Transaccion.group_by_month(:fecha_de_pago).count
+	 @data = Transaccion.group_by_month(:fecha_de_pago).count
   end
 
   def new

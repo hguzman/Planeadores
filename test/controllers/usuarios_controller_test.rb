@@ -2,22 +2,22 @@ require 'test_helper'
 
 class UsuariosControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get usuarios_index_url
+    get usuarios_path
     assert_response :success
   end
 
   test "should get new" do
-    get usuarios_new_url
+    get new_usuario_path
     assert_response :success
   end
 
   test "should get show" do
-    get usuarios_show_url
+    get usuario_path(:one)
     assert_response :success
   end
 
   test "should get edit" do
-    get usuarios_edit_url
+    get edit_usuario_path(:one)
     assert_response :success
   end
 

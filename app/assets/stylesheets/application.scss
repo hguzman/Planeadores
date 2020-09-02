@@ -561,7 +561,7 @@ header {
   left: 100px;
   top: 100px;
 }
-//*Show Agente*/
+/*Show Agente*/
 
 .list-group{
   width: 40%;
@@ -569,4 +569,26 @@ header {
 
   margin-left: 30%;
   margin-top: -10px;
+}
+
+
+/* Formularios */
+.formulario_table {
+  display: table;
+  width: 450px;
+}
+
+.formulario_table tr td {
+  text-align: left;
+  padding: 10px 10px 10px 5px;
+}
+
+.formulario_table tr td:hover {
+  shape-outside: none;
+}
+
+#btnSubmit {
+  width: 450px;
+  background: #333;
+  color: #fff;
 }

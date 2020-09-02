@@ -2,22 +2,22 @@ require 'test_helper'
 
 class Agentes::TransaccionesControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get agentes_transacciones_index_url
+    get agente_transacciones_path(agentes(:one))
     assert_response :success
   end
 
   test "should get new" do
-    get agentes_transacciones_new_url
+    get new_agente_path(:one)
     assert_response :success
   end
 
   test "should get show" do
-    get agentes_transacciones_show_url
+    get agente_transaccion_path(:one, :one)
     assert_response :success
   end
 
   test "should get edit" do
-    get agentes_transacciones_edit_url
+    get edit_agente_transaccion_path(:one, :one)
     assert_response :success
   end
 
