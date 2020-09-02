@@ -1,23 +1,40 @@
 <div class="formularioLogin">
-  <h2>Ingresar</h2>
-
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= image_tag "avatar.svg", class: "avatar" %>
+    <h2>Bienvenido</h2>
     <div class="form-inputs">
-      <label class="email optional" for="usuario_email"><i class="fas fa-envelope"></i> Email</label>
-      <input autocomplete="email" class="string email optional" autofocus="autofocus" type="email" value="" name="usuario[email]" id="usuario_email" />
+      <div class="input-div one focus">
+        <div class="i">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="div">
+          <label class="email optional" for="usuario_email">Email</label>
+          <input autocomplete="off" class="string email optional input2" autofocus="autofocus" type="email" value="" name="usuario[email]" id="usuario_email" />
+        </div>
+      </div>
 
-      <label class="password optional" for="usuario_password"><i class="fas fa-lock-open"></i> Password</label>
-      <input autocomplete="current-password" class="password optional" type="password" name="usuario[password]" id="usuario_password" />
+      <div class="input-div pass">
+        <div class="i">
+          <i class="fas fa-lock-open"></i>
+        </div>
+        <div class="div">
+          <label class="password optional" for="usuario_password">Password</label>
+          <input autocomplete="current-password" class="password optional input2" type="password" name="usuario[password]" id="usuario_password" />
+        </div>
+      </div>
 
-      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      <div class="input boolean optional usuario_remember_me"><input value="0" type="hidden" name="usuario[remember_me]" /><label class="boolean optional checkbox" for="usuario_remember_me"><input class="boolean optional" type="checkbox" value="1" name="usuario[remember_me]" id="usuario_remember_me" />Remember me</label></div>
+
+      
+      <%= render "devise/shared/links" %>
     </div>
 
     <div class="form-actions">
-      <button><i class="fas fa-sign-in-alt"></i></button>
+      <button class="btn">Login</button>
     </div>
   <% end %>
 
   <div class="enlaces">
-    <%= render "devise/shared/links" %>
+    
   </div>
 </div>

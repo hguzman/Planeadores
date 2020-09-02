@@ -4,24 +4,30 @@
     <% if usuario_signed_in? %>
       <title><%= @title %></title>
     <% else %>
-      <title>Proyecto Planeadores</title>
+      <title>Login</title>
     <% end %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'login' %>
-    <%= javascript_pack_tag 'login' %>
     <script src="https://kit.fontawesome.com/348c72a25c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <div class="bg">
+    
+    <%= image_tag "wave.png", class: "wave" %>
       <div class="container">
-        <%= yield %>
+        <div class="img">
+          <%= image_tag "main_img.svg"%>
+        </div>
+        <div class="login-content">
+          <%= yield %>      
+        </div>
       </div>
-    </div>
-    <%= javascript_pack_tag 'app'%>
+
+    <%= javascript_pack_tag 'login'%>
   </body>
 </html>
