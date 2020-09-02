@@ -67,7 +67,6 @@ form h2 {
 	margin: 25px 0;
 	padding: 5px 0;
 	border-bottom: 2px solid #d9d9d9;
-	/*border: 1px solid red;*/
 }
 
 .input-div:after, .input-div:before {
@@ -76,7 +75,7 @@ form h2 {
 	bottom: -2px;
 	width: 0;
 	height: 2px;
-	background-color: #38d39f;
+	background-color: #333;
 	transition: 0.3s;
 }
 
@@ -93,7 +92,7 @@ form h2 {
 }
 
 .input-div.one.focus .i i {
-	color: #38d39f;
+	color: #333;
 }
 
 .input-div.focus div label {
@@ -116,7 +115,7 @@ form h2 {
 }
 
 .i i {
-	color: #d9d9d9;
+	color: #333;
 	transition: .3s;
 }
 
@@ -176,7 +175,8 @@ a:hover {
 	font-size: 1.2rem;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-image: linear-gradient(to right, #4B4B4B, #333, #4B4B4B);
+	/*background: #333;*/
 	cursor: pointer;
 	color: #fff;
 	text-transform: uppercase;
