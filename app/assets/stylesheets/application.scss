@@ -14,21 +14,27 @@
  *= require font-awesome
  */
 
-* {
-  padding: 0;
+body{
   margin: 0;
+  margin-bottom: 40px;
 }
 
-body, html {
+html {
   font-family: verdana, helvetica, neue;
+  min-height: 100%;
+  position: relative;
+  padding: 0px;
+
+
 }
 
 #header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
+
 }
 
 #header #btnNav {
@@ -42,7 +48,7 @@ body, html {
 
 #header2 {
   height: 77px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 #menuLateral {
@@ -89,9 +95,10 @@ body, html {
 footer {
   background: #333;
   color: #fff;
-  padding: 10px 0;
-  margin-top: 25px;
-
+  height: 70px;
+  width: 100%;
+  margin-top: 11%;
+  bottom: 0;
 }
 
 
@@ -328,6 +335,7 @@ header {
   /* Formularios */
 
   .formulario {
+    margin-top: 2pc;
     width: 67%;
   }
 
