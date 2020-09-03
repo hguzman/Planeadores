@@ -5,16 +5,15 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: mysql2
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+  username: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
-  database: db/development.sqlite3
   database: planeadores
-  username: root
-  password:
   host: localhost
 
 
@@ -24,8 +23,6 @@ development:
 test:
   <<: *default
   database: planeadores_test
-  username: root
-  password:
   host: localhost
 
 production:

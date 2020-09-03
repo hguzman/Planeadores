@@ -10,7 +10,6 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  *= require font-awesome
  */
@@ -20,28 +19,86 @@
   margin: 0;
 }
 
-i {
-  min-width: 20px;
-}
-
 body, html {
   font-family: verdana, helvetica, neue;
 }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#header #btnNav {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+#header .dropdown {
+  margin-right: 60px;
+}
+
+#header2 {
+  height: 77px;
+  margin-bottom: 25px;
+}
+
+#menuLateral {
+    width: 120%;
+    height: 95vh;
+    position: fixed;
+    top: 76px;
+    left: -300px;
+    z-index: 100;
+    transition: all .3s;
+    background: none;
+    overflow: hidden;
+    display: none;
+}
+
+    #menuLateral ul {
+        background: #333;
+        border-top: 1px solid #fff;
+        width: 300px;
+        height: 95vh;
+    }
+
+    #menuLateral ul li {
+        border-bottom: 1px solid #fff;
+        padding: 20px 15px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #menuLateral ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    #menuLateral ul li i {
+      color: #fff;
+      margin-right: 3px;
+    }
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 25px;
+
+}
+
 
 a {
   font-weight: bold;
   text-decoration: none;
   color: #17a2b8;
-}
-
-.container {
-  width: 1200px;
-  min-width: 1200px;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
 }
 
 header {
@@ -440,10 +497,27 @@ header {
   }
 }
 
-.notice, .alert, .error {
+.notice, .error {
   position: absolute;
   top: 100px;
-  left: 10%;
+  left: 40%;
+
+  border: 2px solid #0096D3;
+  width: 25%;
+  text-align: center;
+  padding: 10px 15px;
+  background: #C1EDFF;
+  border-radius: 10px;
+  color: #0096D3;
+
+  display: none;
+  z-index: 100;
+}
+
+.alert{
+  position: absolute;
+  top: 100px;
+  right: 38%;
 
   border: 2px solid #0096D3;
   width: 25%;
@@ -476,4 +550,23 @@ header {
 }
 .eliminar{
   color: rgb(236, 9, 9)
+}
+/*Graica Transacciones*/
+
+.grafica{
+  width: 500px;
+  height: 40%;
+
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+//*Show Agente*/
+
+.list-group{
+  width: 40%;
+  height: 15%;
+
+  margin-left: 30%;
+  margin-top: -10px;
 }

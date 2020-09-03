@@ -1,47 +1,47 @@
-<div class="show">
-	<ul class="nav nav-tabs">
-	  <li class="nav-item">
-	    <%= link_to 'Ver todos', agentes_path, class: "nav-link" %>
-	  </li>
-	  <li class="nav-item">
-	    <%= link_to 'Editar', edit_agente_path(@agente), class: "nav-link" %>
-	  </li>
-	  <li class="nav-item">
-	    <%= link_to 'Ver Planeaciones', agente_planeaciones_path(@agente), class: "nav-link" %>
-	  </li>
-	  <li class="nav-item">
-	    <%= link_to 'Ver Transacciones', agente_transacciones_path(@agente), class: "nav-link" %>
-	  </li>
-	</ul>
+<nav id="menuLateral">
+		<ul id="ul">
+				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+				<% if current_usuario.has_role? :admin %>
+					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
+				<% end %>
+				<li> <i class="fas fa-user-tie"></i> <%= link_to 'Ver todos', agentes_path %></li>
+				<li> <i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_path(@agente) %></li>
+				<li> <i class="fas fa-book"></i> <%= link_to 'Ver Planeaciones', agente_planeaciones_path(@agente) %></li>
+				<li> <i class="fas fa-dollar-sign"></i> <%= link_to 'Ver Transacciones', agente_transacciones_path(@agente) %></li>
+		</ul>
+</nav>
 
-	<table class="table">
+<div class="list-group">
+ <h2 class="list-group-item list-group-item-dark">Información de Agente</h2>
+
+	<table class="table table-stripe" id="tableAgente">
 	  <tbody>
-			<tr>
-		  	<td><span class="listaTitle">Primer Nombre:</span></td>
+			<tr class="list-group-item">
+		  	<th><span class="listaTitle">Primer Nombre:</span></th>
 				<td><%= @agente.primerNombre.capitalize %></td>
 		  </tr>
-			<tr>
-				<td><span class="listaTitle">Segundo Nombre:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Segundo Nombre:</span></th>
 				<td><%= @agente.segundoNombre.capitalize %></td>
 			</tr>
-			<tr>
-				<td><span class="listaTitle">Primer Apellido:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Primer Apellido:</span></th>
 				<td><%= @agente.primerApellido.capitalize %></td>
 			</tr>
-			<tr>
-				<td><span class="listaTitle">Nombre UDS:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Nombre UDS:</span></th>
 				<td><%= @agente.nombreUds.capitalize %></td>
 			</tr>
-			<tr>
-				<td><span class="listaTitle">Modalidad:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Modalidad:</span></th>
 				<td><%= @agente.modalidad.capitalize %></td>
 			</tr>
-			<tr>
-				<td><span class="listaTitle">Correo:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Correo:</span></th>
 				<td><%= @agente.correo.capitalize %></td>
 			</tr>
-			<tr>
-				<td><span class="listaTitle">Cedula:</span></td>
+			<tr class="list-group-item">
+				<th><span class="listaTitle">Cedula:</span></th>
 				<td><%= @agente.cedula %></td>
 			</tr>
 	  </tbody>

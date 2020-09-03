@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :usuarios
+  devise_for :usuarios, controllers: {
+    sessions: 'usuarios/sessions'
+  }
+  
   root 'agentes#index'
 
   resources :usuarios
