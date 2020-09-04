@@ -14,18 +14,16 @@
  *= require font-awesome
  */
 
-body{
+ * {
+  padding: 0;
   margin: 0;
-  margin-bottom: 40px;
-}
+ }
 
 html {
   font-family: verdana, helvetica, neue;
   min-height: 100%;
   position: relative;
   padding: 0px;
-
-
 }
 
 #header {
@@ -52,44 +50,44 @@ html {
 }
 
 #menuLateral {
-    width: 120%;
-    height: 95vh;
-    position: fixed;
-    top: 76px;
-    left: -300px;
-    z-index: 100;
-    transition: all .3s;
-    background: none;
-    overflow: hidden;
-    display: none;
+  width: 120%;
+  height: 95vh;
+  position: fixed;
+  top: 90px;
+  left: -300px;
+  z-index: 100;
+  transition: all .3s;
+  background: none;
+  overflow: hidden;
+  display: none;
 }
 
     #menuLateral ul {
-        background: #333;
-        border-top: 1px solid #fff;
-        width: 300px;
-        height: 95vh;
+      background: #333;
+      border-top: 1px solid #fff;
+      width: 300px;
+      height: 95vh;
     }
 
     #menuLateral ul li {
-        border-bottom: 1px solid #fff;
-        padding: 20px 15px;
+      border-bottom: 1px solid #fff;
+      padding: 20px 15px;
 
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
     }
 
     #menuLateral ul li a {
-        color: #fff;
-        text-decoration: none;
-        display: block;
-        width: 100%;
-        margin-left: 5px;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      margin-left: 5px;
     }
 
     #menuLateral ul li i {
       color: #fff;
-      margin-right: 3px;
+      /*margin-right: 3px;*/
     }
 
 footer {
@@ -97,7 +95,7 @@ footer {
   color: #fff;
   height: 70px;
   width: 100%;
-  margin-top: 11%;
+  margin-top: 30px;
   bottom: 0;
 }
 
@@ -125,17 +123,6 @@ header {
 
 .show a {
   color: #17a2b8;
-}
-
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-#Men1{
-  font-size: 45px;
-  margin-top: -10px;
 }
 
   table tbody tr td {

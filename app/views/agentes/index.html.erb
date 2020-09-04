@@ -1,15 +1,13 @@
-<br><br>
 <h2>Lista de Agentes</h2>
 
 <nav id="menuLateral">
-		<ul id="ul">
-				<!-- <li class="activo"><a href=""><i class="fas fa-home"></i> Inicio</a></li> -->
-				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
-				<% if current_usuario.has_role? :admin %>
-				<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
-				<% end %>
-				<li><i class="fas fa-plus"></i> <%= link_to 'Nuevo Agente', new_agente_path %></li>
-		</ul>
+	<ul id="ul">
+		<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+		<% if current_usuario.has_role? :admin %>
+		<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
+		<% end %>
+		<li><i class="fas fa-plus"></i> <%= link_to 'Nuevo Agente', new_agente_path %></li>
+	</ul>
 </nav>
 
 <table border="1" id="agentes" class="table">
