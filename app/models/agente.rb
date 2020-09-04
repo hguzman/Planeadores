@@ -7,4 +7,10 @@ class Agente < ApplicationRecord
 	validates :cedula, uniqueness: true
 	validates :cedula, numericality: true
 	validates :cedula, length: {maximum: 10}
+
+	# RSpec.describe Agente, type: :model do
+	#   it { should have_many(:planeaciones).dependent(:destroy) }
+	# end
+	
+	# rspec spec/models/agente_spec.rb
 end

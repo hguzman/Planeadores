@@ -5,6 +5,7 @@
   	<%= f.input :primerNombre, input_html: { autocomplete: "off" } %>
   	<%= f.input :segundoNombre, input_html: { autocomplete: "off" } %>
  	<%= f.input :primerApellido, input_html: { autocomplete: "off" } %>
+ 	<%= f.association :roles, as: :check_boxes %>
   	<div class="btnSubmit">
   		<%= f.button :submit %>
   	</div>

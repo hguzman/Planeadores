@@ -64,6 +64,6 @@ class UsuariosController < ApplicationController
   end
 
   def usuario_params
-  	params.require(:usuario).permit(:email, :password, :password_confirmation, :primerNombre, :segundoNombre,:primerApellido, :rol);
+  	params.require(:usuario).permit(:email, :password, :password_confirmation, :primerNombre, :segundoNombre,:primerApellido, role_ids: []);
   end
 end
