@@ -1,55 +1,46 @@
   <%= simple_form_for @agente do |f| %>
-    <table class="formulario_table">
-        <tr>
-          <div class="input string required agente_primerNombre">
-            <td><label class="string required" for="agente_primerNombre">Primer Nombre <abbr title="required">*</abbr></label></td>
-            <td><input autocomplete="off" autofocus="autofocus" class="string required" type="text" name="agente[primerNombre]" id="agente_primerNombre" /></td>
-          </div>
-        </tr>
-        <tr>
-          <div class="input string optional agente_segundoNombre">
-            <td><label class="string optional" for="agente_segundoNombre">Segundo Nombre</label></td>
-            <td><input autocomplete="off" class="string optional" type="text" name="agente[segundoNombre]" id="agente_segundoNombre" /></td>
-          </div>
-        </tr>
-        <tr>
-          <div class="input string required agente_primerApellido">
-            <td><label class="string required" for="agente_primerApellido">Primerapellido <abbr title="required">*</abbr></label></td>
-            <td><input autocomplete="off" class="string required" type="text" name="agente[primerApellido]" id="agente_primerApellido" /></td>
-          </div>
-        </tr>
-        <tr>
-          <div class="input string required agente_nombreUds">
-            <td><label class="string required" for="agente_nombreUds">Nombreuds <abbr title="required">*</abbr></label></td>
-            <td><input autocomplete="off" class="string required" type="text" name="agente[nombreUds]" id="agente_nombreUds" /></td>
-          </div>
-        </tr>
-        <tr>
-          <td><label for="agente_modalidad">Modalidad</label></td>
-          <td>
-            <select name="agente[modalidad]" id="agente_modalidad">
-              <option value="Tradicional">Tradicional</option>
-              <option value="Institucional">Institucional</option>
-              <option value="Familiar">Familiar</option>
-              <option value="Propia">Propia</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <div class="input string optional agente_correo">
-            <td><label class="string optional" for="agente_correo">Correo</label></td>
-            <td><input autocomplete="off" class="string optional" type="text" name="agente[correo]" id="agente_correo" /></td>
-          </div>
-        </tr>
-        <tr>
-          <div class="input string optional agente_cedula">
-            <td><label class="string optional" for="agente_cedula">Cedula</label></td>
-            <td><input autocomplete="off" class="string optional" type="text" name="agente[cedula]" id="agente_cedula" /></td>
-          </div>
-        </tr>
-        <tr>
-          <td colspan="2"><input id="btnSubmit" type="submit" name="commit" value="Create Agente" class="btn" data-disable-with="Create Agente" /></td>
-        </tr>
-    </table>
+  <div class="input string required agente_primerNombre">
+    <label class="string required" for="agente_primerNombre">Primer Nombre <abbr title="required">*</abbr></label>
+    <input autocomplete="off" autofocus="autofocus" class="string required" type="text" name="agente[primerNombre]" id="agente_primerNombre" />
+  </div>
+
+  <div class="input string optional agente_segundoNombre">
+    <label class="string optional" for="agente_segundoNombre">Segundo Nombre</label>
+    <input autocomplete="off" class="string optional" type="text" name="agente[segundoNombre]" id="agente_segundoNombre" />
+  </div>
+
+  <div class="input string required agente_primerApellido">
+    <label class="string required" for="agente_primerApellido">Primerapellido <abbr title="required">*</abbr></label>
+    <input autocomplete="off" class="string required" type="text" name="agente[primerApellido]" id="agente_primerApellido" />
+  </div>
+
+  <div class="input string required agente_nombreUds">
+    <label class="string required" for="agente_nombreUds">Nombreuds <abbr title="required">*</abbr></label>
+    <input autocomplete="off" class="string required" type="text" name="agente[nombreUds]" id="agente_nombreUds" />
+  </div>
+
+  <div>
+    <label for="agente_modalidad">Modalidad</label>
+    <select name="agente[modalidad]" id="agente_modalidad">
+      <option value="Tradicional">Tradicional</option>
+      <option value="Institucional">Institucional</option>
+      <option value="Familiar">Familiar</option>
+      <option value="Propia">Propia</option>
+    </select>
+  </div>
+
+  <div class="input string optional agente_correo">
+    <td><label class="string optional" for="agente_correo">Correo</label></td>
+    <td><input autocomplete="off" class="string optional" type="text" name="agente[correo]" id="agente_correo" /></td>
+  </div>
+
+  <div class="input string optional agente_cedula">
+    <td><label class="string optional" for="agente_cedula">Cedula</label></td>
+    <td><input autocomplete="off" class="string optional" type="text" name="agente[cedula]" id="agente_cedula" /></td>
+  </div>
+
+  <div class="btnSubmit">
+    <input id="btnSubmit" type="submit" name="commit" value="Create Agente" class="btn" data-disable-with="Create Agente" />
+  </div>
   <% end %>
 </div>
