@@ -1,9 +1,10 @@
-<div class="formulario">
-  <%= simple_form_for [@agente, @planeacion] do |f| %>
-    <label class="Format" for="formato">Formato</label><div class="selectFormato"><%= f.select :formato, ([['Formato 1'], ['Formato 2']]) %></div>
-    <div class="tematica"><%= f.input :tematica, input_html: { autocomplete: "off", :class => "inputTematica", :style => 'width: 255px' } %></div>
-    <div class="fecha"><%= f.input :fecha_de_creacion, input_html: { :class => "inputFecha" } %></div>
-    <%= f.button :submit %>
-  <% end %>
-
-</div>
+<%= simple_form_for [@agente, @planeacion] do |f| %>
+	<div>
+		<label class="Format" for="formato">Formato</label>
+		<%= f.select :formato, ([['Formato 1'], ['Formato 2']]) %>
+	</div>
+	<%= f.input :tematica, input_html: { autocomplete: "off" } %>
+	<div class="btnSubmit">
+		<%= f.button :submit %>
+	</div>
+<% end %>

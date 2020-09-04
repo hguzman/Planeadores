@@ -144,337 +144,6 @@ header {
       color: #006973;
     }
 
-  /* Formulario Agentes  */
-  .inputPrimerNombre{
-  height: 25px;
-  border-radius: 5px 5px 5px 5px;
-  margin-right: 425px;
-
-  position: relative;
-  right: 25px;
-
-  background: rgb(232, 247, 255)
-  }
-  .segundoNombre{
-    position: relative;
-    left: 190px;
-    top: -45px;
-
-  }
-  .inputSegundoNombre{
-    height: 25px;
-    border-radius: 5px 5px 5px 5px;
-
-    position: relative;
-    right: 25px;
-
-    background: rgb(232, 247, 255)
-  }
-  .inputPrimerApellido{
-    height: 25px;
-    border-radius: 5px 5px 5px 5px;
-
-    position: relative;
-    right: 23px;
-
-    background: rgb(232, 247, 255)
-  }
-  .primerApellido{
-    position: relative;
-    right: 213px;
-    top: -60px;
-  }
-  .inputNombreUDS{
-    height: 25px;
-    border-radius: 5px 5px 5px 5px;
-
-    position: relative;
-    right: 25px;
-
-    background: rgb(232, 247, 255)
-  }
-  .nombreUDS{
-    position: relative;
-    right: 54px;
-    top: -73px;
-  }
-  .selectModalidad{
-    height: 25px;
-    border-radius: 5px 5px 5px 5px;
-
-    position: relative;
-    right: 26px;
-
-    background: rgb(232, 247, 255)
-  }
-  .modalidad{
-    position: relative;
-    right: 490px;
-    top: -27px;
-  }
-  .inputCorreo{
-    height: 25px;
-    border-radius: 5px 5px 5px 5px;
-
-    position: relative;
-    right: 23px;
-
-    background: rgb(232, 247, 255)
-  }
-  .correo{
-    position: relative;
-    right: 210px;
-    top: -43px;
-  }
-  .inputCedula{
-    height: 25px;
-    border-radius: 5px 5px 5px 5px;
-
-    position: relative;
-    right: 23px;
-
-    background: rgb(232, 247, 255)
-  }
-  .cedula{
-    position: relative;
-    right: 83px;
-    top: -57px;
-  }
-  .btnAgente{
-    border-radius: 5px 5px 5px 5px;
-    position: relative;
-    right: 433px;
-    top: -20px;
-
-
-  }
-  /*Formulario Planeaciones*/
-
-  .selectFormato{
-    height: 25px;
-    border-radius: 5px 5px 5px 5px;
-
-    position: relative;
-    right: 77px;
-
-    background: rgb(232, 247, 255)
-  }
-  .inputTematica{
-    height: 25px;
-    border-radius: 5px 5px 5px 5px;
-
-    position: relative;
-    right: 30px;
-
-    background: rgb(232, 247, 255)
-  }
-  .tematica{
-    position: relative;
-    right: 323px;
-    top: 53px;
-  }
-  .inputFecha{
-    position: relative;
-    right: 30px;
-  }
-  .fecha{
-    position: relative;
-    right: 30px;
-    top: 37px;
-  }
-  .btnPlaneaciones{
-    position: relative;
-    right: 425px;
-    top: 70px;
-  }
-
-  /*Formulario Transaccion*/
-
-  .inputValor{
-    height: 25px;
-    border-radius: 5px 5px 5px 5px;
-
-    position: relative;
-    right: 35px;
-
-    background: rgb(232, 247, 255)
-  }
-  .selectMedioPago{
-    position: relative;
-    right: 35px;
-    top: 5px;
-  }
-  .mediodePago{
-    position: relative;
-    right: 477px;
-    top: 45px;
-  }
-  .inputFechaPago{
-    position: relative;
-    right: 40px;
-  }
-  .fechaPago{
-    position: relative;
-    right: 27px;
-    top: 30px;
-  }
-  .btnTransaccion{
-    position: relative;
-    top: 60px;
-    right: 434px;
-  }
-
-
-  /* Formularios */
-
-  .formulario {
-    width: 67%;
-  }
-
-  .formulario form {
-    /* background: lightgray; */
-    padding: 10px 15px;
-    border-radius: 10px;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .formulario form div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-
-    .formulario form div label {
-      width: 150px;
-      text-align: left;
-      margin-right: 25px;
-    }
-
-    .formulario form div select {
-      width: 102px;
-    }
-
-    .formulario form div input[type="text"], input[type="password"], input[type="email"],input[type="number"] {
-      width: 300px;
-      outline: none;
-      border: 1px solid #333;
-      padding: 2px;
-      transition: all .3s;
-    }
-
-    .formulario form div input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus,input[type="number"]:focus {
-      box-shadow: 2px 2px 2px #333;
-    }
-
-    .formulario form input[type="submit"] {
-      background: rgb(22, 134, 224);
-      padding: 5px 10px;
-      border-radius: 5px 5px 5px 5px;
-      border: 1px solid #333;
-      color: #fff;
-      outline: none;
-      cursor: pointer;
-      margin-top: 10px;
-      width: 150px;
-      height: 35px;
-      transition: all .3s;
-    }
-
-    .formulario form input[type="submit"]:hover {
-      box-shadow: 2px 2px 2px #333;
-    }
-
-/* Formulario Login */
-
-.formularioLogin {
-  /* background: lightgray; */
-  padding: 10px 15px;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
-.formularioLogin form div div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-  .formularioLogin h2 {
-    margin-bottom: 25px;
-    text-align: center;
-  }
-
-  .formularioLogin label {
-    width: 100%;;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .formularioLogin input[type="email"], .formularioLogin input[type="password"] {
-    /* width: 200px; */
-    width: 95%;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #333;
-    transition: all .3s;
-  }
-
-  .formularioLogin input[type="email"],.formularioLogin input[type="password"]:focus {
-    box-shadow: none;
-    width: 100%;
-  }
-
-  .formularioLogin input[type="submit"] {
-    background: #00B3C3;
-    padding: 5px 10px;
-    border: 1px solid #333;
-    color: #fff;
-    outline: none;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 150px;
-    transition: all .3s;
-  }
-
-  .formularioLogin .form-actions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .formularioLogin input[type="submit"]:hover {
-    box-shadow: 2px 2px 2px #333;
-  }
-
-  .formularioLogin input[type="checkbox"] {
-    margin-right: 5px;
-  }
-
-  .formularioLogin a {
-    color: #333;
-    display: block;
-    font-family: arial;
-    letter-spacing: .5px;
-    text-decoration: underline;
-    text-align: center;
-  }
-
-  .enlaces {
-    margin-top: 10px;
-  }
-
-  /* Menú */
-
-
-/* Lista Show */
-
 /* Mensajes Flash */
 
 @keyframes flashMessage {
@@ -573,22 +242,47 @@ header {
 
 
 /* Formularios */
-.formulario_table {
-  display: table;
-  width: 450px;
+form {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.formulario_table tr td {
-  text-align: left;
-  padding: 10px 10px 10px 5px;
+form input {
+  padding: 0 5px;
 }
 
-.formulario_table tr td:hover {
-  shape-outside: none;
+form > div {
+  width: 500px;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#btnSubmit {
-  width: 450px;
+select {
+  width: 237px;
+}
+
+form .btnSubmit {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+form .btnSubmit input {
+  width: 400px;
   background: #333;
   color: #fff;
+}
+
+form #transaccion_fecha_de_pago_1i {
+  width: 70px;
+}
+
+form #transaccion_fecha_de_pago_2i {
+  width: 120px;
+}
+
+form #transaccion_fecha_de_pago_3i {
+  width: 35px;
 }

@@ -1,11 +1,11 @@
-<div class="formulario">
-	<%= simple_form_for @usuario do |f| %>
-		<%= f.input :email, input_html: { autocomplete: "off", autofocus: "on" } %>
-	 	<%= f.input :password, input_html: { autocomplete: "off" } %>
-	 	<%= f.input :password_confirmation, input_html: { autocomplete: "off" } %>
-	  <%= f.input :primerNombre, input_html: { autocomplete: "off" } %>
-	  <%= f.input :segundoNombre, input_html: { autocomplete: "off" } %>
-	 	<%= f.input :primerApellido, input_html: { autocomplete: "off" } %>
-	  <%= f.button :submit %>
-	<% end %>
-</div>
+<%= simple_form_for @usuario do |f| %>
+	<%= f.input :email, input_html: { autocomplete: "off", autofocus: "on" } %>
+ 	<%= f.input :password, input_html: { autocomplete: "off" } %>
+ 	<%= f.input :password_confirmation, input_html: { autocomplete: "off" } %>
+  	<%= f.input :primerNombre, input_html: { autocomplete: "off" } %>
+  	<%= f.input :segundoNombre, input_html: { autocomplete: "off" } %>
+ 	<%= f.input :primerApellido, input_html: { autocomplete: "off" } %>
+  	<div class="btnSubmit">
+  		<%= f.button :submit %>
+  	</div>
+<% end %>
