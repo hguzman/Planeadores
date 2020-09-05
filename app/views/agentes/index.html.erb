@@ -3,15 +3,21 @@
 <nav id="menuLateral">
 	<ul id="ul">
 		<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+
 		<% if current_usuario.has_role? :admin %>
 		<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
 		<% end %>
-		<li><i class="fas fa-plus"></i> <%= link_to 'Nuevo Agente', new_agente_path %></li>
+
+		<li><i class="fas fa-user-tie"></i><%= link_to 'Agentes', agentes_path %></li>
 	</ul>
 </nav>
 
-<table border="1" id="agentes" class="table">
-	<thead class="thead-dark">
+<div class="btnNuevo">
+	<i class="fas fa-plus"></i> <%= link_to 'Nuevo Agente', new_agente_path %>
+</div>
+
+<table id="agentes" class="table">
+	<thead>
 		<th>Primer Nombre</th>
 		<th>Primer Apellido</th>
 		<th>Nombre UDS</th>

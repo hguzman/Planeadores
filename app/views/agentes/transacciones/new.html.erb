@@ -1,13 +1,10 @@
 <h2>Nueva Transacción</h2>
 
 <nav id="menuLateral">
-		<ul id="ul">
-				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
-				<% if current_usuario.has_role? :admin %>
-					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
-				<% end %>
-        <li><i class="fas fa-undo-alt"></i><%= link_to 'Regresar', agente_transacciones_path %></li>
-		</ul>
+	<ul id="ul">
+		<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+    	<li><i class="fas fa-undo-alt"></i><%= link_to 'Regresar', agente_transacciones_path %></li>
+	</ul>
 </nav>
 
 <%= render 'form' %>

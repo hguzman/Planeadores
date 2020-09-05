@@ -4,9 +4,9 @@
 				<% if current_usuario.has_role? :admin %>
 					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
 				<% end %>
-				<li><i class="fas fa-book"></i><%= link_to 'Ver Todas', agente_planeaciones_path(@agente) %></li>
-				<li><i class="fas fa-user-edit"></i><%= link_to 'Editar', edit_agente_planeacion_path(@agente, @planeacion) %></li>
-				<li><i class="fas fa-file-pdf"></i><a href="/agentes/<%= @agente.id %>/planeaciones/<%= @planeacion.id %>.pdf" target="_blank">Generar PDF</a></li>
+				<li><i class="fas fa-book"></i> <%= link_to 'Planeaciones', agente_planeaciones_path(@agente) %></li>
+				<li><i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_planeacion_path(@agente, @planeacion) %></li>
+				<li><i class="fas fa-file-pdf"></i> <a href="/agentes/<%= @agente.id %>/planeaciones/<%= @planeacion.id %>.pdf" target="_blank">Generar PDF</a></li>
 		</ul>
 </nav>
 

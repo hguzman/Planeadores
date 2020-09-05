@@ -17,7 +17,7 @@
  * {
   padding: 0;
   margin: 0;
- }
+}
 
 html {
   font-family: verdana, helvetica, neue;
@@ -27,11 +27,12 @@ html {
 }
 
 #header {
-  position: absolute;
+  height: 70px;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 200;
 
 }
 
@@ -45,7 +46,7 @@ html {
 }
 
 #header2 {
-  height: 77px;
+  height: 50px;
   margin-bottom: 50px;
 }
 
@@ -53,7 +54,7 @@ html {
   width: 120%;
   height: 95vh;
   position: fixed;
-  top: 90px;
+  top: 70px;
   left: -300px;
   z-index: 100;
   transition: all .3s;
@@ -107,6 +108,8 @@ a {
 }
 
 header {
+  /*background: #38d39f;*/
+  /*color: #3E4543;*/
   background: #333;
   color: #fff;
   padding: 10px;
@@ -125,8 +128,12 @@ header {
   color: #17a2b8;
 }
 
+table thead {
+  background: #f6f8fa;
+}
+
   table tbody tr td {
-    text-align: center;
+    /*text-align: center;*/
     transition: all .2s;
   }
 
@@ -231,3 +238,21 @@ header {
   margin-left: 30%;
   margin-top: -10px;
 }
+
+.btnNuevo {
+  width: 200px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 20px 0 50px 0;
+  background: #17a2b8;
+  color: #fff;
+}
+
+  .btnNuevo a {
+    color: #fff;
+  }
+
+  .btnNuevo a:hover {
+    color: #fff;
+    text-decoration: none;
+  }

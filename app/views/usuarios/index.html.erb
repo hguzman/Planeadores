@@ -1,16 +1,19 @@
 <h2>Usuarios</h2>
 
 <nav id="menuLateral">
-		<ul id="ul">
-				<!-- <li class="activo"><a href=""><i class="fas fa-home"></i> Inicio</a></li> -->
-				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
-				<li><i class="fas fa-user-tie"></i><%= link_to 'Agentes', agentes_path %></li>
-				<li><i class="fas fa-plus"></i><%= link_to 'Nuevo Usuario', new_usuario_path %></li>
-		</ul>
+	<ul id="ul">
+		<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+		<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
+		<li><i class="fas fa-user-tie"></i><%= link_to 'Agentes', agentes_path %></li>
+	</ul>
 </nav>
 
-<table border="1" id="usuarios" class="table">
-	<thead class="thead-dark">
+<div class="btnNuevo">
+	<i class="fas fa-plus"></i> <%= link_to 'Nuevo Usuario', new_usuario_path %>
+</div>
+
+<table id="usuarios" class="table">
+	<thead>
 		<th>Email</th>
 		<th>Primer Nombre</th>
 		<th>Primer Apellido</th>
