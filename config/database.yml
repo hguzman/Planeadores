@@ -27,4 +27,10 @@ test:
 
 production:
   <<: *default
+  production:
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: planeadores_production
+  username: JhanCBB117
+  password: <%= ENV['JhanCBB117_DATABASE_PASSWORD'] %>

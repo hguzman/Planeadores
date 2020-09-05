@@ -122,6 +122,8 @@ GEM
     nokogiri (1.10.9-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    pg (1.2.3)
+    pg (1.2.3-x64-mingw32)
     public_suffix (4.0.5)
     puma (4.3.5)
       nio4r (~> 2.0)
@@ -238,6 +240,7 @@ DEPENDENCIES
   groupdate (~> 5.1)
   jbuilder (~> 2.7)
   mysql2
+  pg
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
   rolify
