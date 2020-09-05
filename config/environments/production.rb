@@ -118,11 +118,11 @@ Rails.application.configure do
     port: 587,
     domain: "gmail.com",
     # enable_starttls_auto: true,
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"],
+    user_name: "planeadores@gmail.com",
+    password: "planeadores123",
     authentication: "plain"
   }
-  
+
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
 if ENV["RAILS_LOG_TO_STDOUT"].present?
