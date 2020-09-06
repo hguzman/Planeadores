@@ -14,18 +14,15 @@
  *= require font-awesome
  */
 
- * {
-  padding: 0;
-  margin: 0;
- }
-
 html {
   font-family: verdana, helvetica, neue;
   min-height: 100%;
   position: relative;
-  padding: 0px;
 }
-
+body{
+  margin: 0;
+  margin-bottom: 40px;
+}
 #header {
   position: absolute;
   top: 0;
@@ -93,10 +90,11 @@ html {
 footer {
   background: #333;
   color: #fff;
-  height: 70px;
+  height: 100px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 150px;
   bottom: 0;
+  position: relative;
 }
 
 
