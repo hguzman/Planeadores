@@ -4,7 +4,7 @@
 				<% if current_usuario.has_role? :admin %>
 					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
 				<% end %>
-				<li> <i class="fas fa-user-tie"></i> <%= link_to 'Ver todos', agentes_path %></li>
+				<li><i class="fas fa-user-tie"></i><%= link_to 'Agentes', agentes_path %></li>
 				<li> <i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_path(@agente) %></li>
 				<li> <i class="fas fa-book"></i> <%= link_to 'Ver Planeaciones', agente_planeaciones_path(@agente) %></li>
 				<li> <i class="fas fa-dollar-sign"></i> <%= link_to 'Ver Transacciones', agente_transacciones_path(@agente) %></li>

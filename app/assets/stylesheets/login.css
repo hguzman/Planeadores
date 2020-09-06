@@ -20,9 +20,6 @@ body {
 	width: 1200px;
 	height: 100vh;
 	margin: 0 auto;
-	/*display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 7rem,*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

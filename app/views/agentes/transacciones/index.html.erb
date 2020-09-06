@@ -6,13 +6,16 @@
 				<% if current_usuario.has_role? :admin %>
 					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
 				<% end %>
-				<li><i class="fas fa-plus"></i><%= link_to 'Nueva Transaccion', new_agente_transaccion_path(@agente) %></li>
 				<li><i class="fas fa-user-tie"></i><%= link_to 'Ver Agente', agente_path(@agente) %></li>
 		</ul>
 </nav>
 
-<table border="1" id="transacciones" class="table">
-	<thead class="thead-dark">
+<div class="btnNuevo">
+	<i class="fas fa-plus"></i> <%= link_to 'Transaccion', new_agente_transaccion_path(@agente) %>
+</div>
+
+<table id="transacciones" class="table">
+	<thead>
 		<tr>
 			<th>Valor</th>
 			<th>Medio de Pago</th>
