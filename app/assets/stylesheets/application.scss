@@ -13,15 +13,21 @@
  *= require_self
  *= require font-awesome
  */
-
+*{
+  margin: 0;
+  padding: 0;
+}
 html {
   font-family: verdana, helvetica, neue;
   min-height: 100%;
   position: relative;
 }
-body{
-  margin: 0;
-  margin-bottom: 40px;
+.titulo{
+  margin-top: 80px;
+}
+.titulov{
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 #header {
   position: absolute;
