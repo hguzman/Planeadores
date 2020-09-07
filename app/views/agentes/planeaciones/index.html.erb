@@ -7,13 +7,16 @@
 				<% if current_usuario.has_role? :admin %>
 					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
 				<% end %>
-        <li> <i class="fas fa-plus"></i> <%= link_to 'Nueva Planeacion', new_agente_planeacion_path(@agente) %></li>
 				<li> <i class="fas fa-user-tie"></i> <%= link_to ' Ver Agente', agente_path(@agente) %></li>
 		</ul>
 </nav>
 
-<table border="1" id="planeaciones" class="table">
-	<thead class="thead-dark">
+<div class="btnNuevo">
+	<i class="fas fa-plus"></i> <%= link_to 'Planeacion', new_agente_planeacion_path(@agente) %>
+</div>
+
+<table id="planeaciones" class="table">
+	<thead>
 		<th scope="col">Formato</th>
 		<th scope="col">Tematica</th>
 		<th scope="col">Fecha de creacion</th>

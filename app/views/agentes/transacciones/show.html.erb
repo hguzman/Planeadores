@@ -4,7 +4,7 @@
 				<% if current_usuario.has_role? :admin %>
 					<li> <i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
 				<% end %>
-				<li><i class="fas fa-dollar-sign"></i><%= link_to 'Ver todas', agente_transacciones_path %></li>
+				<li><i class="fas fa-dollar-sign"></i><%= link_to 'Transacciones', agente_transacciones_path %></li>
 				<li><i class="fas fa-user-edit"></i><%= link_to 'Editar', edit_agente_transaccion_path(@agente, @transaccion) %></li>
 				<li><i class="fas fa-file-pdf"></i><a href="/agentes/<%= @agente.id %>/transacciones/<%= @transaccion.id %>.pdf" target="_blank">Generar Factura</a></li>
 		</ul>

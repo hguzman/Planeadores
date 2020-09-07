@@ -30,11 +30,12 @@ html {
   margin-bottom: 50px;
 }
 #header {
-  position: absolute;
+  height: 70px;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 200;
 
 }
 
@@ -48,7 +49,7 @@ html {
 }
 
 #header2 {
-  height: 77px;
+  height: 50px;
   margin-bottom: 50px;
 }
 
@@ -56,7 +57,7 @@ html {
   width: 120%;
   height: 95vh;
   position: fixed;
-  top: 90px;
+  top: 70px;
   left: -300px;
   z-index: 100;
   transition: all .3s;
@@ -98,7 +99,7 @@ footer {
   color: #fff;
   height: 100px;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 160px;
   bottom: 0;
   position: relative;
 }
@@ -111,6 +112,8 @@ a {
 }
 
 header {
+  /*background: #38d39f;*/
+  /*color: #3E4543;*/
   background: #333;
   color: #fff;
   padding: 10px;
@@ -129,8 +132,12 @@ header {
   color: #17a2b8;
 }
 
+table thead {
+  background: #f6f8fa;
+}
+
   table tbody tr td {
-    text-align: center;
+    /*text-align: center;*/
     transition: all .2s;
   }
 
@@ -236,49 +243,20 @@ header {
   margin-top: -10px;
 }
 
-
-/* Formularios */
-form {
-  width: 100%;
-  margin: 0 auto;
-}
-
-form input {
-  padding: 0 5px;
-}
-
-form > div {
-  width: 500px;
-  display: flex;
-  padding: 10px 0;
-  justify-content: space-between;
-  align-items: center;
-}
-
-select {
-  width: 237px;
-}
-
-form .btnSubmit {
-  width: 500px;
-  display: flex;
-  justify-content: center;
-}
-
-form .btnSubmit input {
-  width: 400px;
-  background: #333;
+.btnNuevo {
+  width: 200px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 20px 0 50px 0;
+  background: #17a2b8;
   color: #fff;
 }
 
-form #transaccion_fecha_de_pago_1i {
-  width: 70px;
-}
+  .btnNuevo a {
+    color: #fff;
+  }
 
-form #transaccion_fecha_de_pago_2i {
-  width: 120px;
-}
-
-form #transaccion_fecha_de_pago_3i {
-  width: 35px;
-}
+  .btnNuevo a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
