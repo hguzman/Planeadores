@@ -26,5 +26,9 @@ test:
   host: localhost
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: planeadores_production
+  username: planeadores
+  password: <%= ENV['PLANEADORES_DATABASE_PASSWORD'] %>
