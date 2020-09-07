@@ -1,10 +1,10 @@
-<h2>Nueva Planeación</h2>
+<h2 class="titulov">Nueva Planeación</h2>
 
 <nav id="menuLateral">
-		<ul id="ul">
-			<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
-        	<li><i class="fas fa-undo-alt"></i><%= link_to 'Regresar', agente_planeaciones_path(@agente) %></li>
-		</ul>
+	<ul id="ul">
+		<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
+    	<li><i class="fas fa-undo-alt"></i><%= link_to 'Regresar', agente_planeaciones_path(@agente) %></li>
+	</ul>
 </nav>
 
 <%= render 'form' %>
