@@ -13,22 +13,18 @@
  *= require_self
  *= require font-awesome
  */
-*{
-  margin: 0;
+ * {
   padding: 0;
+  margin: 0;
 }
+
 html {
   font-family: verdana, helvetica, neue;
   min-height: 100%;
   position: relative;
+  padding: 0px;
 }
-.titulo{
-  margin-top: 80px;
-}
-.titulov{
-  margin-top: 80px;
-  margin-bottom: 50px;
-}
+
 #header {
   height: 70px;
   position: fixed;
@@ -97,11 +93,10 @@ html {
 footer {
   background: #333;
   color: #fff;
-  height: 100px;
+  height: 70px;
   width: 100%;
-  margin-top: 160px;
+  margin-top: 30px;
   bottom: 0;
-  position: relative;
 }
 
 
