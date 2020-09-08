@@ -148,3 +148,39 @@
   display: none;
   z-index: 100;
 }
+
+.graficas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.graficas h1 {
+  width: 100%;
+}
+
+.grafica1 {
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+}
+
+.grafica1 > div, .grafica2 > div {
+  padding: 10px 15px;
+}
+
+.grafica2 {
+  box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15); 
+  border-radius: 5px;
+}
+
+.grafica1 h2, .grafica2 h2 {
+  background: #f8f9fc;
+  padding: 15px 15px;
+  border-radius: 5px 5px 0 0;
+  color: #4e73df;
+  font-size: 16pt;
+  border: 1px solid #e3e6f0;
+}
