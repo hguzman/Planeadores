@@ -1,0 +1,25 @@
+<h2>Transacciones</h2>
+
+<nav id="menuLateral">
+	<ul id="ul">
+		<li><i class="fas fa-tachometer-alt"></i> <%= link_to ' Dashboard', root_path %></li>
+		<% if current_usuario.has_role? :admin %>
+			<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
+		<% end %>
+		<li><i class="fas fa-user-tie"></i><%= link_to 'Agentes', agentes_path %></li>
+	</ul>
+</nav>
+
+<table id="transacciones" class="table">
+	<thead>
+		<tr>
+			<th>Valor</th>
+			<th>Medio de Pago</th>
+			<th>Fecha de Pago</th>
+			<th>Agente</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%= render @transacciones %>
+	</tbody>
+</table>
