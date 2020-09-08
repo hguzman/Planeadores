@@ -16,3 +16,16 @@
 		<%= link_to 'PLANEACIONES', planeaciones_path %> <i class="fas fa-book"></i>
 	</div>
 </div>
+
+<div class="graficas">
+	<h2>Estadistica de Transacciones</h2>
+
+	<div class="grafica1">
+		<h2>Grafica por mes</h2>
+		<%= line_chart(@data) %>
+	</div>
+	<div class="grafica2">
+		<h2>Grafica por año</h2>
+		<%= pie_chart(@años) %>	
+	</div>
+</div>
