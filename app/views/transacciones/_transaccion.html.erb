@@ -1,0 +1,6 @@
+<tr>
+	<td><%= link_to transaccion.valor, agente_transaccion_path(transaccion.agente, transaccion) %></td>
+	<td><%= transaccion.medio_de_pago %></td>
+	<td><%= transaccion.fecha_de_pago %></td>
+	<td><%= link_to 'Ver agente', agente_path(transaccion.agente) %></td>
+</tr>

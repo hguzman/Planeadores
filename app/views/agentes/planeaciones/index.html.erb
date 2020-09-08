@@ -1,15 +1,4 @@
-
 <h2 class="titulo">Planeaciones</h2>
-
-<nav id="menuLateral">
-		<ul id="ul">
-				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
-				<% if current_usuario.has_role? :admin %>
-					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
-				<% end %>
-				<li> <i class="fas fa-user-tie"></i> <%= link_to ' Ver Agente', agente_path(@agente) %></li>
-		</ul>
-</nav>
 
 <div class="btnNuevo">
 	<i class="fas fa-plus"></i> <%= link_to 'Planeacion', new_agente_planeacion_path(@agente) %>

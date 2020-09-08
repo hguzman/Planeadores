@@ -1,5 +1,6 @@
-<%= simple_form_for [@agente, @planeacion], wrapper: :floating_labels_form do |f| %>
+<%= simple_form_for [@agente, @planeacion], wrapper: :vertical_form do |f| %>
 	<%= f.input :formato, priority: [ "Formato 1" ], collection: ["Formato 1", "Formato 2"], include_blank: false, include_hidden: false %>
 	<%= f.input :tematica, input_html: { autocomplete: "off" } %>
+	<%= f.input :fecha_de_creacion %>
 	<%= f.button :submit %>
 <% end %>

@@ -1,10 +1,10 @@
 <h2>Nuevo Agente</h2>
 
-<nav id="menuLateral">
-		<ul id="ul">
-			<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>	
-        	<li><i class="fas fa-undo-alt"></i> <%= link_to 'Regresar', agentes_path %></li>
-		</ul>
-</nav>
-
 <%= render 'form' %>
+
+<div class="botones">
+	<div class="regresar_form btn btn-info">
+		<i class="fas fa-undo-alt"></i> <%= link_to 'Regresar', agentes_path %>
+	</div>
+</div>
+

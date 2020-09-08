@@ -1,0 +1,6 @@
+<tr>
+	<td><%= link_to planeacion.formato, agente_planeacion_path(planeacion.agente, planeacion) %></td>
+	<td><%= planeacion.tematica %></td>
+	<td><%= planeacion.fecha_de_creacion %></td>
+	<td><%= link_to 'Ver agente', agente_path(planeacion.agente) %></td>
+</tr>
