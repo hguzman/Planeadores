@@ -1,49 +1,38 @@
-<nav id="menuLateral">
-		<ul id="ul">
-				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
-				<% if current_usuario.has_role? :admin %>
-					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
-				<% end %>
-				<li><i class="fas fa-user-tie"></i><%= link_to 'Agentes', agentes_path %></li>
-				<li> <i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_path(@agente) %></li>
-				<li> <i class="fas fa-book"></i> <%= link_to 'Ver Planeaciones', agente_planeaciones_path(@agente) %></li>
-				<li> <i class="fas fa-dollar-sign"></i> <%= link_to 'Ver Transacciones', agente_transacciones_path(@agente) %></li>
-		</ul>
-</nav>
+<h2>Información del Agente</h2>
 
-<div class="list-group">
- <h2 class="list-group-item list-group-item-dark">Información de Agente</h2>
+<div class="botones">
+	<div class="editar btn btn-success">
+		<i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_path(@agente) %>
+	</div>
 
-	<table class="table table-stripe" id="tableAgente">
-	  <tbody>
-			<tr class="list-group-item">
-		  	<th><span class="listaTitle">Primer Nombre:</span></th>
-				<td><%= @agente.primerNombre.capitalize %></td>
-		  </tr>
-			<tr class="list-group-item">
-				<th><span class="listaTitle">Segundo Nombre:</span></th>
-				<td><%= @agente.segundoNombre.capitalize %></td>
-			</tr>
-			<tr class="list-group-item">
-				<th><span class="listaTitle">Primer Apellido:</span></th>
-				<td><%= @agente.primerApellido.capitalize %></td>
-			</tr>
-			<tr class="list-group-item">
-				<th><span class="listaTitle">Nombre UDS:</span></th>
-				<td><%= @agente.nombreUds.capitalize %></td>
-			</tr>
-			<tr class="list-group-item">
-				<th><span class="listaTitle">Modalidad:</span></th>
-				<td><%= @agente.modalidad.capitalize %></td>
-			</tr>
-			<tr class="list-group-item">
-				<th><span class="listaTitle">Correo:</span></th>
-				<td><%= @agente.correo.capitalize %></td>
-			</tr>
-			<tr class="list-group-item">
-				<th><span class="listaTitle">Cedula:</span></th>
-				<td><%= @agente.cedula %></td>
-			</tr>
-	  </tbody>
-	</table>
+	<div class="planeaciones btn btn-secondary">
+		<i class="fas fa-book"></i> <%= link_to 'Ver Planeaciones', agente_planeaciones_path(@agente) %>
+	</div>
+
+	<div class="transacciones btn btn-secondary">
+		<i class="fas fa-dollar-sign"></i> <%= link_to 'Ver Transacciones', agente_transacciones_path(@agente) %>
+	</div>
 </div>
+
+<dl class="infoShow">
+	<dt>Primer Nombre:</dt>
+	<dd><%= @agente.primerNombre.capitalize %></dd>
+
+	<dt>Segundo Nombre:</dt>
+	<dd><%= @agente.segundoNombre.capitalize %></dd>
+
+	<dt>Primer Apellido:</dt>
+	<dd><%= @agente.primerApellido.capitalize %></dd>
+
+	<dt>Nombre UDS:</dt>
+	<dd><%= @agente.nombreUds.capitalize %></dd>
+
+	<dt>Modalidad:</dt>
+	<dd><%= @agente.modalidad.capitalize %></dd>
+
+	<dt>Correo:</dt>
+	<dd><%= @agente.correo.capitalize %></dd>
+
+	<dt>Cedula:</dt>
+	<dd><%= @agente.cedula %></dd>
+</dl>

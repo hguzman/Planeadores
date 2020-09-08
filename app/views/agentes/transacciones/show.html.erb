@@ -1,32 +1,26 @@
-<nav id="menuLateral">
-		<ul id="ul">
-				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
-				<% if current_usuario.has_role? :admin %>
-					<li> <i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
-				<% end %>
-				<li><i class="fas fa-dollar-sign"></i><%= link_to 'Transacciones', agente_transacciones_path %></li>
-				<li><i class="fas fa-user-edit"></i><%= link_to 'Editar', edit_agente_transaccion_path(@agente, @transaccion) %></li>
-				<li><i class="fas fa-file-pdf"></i><a href="/agentes/<%= @agente.id %>/transacciones/<%= @transaccion.id %>.pdf" target="_blank">Generar Factura</a></li>
-		</ul>
-</nav>
+<h2>Información de Transacción</h2>
 
-<div class="list-group">
-<h2 class="list-group-item list-group-item-dark">Información de Transacción</h2>
+<div class="botones">
+	<div class="pdf btn btn-danger">
+		<i class="fas fa-file-pdf"></i> <a href="/agentes/<%= @agente.id %>/transacciones/<%= @transaccion.id %>.pdf" target="_blank">Generar Factura</a>
+	</div>
 
-<table class="table table-stripe">
-	<tbody>
-		<tr class="list-group-item">
-			<th><span class="listaTitle">Valor:</span></th>
-			<td><%= @transaccion.valor %></td>
-		</tr>
-		<tr class="list-group-item">
-			<th><span class="listaTitle">Medio de Pago:</span></th>
-			<td><%= @transaccion.medio_de_pago.capitalize %></td>
-		</tr>
-		<tr class="list-group-item">
-			<th><span class="listaTitle">Fecha de Pago:</span></th>
-			<td><%= @transaccion.fecha_de_pago %></td>
-		</tr>
-	</tbody>
-</table>
+	<div class="editar btn btn-success">
+		<i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_transaccion_path(@agente, @transaccion) %>
+	</div>
+
+	<div class="regresar btn btn-info">
+		<i class="fas fa-undo-alt"></i><%= link_to 'Regresar', agente_transacciones_path(@agente) %>
+	</div>
 </div>
+
+<dl class="infoShow">
+	<dt>Valor:</dt>
+	<dd><%= @transaccion.valor %></dd>
+
+	<dt>Medio de Pago:</dt>
+	<dd><%= @transaccion.medio_de_pago.capitalize %></dd>
+
+	<dt>Fecha de Pago:</dt>
+	<dd><%= @transaccion.fecha_de_pago %></dd>
+</dl>

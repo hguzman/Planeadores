@@ -1,32 +1,26 @@
-<nav id="menuLateral">
-		<ul id="ul">
-				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
-				<% if current_usuario.has_role? :admin %>
-					<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
-				<% end %>
-				<li><i class="fas fa-book"></i> <%= link_to 'Planeaciones', agente_planeaciones_path(@agente) %></li>
-				<li><i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_planeacion_path(@agente, @planeacion) %></li>
-				<li><i class="fas fa-file-pdf"></i> <a href="/agentes/<%= @agente.id %>/planeaciones/<%= @planeacion.id %>.pdf" target="_blank">Generar PDF</a></li>
-		</ul>
-</nav>
+<h2>Información de Planeación</h2>
 
-<div class="list-group">
- <h2 class="list-group-item list-group-item-dark">Información de Planeación</h2>
+<div class="botones">
+	<div class="pdf btn btn-danger" >
+		<i class="fas fa-file-pdf"></i> <a href="/agentes/<%= @agente.id %>/planeaciones/<%= @planeacion.id %>.pdf" target="_blank">Generar PDF</a>	
+	</div>
 
-	<table class="table table-stripe">
-	  <tbody>
-			<tr class="list-group-item">
-		  	<th><span class="listaTitle">Formato:</span></th>
-				<td><%= @planeacion.formato.capitalize %></td>
-		  </tr>
-			<tr class="list-group-item">
-				<th><span class="listaTitle">Temática:</span></th>
-				<td><%= @planeacion.tematica.capitalize %></td>
-			</tr>
-			<tr class="list-group-item">
-				<th><span class="listaTitle">Fecha de creción:</span></th>
-				<td><%= @planeacion.fecha_de_creacion %></td>
-			</tr>
-	  </tbody>
-	</table>
+	<div class="editar btn btn-success">
+		<i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_planeacion_path(@agente, @planeacion) %>
+	</div>
+
+	<div class="regresar btn btn-info">
+		<i class="fas fa-undo-alt"></i> <%= link_to 'Regresar', agente_planeaciones_path(@agente) %>
+	</div>
 </div>
+
+<dl class="infoShow">
+	<dt>Formato:</dt>
+	<dd>Formato: <%= @planeacion.formato.capitalize %></dd>
+
+	<dt>Tematica:</dt>
+	<dd><%= @planeacion.tematica.capitalize %></dd>
+
+	<dt>Fecha de Creación</dt>
+	<dd><%= @planeacion.fecha_de_creacion %></dd>
+</dl>
