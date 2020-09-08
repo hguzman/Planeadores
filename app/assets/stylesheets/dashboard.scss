@@ -1,0 +1,150 @@
+// Place all the styles related to the dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  background: #5a5c69;
+  color: #fff;
+  padding: 10px;
+}
+
+#header #btnNav {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+#header .dropdown {
+  margin-right: 60px;
+}
+
+#header2 {
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+.cuadros {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+	font-size: 15pt;
+}
+
+.cuadros > div {
+	background: #fff;
+	width: 250px;
+	height: 140px;
+	padding: 10px 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: .35rem;
+	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+	border: 1px solid #e3e6f0;
+}
+
+.cuadros > div i {
+	margin-left: 20px;
+	font-size: 25pt;
+}
+
+.cuadros #agentes {
+	border-left: .25rem solid #4e73df;
+}
+
+	.cuadros #agentes a, .cuadros #agentes i {
+		color: #4e73df;
+	}
+
+.cuadros #usuarios {
+	border-left: .25rem solid #1cc88a;
+}
+
+	.cuadros #usuarios a, .cuadros #usuarios i {
+		color: #1cc88a;
+	}
+
+.cuadros #transacciones {
+	border-left: .25rem solid #36b9cc;
+}
+
+.cuadros #transacciones a, .cuadros #transacciones i {
+	color: #36b9cc;
+}
+
+.cuadros #planeaciones {
+	border-left: .25rem solid #f6c23e;
+}
+
+.cuadros #planeaciones a, .cuadros #planeaciones i {
+	color: #f6c23e;
+}
+
+.cuadros > div a:hover {
+	text-decoration: none;
+}
+
+@keyframes flashMessage {
+  0% {
+    top: 0px;
+    opacity: 0;
+  } 100% {
+    top: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes quitarMessage {
+  0% {
+    top: 100px;
+    opacity: 1;
+  } 100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+.notice, .error {
+  position: absolute;
+  top: 100px;
+  left: 40%;
+
+  border: 2px solid #0096D3;
+  width: 25%;
+  text-align: center;
+  padding: 10px 15px;
+  background: #C1EDFF;
+  border-radius: 10px;
+  color: #0096D3;
+
+  display: none;
+  z-index: 100;
+}
+
+.alert{
+  position: absolute;
+  top: 100px;
+  right: 38%;
+
+  border: 2px solid #0096D3;
+  width: 25%;
+  text-align: center;
+  padding: 10px 15px;
+  background: #C1EDFF;
+  border-radius: 10px;
+  color: #0096D3;
+
+  display: none;
+  z-index: 100;
+}
