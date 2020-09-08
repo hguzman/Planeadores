@@ -9,16 +9,17 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
+ 
  *= require_self
  *= require font-awesome
  */
- * {
+
+* {
   padding: 0;
   margin: 0;
 }
 
-html {
+body, html {
   font-family: verdana, helvetica, neue;
   min-height: 100%;
   position: relative;
@@ -63,18 +64,18 @@ html {
 }
 
     #menuLateral ul {
-      background: #333;
-      border-top: 1px solid #fff;
+      background: #5a5c69;
       width: 300px;
       height: 95vh;
     }
 
     #menuLateral ul li {
-      border-bottom: 1px solid #fff;
       padding: 20px 15px;
-
+      width: 90%;
       display: flex;
       align-items: center;
+      border-bottom: 1px solid #858796;
+      margin-left: 10px;
     }
 
     #menuLateral ul li a {
@@ -87,11 +88,10 @@ html {
 
     #menuLateral ul li i {
       color: #fff;
-      /*margin-right: 3px;*/
     }
 
 footer {
-  background: #333;
+  background: #5a5c69;
   color: #fff;
   height: 70px;
   width: 100%;
@@ -109,7 +109,7 @@ a {
 header {
   /*background: #38d39f;*/
   /*color: #3E4543;*/
-  background: #333;
+  background: #5a5c69;
   color: #fff;
   padding: 10px;
   margin-bottom: 25px;
@@ -251,7 +251,40 @@ table thead {
     color: #fff;
   }
 
-  .btnNuevo a:hover {
+  .btnNuevo a:hover, .btnNuevo:hover {
     color: #fff;
     text-decoration: none;
   }
+
+.botones a {
+  color: #ffff;
+}
+
+.botones a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.botones i {
+  margin-right: 3px;
+  color: #fff;
+}
+
+.botones .regresar_form {
+  margin-top: 20px;
+  width: 160px;
+}
+
+.botones .regresar_form2 {
+  margin-top: 20px;
+  width: 190px;
+}
+
+.botones .regresar_form3 {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.infoShow {
+  margin-top: 25px;
+}

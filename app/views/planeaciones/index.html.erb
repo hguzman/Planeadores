@@ -1,0 +1,23 @@
+<h2>Planeaciones</h2>
+
+<nav id="menuLateral">
+	<ul id="ul">
+		<li><i class="fas fa-tachometer-alt"></i> <%= link_to ' Dashboard', root_path %></li>
+		<% if current_usuario.has_role? :admin %>
+			<li><i class="fas fa-users"></i> <%= link_to 'Usuarios', usuarios_path %></li>
+		<% end %>
+		<li><i class="fas fa-user-tie"></i><%= link_to 'Agentes', agentes_path %></li>
+	</ul>
+</nav>
+
+<table id="planeaciones" class="table">
+	<thead>
+		<th scope="col">Formato</th>
+		<th scope="col">Tematica</th>
+		<th scope="col">Fecha de creacion</th>
+		<th>Agente</th>
+	</thead>
+	<tbody id="bodyTable">
+		<%= render @planeaciones %>
+	</tbody>
+</table>

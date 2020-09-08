@@ -1,33 +1,25 @@
 <h2>Información de Usuario</h2>
 
-<nav id="menuLateral">
-		<ul id="ul">
-				<li><i class="fas fa-home"></i> <%= link_to ' Inicio', agentes_path %></li>
-				<% if current_usuario.has_role? :admin %>
-					<li><i class="fas fa-user-tie"></i> <%= link_to 'Agentes', agentes_path %></li>
-				<% end %>
-				<li><i class="fas fa-users"></i><%= link_to 'Ver Todos', usuarios_path %></li>
-				<li><i class="fa fa-edit"></i><%= link_to 'Editar', edit_usuario_path(@usuario) %></li>
-		</ul>
-</nav>
+<div class="botones">
+	<div class="editar btn btn-success">
+		<i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_usuario_path(@usuario) %>
+	</div>
 
-	<table class="table">
-	  <tbody>
-			<tr>
-		  	<td><span class="listaTitle">Email</span></td>
-				<td><%= @usuario.email %></td>
-		  </tr>
-			<tr>
-				<td><span class="listaTitle">Primer Nombre</span></td>
-				<td><%= @usuario.primerNombre %></td>
-			</tr>
-			<tr>
-				<td><span class="listaTitle">Segundo Nombre</span></td>
-				<td><%= @usuario.segundoNombre %></td>
-			</tr>
-			<tr>
-				<td><span class="listaTitle">Primer Apellido</span></td>
-				<td><%= @usuario.primerApellido %></td>
-			</tr>
-	  </tbody>
-	</table>
+	<div class="regresar btn btn-info">
+		<i class="fas fa-undo-alt"></i> <%= link_to 'Regresar', usuarios_path %>
+	</div>
+</div>
+
+<dl class="infoShow">
+	<dt>Email</dt>
+	<dd><%= @usuario.email %></dd>
+
+	<dt>Primer Nombre</dt>
+	<dd><%= @usuario.primerNombre %></dd>
+
+	<dt>Segundo Nombre</dt>
+	<dd><%= @usuario.segundoNombre %></dd>
+
+	<dt>Primer Apellido</dt>
+	<dd><%= @usuario.primerApellido %></dd>
+</dl>
