@@ -6,5 +6,10 @@
   <%= f.input :modalidad %>
   <%= f.input :correo %>
   <%= f.input :cedula %>
-  <%= f.button :submit %>
+  <div class="botones">
+  	<%= f.button :submit, class: "btn btn-info" %>
+  	<div class="btn btn-secondary">
+  		<i class="fas fa-undo-alt"></i> <%= link_to 'Regresar', agentes_path %>
+  	</div>
+  </div>
 <% end %>

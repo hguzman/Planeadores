@@ -1,12 +1,12 @@
 <h2>Información de Transacción</h2>
 
 <div class="botones">
-	<div class="pdf btn btn-danger">
-		<i class="fas fa-file-pdf"></i> <a href="/agentes/<%= @agente.id %>/transacciones/<%= @transaccion.id %>.pdf" target="_blank">Generar Factura</a>
-	</div>
-
 	<div class="editar btn btn-success">
 		<i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_transaccion_path(@agente, @transaccion) %>
+	</div>
+
+	<div class="pdf btn btn-secondary">
+		<i class="fas fa-file-pdf"></i> <a href="/agentes/<%= @agente.id %>/transacciones/<%= @transaccion.id %>.pdf" target="_blank">Generar Factura</a>
 	</div>
 
 	<div class="regresar btn btn-info">

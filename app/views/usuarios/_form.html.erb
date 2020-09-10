@@ -6,5 +6,10 @@
   	<%= f.input :segundoNombre, input_html: { autocomplete: "off" } %>
  	<%= f.input :primerApellido, input_html: { autocomplete: "off" } %>
  	<%= f.association :roles, as: :check_boxes %>
-  	<%= f.button :submit %>
+  	<div class="botones">
+  		<%= f.button :submit, class: "btn btn-info" %>
+  		<div class="btn btn-secondary">
+  			<i class="fas fa-undo-alt"></i> <%= link_to 'Regresar', usuarios_path %>
+  		</div>
+  	</div>
 <% end %>
