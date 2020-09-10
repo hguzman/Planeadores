@@ -4,9 +4,12 @@
 	<div id="agentes">
 		<%= link_to 'AGENTES', agentes_path %><i class="fas fa-user-tie"></i> 
 	</div>
-	<div id="usuarios">
-		<%= link_to 'USUARIOS', usuarios_path %> <i class="fas fa-users"></i>
-	</div>
+
+	<% if current_usuario.has_role? :admin %>
+		<div id="usuarios">
+			<%= link_to 'USUARIOS', usuarios_path %> <i class="fas fa-users"></i>
+		</div>
+	<% end %>
 
 	<div id="transacciones">
 		<%= link_to 'TRANSACCIONES', transacciones_path %> <i class="fas fa-dollar-sign"></i>

@@ -1,11 +1,11 @@
 <h2>Información de Planeación</h2>
 
 <div class="botones">
-	<div class="pdf btn btn-primary"></i> <a href="/agentes/<%= @agente.id %>/planeaciones/<%= @planeacion.id %>.pdf" target="_blank">Generar PDF</a>	
-	</div>
-
 	<div class="editar btn btn-success">
 		<i class="fas fa-user-edit"></i> <%= link_to 'Editar', edit_agente_planeacion_path(@agente, @planeacion) %>
+	</div>
+
+	<div class="pdf btn btn-secondary"></i> <a href="/agentes/<%= @agente.id %>/planeaciones/<%= @planeacion.id %>.pdf" target="_blank">Generar PDF</a>	
 	</div>
 
 	<div class="regresar btn btn-info">
