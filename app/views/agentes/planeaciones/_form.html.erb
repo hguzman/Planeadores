@@ -2,5 +2,10 @@
 	<%= f.input :formato, priority: [ "Formato 1" ], collection: ["Formato 1", "Formato 2"], include_blank: false, include_hidden: false %>
 	<%= f.input :tematica, input_html: { autocomplete: "off" } %>
 	<%= f.input :fecha_de_creacion %>
-	<%= f.button :submit %>
+	<div class="botones">
+		<%= f.button :submit, class: "btn btn-info" %>	
+		<div class="btn btn-secondary">
+			<i class="fas fa-undo-alt"></i> <%= link_to 'Regresar', agente_planeaciones_path(@agente) %>
+		</div>
+	</div>
 <% end %>

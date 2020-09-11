@@ -1,7 +1,13 @@
 <h2>Transacciones</h2>
 
-<div class="btnNuevo">
-	<i class="fas fa-plus"></i> <%= link_to 'Transaccion', new_agente_transaccion_path(@agente) %>
+<div class="botones">
+	<div class="btn btn-info">
+		<i class="fas fa-plus"></i> <%= link_to 'Transaccion', new_agente_transaccion_path(@agente) %>
+	</div>
+
+	<div class="btn btn-secondary">
+		<i class="fas fa-user-tie"></i> <%= link_to 'Ver agente', agente_path(@agente) %>
+	</div>
 </div>
 
 <table id="transacciones" class="table">
