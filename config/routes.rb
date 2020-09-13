@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :usuarios, controllers: {
     sessions: 'usuarios/sessions'
   }
-  
+
   root 'dashboard#dashboard'
 
   resources :usuarios

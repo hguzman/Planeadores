@@ -11,6 +11,6 @@ class Agente < ApplicationRecord
 	# RSpec.describe Agente, type: :model do
 	#   it { should have_many(:planeaciones).dependent(:destroy) }
 	# end
-	
+
 	# rspec spec/models/agente_spec.rb
 end

@@ -9,7 +9,7 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- 
+
  *= require_self
  *= require font-awesome
  */
@@ -280,7 +280,14 @@ table thead {
   margin-top: 20px;
   width: 200px;
 }
-
-.infoShow {
+px.infoShow {
   margin-top: 25px;
+}
+
+/*Boton Excel*/
+#button{
+  position: relative;
+  left: 69%;
+  
+
 }
