@@ -285,9 +285,15 @@ px.infoShow {
 }
 
 /*Boton Excel*/
-#button{
-  position: relative;
-  left: 69%;
-  
+#Excel{
+  font-size: 18px;
+  width: 120px;
+  height: 42px;
 
+  position: relative;
+  left: 220px;
+  top: -92px;
+}
+.excel{
+  color: rgb(255, 255, 255)
 }
