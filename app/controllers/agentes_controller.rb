@@ -5,7 +5,18 @@ class AgentesController < ApplicationController
   def index
   	@agentes = Agente.all
     @title = "Lista de Agentes"
+
+    respond_html_and_csv
   end
+
+  def respond_html_and_csv
+  respond_to do |format|
+    format.html
+    format.xlsx do
+      response.headers['Content-Disposition'] = 'attachment; filename="agentes.xlsx"'
+    end
+  end
+end
 
   def new
   	@agente = Agente.new

@@ -4,6 +4,10 @@
 	<div class="btn btn-info">
 		<i class="fas fa-user-plus"></i> <%= link_to 'Nuevo Agente', new_agente_path %>
 	</div>
+	
+	<div class="btn btn-success" id="Excel">
+		<i class="fas fa-file-excel"></i> <%= link_to 'Excel', agentes_path(format: "xlsx"), :class => "excel" %>
+	</div>
 </div>
 
 <table id="agentes" class="table">
