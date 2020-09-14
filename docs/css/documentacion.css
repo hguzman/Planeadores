@@ -7,7 +7,7 @@
     background: #f4f4f4;
     padding: 10px 25px;
     border-radius: 20px;
-    height: 300px;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
