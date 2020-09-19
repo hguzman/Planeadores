@@ -1,0 +1,7 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Agentes") do |sheet|
+sheet.add_row ['Id', 'Primer Nombre', 'Primer Apellido', 'NombreUDS', 'Modalidad', 'Fecha de Creacion']
+@agentes.each do |agente|
+    sheet.add_row [agente.id, agente.primerNombre.capitalize, agente.primerApellido.capitalize, agente.nombreUds.capitalize, agente.modalidad.capitalize, agente.created_at ]
+  end
+end
