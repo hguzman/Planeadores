@@ -1,7 +1,42 @@
 wb = xlsx_package.workbook
 wb.add_worksheet(name: "Agentes") do |sheet|
-sheet.add_row ['Id', 'Primer Nombre', 'Primer Apellido', 'NombreUDS', 'Modalidad', 'Fecha de Creacion']
+
+
+img = File.expand_path("../../../assets/images/portada11.PNG", __FILE__)
+sheet.add_image(:image_src => img, :noSelect => true, :noMove => true) do |image|
+image.width = 680
+image.height = 250
+image.start_at 1,0
+end
+
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+sheet.add_row ['']
+
+img = File.expand_path("../../../assets/images/ListaAgentes.png", __FILE__)
+sheet.add_image(:image_src => img, :noSelect => true, :noMove => true) do |image|
+image.width = 390
+image.height = 50
+image.start_at 2,12
+end
+
+sheet.add_row (['Id', 'Primer Nombre', 'Primer Apellido', 'NombreUDS', 'Modalidad', 'Fecha de Creacion'])
 @agentes.each do |agente|
     sheet.add_row [agente.id, agente.primerNombre.capitalize, agente.primerApellido.capitalize, agente.nombreUds.capitalize, agente.modalidad.capitalize, agente.created_at ]
   end
+
+  sheet.merge_cells 'C13:E13'
+  sheet.merge_cells 'C14:E14'
 end
