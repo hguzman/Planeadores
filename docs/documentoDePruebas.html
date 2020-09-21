@@ -218,6 +218,144 @@
     			<td>Se aprobará el proyecto con un 100% de las pruebas ejecutadas, pero con un 90% de aceptación. Esto quiere decir el 90% de las pruebas deben ser exitosas y sin errores. El restante 10% pueden existir errores medios o bajos, pero no graves. En caso de ocurrir que el proyecto no cumpla con el nivel exigido, el proyecto se rechaza completo en su etapa de certificación.</td>
     		</tr>
     	</table>
+
+        <h2>4. Estrategia de pruebas</h2>
+
+        <p>Se requiere aprobar por parte del equipo e desarrollo y por parte del usuario del producto (IAWPMI)- Implementación de un aplicativo web para el manejo de la información en la empresa planeadores, que administre los registros de agentes, planeaciones y transacciones de la empresa planeadores. Se debe verificar:</p>
+
+        <ul>
+            <li>1ra. Etapa: Funcionalidades de los módulos del Proyecto y de Revisión sean operativas.</li>
+            <li>2da. Etapa: Funcionalidad de verificación y validación de los diferentes formularios del proyecto.</li>
+            <li>3ra. Etapa: El correcto registro de un nuevo</li>
+            <li>4ta. Etapa: Que las funcionalidades integradas al aplicativo web cumplan su correcto funcionamiento.</li>
+            <li>
+                Conjuntamente los sub-objetivos de las etapas dadas anteriormente se resumen de la siguiente forma:
+                <ul>
+                    <li>Verificación y validación de los usuarios a ingresar.</li>
+                    <li>Validar campos de formularios.</li>
+                    <li>La creación, actualización y eliminación de usuarios, agentes, planeaciones y transacciones.</li>
+                    <li>Actualización de base de datos.</li>
+                    <li>Notificar al agente por correo cuando se haga una acción a su información (Actualización, eliminación o al agregar datos). o Revisión de las Planeaciones.</li>
+                    <li>Crear factura de transacción. o La revisión y aprobación de los entregable del proyecto.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>4.1 Escenario de las pruebas</h2>
+
+        <p>Para cumplir con los objetivos planteados deben existir tres escenarios, que son, Pruebas de ejecución, Pruebas de GUI o Interfaz y Pruebas de Operación o Funcionales.</p>
+
+        <p>Para las Pruebas de ejecución se debe comprobar que:</p>
+
+        <ul>
+            <li>La conexión a internet</li>
+            <li>Que el servidor inicie correctamente</li>
+        </ul>
+
+        <p>Para las pruebas de GUI se debe comprobar que:</p>
+
+        <ul>
+            <li>Carga, despliegue, modalidad, navegabilidad y usabilidad de las GUI del Sistema y sus elementos. Donde las métricas y Heurísticas de usabilidad y funcionalidad a utilizar son las siguientes:</li>
+            <li>Comprensión Global del Sitio.</li>
+            <li>Métricas de confiabilidad.</li>
+            <li>Navegación y Exploración.</li>
+        </ul>
+
+        <p>Para las pruebas de Operación o Funcionales se debe comprobar:</p>
+
+        <ul>
+            <li>El comportamiento de la aplicación web con casos inválidos y válidos, de flujo completo del proceso de inicio de sesión.</li>
+            <li>El comportamiento de la aplicación web con casos inválidos y válidos, de flujo completo del registro de agentes.</li>
+            <li>El comportamiento de la aplicación web al generar un PDF.</li>
+            <li>El comportamiento de la aplicación para el módulo de login.</li>
+            <li>El comportamiento de la aplicación para el módulo de registro de agente.</li>
+            <li>El comportamiento de la aplicación para el módulo de planeacion.</li>
+            <li>El comportamiento de la aplicación para el módulo de transacción.</li>
+        </ul>
+
+        <h2>4.2 Orden de ejecución de las pruebas</h2>
+
+        <p>Las pruebas se llevarán acabo de la siguiente forma:</p>
+
+        <h3>1. Secuencia de pasos para iniciar sesión</h3>
+
+        <ul>
+            <li>Ingresar usuario(correo) y contraseña.</li>
+            <li>Dar click en ingresar.</li>
+        </ul>
+
+        <p>Si el usuario y contraseña son correctos, ingresará al sistema y le saldrá un mensaje que ha iniciado sesión. </p>
+
+        <h3 class="err">1.1 Si el usuario y contraseña son incorrectos saldrá un mensaje que dirá que el usuario y contraseña son inválidos. </h3>
+
+        <h3>2. Secuencia de pasos para registrar a un agente</h3>
+
+        <ul>
+            <li>Dar click en nuevo agente.</li>
+            <li>Ingresar los datos del agente nombre, apellido, etc.</li>
+            <li>Dar click en crear agente.</li>
+        </ul>
+
+        <p>El sistema mostrará la interfaz con los datos del agente que acabas de crear y te saldrá un mensaje que dirá agente registrado.</p>
+
+        <h3 class="err">2.1 Si se deja un campo vacío o ingresa un tipo de dato que no corresponda a ese campo el sistema mostrará un mensaje rojo que dirá el error y no se registraran los datos hasta que lo corrijas.</h3>
+
+        <h3>3. Secuencia de pasos para crear una planeacion</h3>
+
+        <ul>
+            <li>Ingresar al agente que se le hará la planeacion haciendo click en su nombre.</li>
+            <li>Dar click en ver planeaciones.</li>
+            <li>Hacer click en nueva planeacion.</li>
+            <li>Seleccionar el formato de la planeacion e ingresar la temática.</li>
+            <li>Dar en crear planeacion.</li>
+        </ul>
+
+        <p>El sistema mostrará los datos de la planeacion y un mensaje que dirá que la planeacion fue creada, también te da la opción de generar el PDF de la planeacion.</p>
+
+        <h3 class="err">3.1 Si se deja un campo vacío el sistema mostrara un mensaje rojo que dirá el error y no se creara la planeación hasta que lo corrijas.</h3>
+
+        <h3>4. Secuencia de pasoso para crear la transacción</h3>
+
+        <ul>
+            <li>Ingresar al agente que se le hará la planeacion haciendo click en su nombre.</li>
+            <li>Dar click en ver transacciones.</li>
+            <li>Hacer click en nueva transacción.</li>
+            <li>Ingresar el valor, medio de pago y fecha de la transacción.</li>
+            <li>Dar click en crear transacción.</li>
+        </ul>
+
+        <p>El sistema mostrará los datos de la transacción creada y un mensaje que dirá que la transacción fue creada, también te da la opción de generar la factura.</p>
+
+        <h3 class="err">4.1 Si se deja un campo vacío el sistema mostrara un mensaje rojo que dirá el error, No permite ingresar letras en el valor y no se creara la transacción hasta que ingreses el valor.</h3>
+
+        <h3>4.3 Pruebas unitarias</h3>
+
+        <p>Se harán las respectivas pruebas unitarias al aplicativo web (IAWPMI), para verificar y validar el correcto funcionamiento de los módulos y formularios.</p>
+
+        <h3>4.4 Equipo de pruebas y responsabilidades</h3>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Responsabilidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jhan Carlos Bastidas Martinez, Cristian Julio, Melissa Pérez, Zohair Castro.</td>
+                    <td>Desarrolladores, Responsable en el desarrollo del proyecto basados en las necesidades del cliente.</td>
+                </tr>
+                <tr>
+                    <td>Jhan Carlos Bastidas Martinez, Cristian Julio</td>
+                    <td>Líderes, responsables de la organización y el cumplimiento de las tareas asignadas a los desarrolladores.</td>
+                </tr>
+                <tr>
+                    <td>Jhan Carlos Bastidas Martinez, Cristian Julio, Melissa Pérez, Zohair Castro.</td>
+                    <td>Testing de Solución, responsable de la generación del plan de pruebas.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <footer>
