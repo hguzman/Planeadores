@@ -3,436 +3,641 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Landing page</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script src="https://kit.fontawesome.com/348c72a25c.js" crossorigin="anonymous"></script> <!-- FontAwesome -->
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/348c72a25c.js" crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- JQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!-- Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">  <!-- Font -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/queries.css">
 </head>
 <body>
-	<div class="modal">
-		<div class="cerrar">X</div>
-		<section class="curriculum" id="modalCristian">
-			<div class="titulo">
-				<img src="img/cristianImg.jfif" alt="">
-				<h2>Cristian Andres Julio Cantillo</h2>
-			</div>
-
-			<h2>Información General</h2>
-
-			<div class="infoCurriculum">
-				<table border="1">
-					<tr>
-						<td>Fecha de nacimiento</td>
-						<td>05/25/2001</td>
-					</tr>
-					<tr>
-						<td>Correo</td>
-						<td>cristianandres2001julio@gmail.com</td>
-					</tr>
-					<tr>
-						<td>Ciudad</td>
-						<td>Barranquilla</td>
-					</tr>
-					<tr>
-						<td>Numero</td>
-						<td>123456789</td>
-					</tr>
-				</table>
-			</div>
-
-			<h2>Información Académica</h2>
-
-			<div class="infoCurriculum">
-
-				<h4>Secundaria</h4>
-
-				<table border="1">
-					<tr>
-						<td>Titulo Obtenido</td>
-						<td>Bachiller Académico </td>
-					</tr>
-					<tr>
-						<td>Institución Educativa</td>
-						<td>SARID ARTETA DE VÁSQUEZ</td>
-					</tr>
-					<tr>
-						<td>Fecha de Culminación</td>
-						<td>02/12/2018</td>
-					</tr>
-				</table>
-
-				<h4>Formación Tecnica</h4>
-
-				<table border="1">
-					<tr>
-						<td>Titulo Obtenido</td>
-						<td>Técnico en reparación y Mantenimiento de Computadores</td>
-					</tr>
-					<tr>
-						<td>Institución Educativa</td>
-						<td>ALITIC Alianza técnica </td>
-					</tr>
-					<tr>
-						<td>Fecha de Culminación</td>
-						<td>02/12/2018</td>
-					</tr>
-				</table>
-			</div>
-		</section>
-
-		<section class="curriculum" id="modalJhan">
-			<div class="titulo">
-				<img src="img/jhan.jpeg" alt="">
-				<h2>Jhan Carlos Bastidas Martinez</h2>
-			</div>
-
-			<h2>Información General</h2>
-
-			<div class="infoCurriculum">
-				<table border="1">
-					<tr>
-						<td>Fecha de nacimiento</td>
-						<td>21/12/2001</td>
-					</tr>
-					<tr>
-						<td>Correo</td>
-						<td>bastidasmartinezj@gmail.com</td>
-					</tr>
-					<tr>
-						<td>Ciudad</td>
-						<td>Barranquilla</td>
-					</tr>
-					<tr>
-						<td>Numero</td>
-						<td>1234567433</td>
-					</tr>
-				</table>
-			</div>
-
-			<h2>Información Académica</h2>
-
-			<div class="infoCurriculum">
-
-				<h4>Secundaria</h4>
-
-				<table border="1">
-					<tr>
-						<td>Titulo Obtenido</td>
-						<td>Bachiller Académico </td>
-					</tr>
-					<tr>
-						<td>Institución Educativa</td>
-						<td>TECNICA AGROPECUARIA</td>
-					</tr>
-					<tr>
-						<td>Fecha de Culminación</td>
-						<td>08/12/2018</td>
-					</tr>
-				</table>
-
-				<h4>Formación Tecnica</h4>
-
-				<table border="1">
-					<tr>
-						<td>Titulo Obtenido</td>
-						<td>Técnico en producción agropecuaria</td>
-					</tr>
-					<tr>
-						<td>Institución Educativa</td>
-						<td>Centro agroempresarial y minero (SENA) </td>
-					</tr>
-					<tr>
-						<td>Fecha de Culminación</td>
-						<td>03/12/2015</td>
-					</tr>
-				</table>
-			</div>
-		</section>
-
-		<section class="curriculum" id="modalZohair">
-			<div class="titulo">
-				<img src="img/zohair.jpeg" alt="">
-				<h2>Zohair Andres Castro Rosis</h2>
-			</div>
-
-			<h2>Información General</h2>
-
-			<div class="infoCurriculum">
-				<table border="1">
-					<tr>
-						<td>Fecha de nacimiento</td>
-						<td>20/12/2001</td>
-					</tr>
-					<tr>
-						<td>Correo</td>
-						<td>Zacr2012@hotmail.com</td>
-					</tr>
-					<tr>
-						<td>Ciudad</td>
-						<td>Barranquilla</td>
-					</tr>
-					<tr>
-						<td>Numero</td>
-						<td>3185242625</td>
-					</tr>
-				</table>
-			</div>
-
-			<h2>Información Académica</h2>
-
-			<div class="infoCurriculum">
-
-				<h4>Secundaria</h4>
-
-				<table border="1">
-					<tr>
-						<td>Titulo Obtenido</td>
-						<td>Bachiller Académico </td>
-					</tr>
-					<tr>
-						<td>Institución Educativa</td>
-						<td>VISTA HERMOSA</td>
-					</tr>
-					<tr>
-						<td>Fecha de Culminación</td>
-						<td>05/12/2017</td>
-					</tr>
-				</table>
-
-				<h4>Formación Tecnica</h4>
-
-				<table border="1">
-					<tr>
-						<td>Titulo Obtenido</td>
-						<td>Tecnico laboral por competencias en mantenimiento electromecanico industrial</td>
-					</tr>
-					<tr>
-						<td>Institución Educativa</td>
-						<td>ITSA</td>
-					</tr>
-					<tr>
-						<td>Fecha de Culminación</td>
-						<td>14/12/2017</td>
-					</tr>
-				</table>
-			</div>
-		</section>
-
-		<section class="curriculum" id="modalMelissa">
-			<div class="titulo">
-				<img src="img/melissa.jpeg" alt="">
-				<h2>Melissa Perez Peña</h2>
-			</div>
-
-			<h2>Información General</h2>
-
-			<div class="infoCurriculum">
-				<table border="1">
-					<tr>
-						<td>Fecha de nacimiento</td>
-						<td>19/04/2002</td>
-					</tr>
-					<tr>
-						<td>Correo</td>
-						<td>perezmelissa1904@gmail.com</td>
-					</tr>
-					<tr>
-						<td>Ciudad</td>
-						<td>Barranquilla</td>
-					</tr>
-					<tr>
-						<td>Numero</td>
-						<td>1234569567</td>
-					</tr>
-				</table>
-			</div>
-
-			<h2>Información Académica</h2>
-
-			<div class="infoCurriculum">
-
-				<h4>Secundaria</h4>
-
-				<table border="1">
-					<tr>
-						<td>Titulo Obtenido</td>
-						<td>Bachiller Académico </td>
-					</tr>
-					<tr>
-						<td>Institución Educativa</td>
-						<td>LICEO METROPOLITANO TERESA DE JESUS</td>
-					</tr>
-					<tr>
-						<td>Fecha de Culminación</td>
-						<td>12/12/2018</td>
-					</tr>
-				</table>
-
-				<h4>Formación Tecnica</h4>
-
-				<table border="1">
-					<tr>
-						<td>Titulo Obtenido</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Institución Educativa</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Fecha de Culminación</td>
-						<td></td>
-					</tr>
-				</table>
-			</div>
-		</section>
-	</div>
-
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<header id="header">
-					<div class="bg">
-						<div class="nav">
-							<nav>
-								<a href="https://hguzman.github.io/Planeadores/">Inicio</a>
-								<a href="documentacion.html">Documentación</a>
-								<a href="diagrams.html">Diagramas</a>
-								<a href="#">Galería</a>
-							</nav>
-						</div>
-						<div class="textos">
-							<h1>Proyecto Planeadores</h1>
-							<p>Landing Page</p>
-						</div>
-						<div class="images">
-							<!-- <img src="img/img1.jpg" alt=""> -->
-						</div>
-					</div>
-				</header>
+        <div class="row sticky-top shadow-sm p-2 bg-white rounded">
+            <div class="col-4 col-md-4 d-flex justify-content-start align-items-center">
+                <h1 class="h3 pt-2"><a href="index.html">PLANEADORES</a></h1>
+            </div>
+            <div class="col-8 col-md-8 d-flex justify-content-end align-items-center">
+                <i id="btnAbrirMenu" class="fas fa-bars pr-3"></i>
+                <ul class="nav ul">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="documentacion.html">Documentación</a>
+                    <a class="nav-link" href="diagramas.html">Diagramas</a>
+                    <a class="nav-link" href="#">Galería</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	<div class="container mt-5 mb-5">
+		<div class="row d-flex justify-content-between align-items-center header">
+			<div class="col-12 col-md-6">
+				<img class="img-fluid" src="img/ilustracion.png" alt="">
+			</div>
+			<div class="col-12 col-md-6 textos">
+				<h2 class="text-center">
+					Proyecto Planeadores <br>
+					<span>Landing Page</span>
+				</h2>
+				<div class="d-flex justify-content-center mt-4">
+					<a class="btn btn-comenzar" href="#planeadores">Comencemos!</a>
+				</div>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col">
-				<section class="container">
-					<h1 class="text-center">Planeadores</h1>
+		<div class="row mt-5 mb-5 d-flex justify-content-between align-items-center" id="planeadores">
+			<div class="col-12 col-md-6">
+				<img class="img-fluid" src="img/ilustracion-1.png" alt="">
+			</div>
+			<div class="col-12 col-md-6">
+				<h2 class="text-center mb-4">Planeadores</h2>
+				<h3>Quienes somos?</h3>
+				<p>Somos un grupo de profesionales en Primera Infancia que brindamos apoyo y/o asesoría a padres, madres, cuidadores y agentes educativos de las distintas modalidades del ICBF, con el fin de hacer aportes significativos a su labor, ya sea en su rol de padre o en su rol de docentes. Ponemos al servicio de cada uno de ustedes nuestros conocimientos y experiencias desde el momento en que decidimos traspasar las barreras de un aula para llegar aún más lejos, a más niños y niñas, pero siempre con la mirada fija en el resultado esperado que no se puede perder de vista nunca: “El desarrollo integral de cada niño y niña de nuestro país desde su primera infancia”</p>
 
-					<div class="shadow-sm p-3 mb-5 bg-white rounded">
-						<h2>Quienes Somos?</h2>
-						<p>Somos un grupo de profesionales en Primera Infancia que brindamos apoyo y/o asesoría a padres, madres, cuidadores y agentes educativos de las distintas modalidades del ICBF, con el fin de hacer aportes significativos a su labor, ya sea en su rol de padre o en su rol de docentes. Ponemos al servicio de cada uno de ustedes nuestros conocimientos y experiencias desde el momento en que decidimos traspasar las barreras de un aula para llegar aún más lejos, a más niños y niñas, pero siempre con la mirada fija en el resultado esperado que no se puede perder de vista nunca: “El desarrollo integral de cada niño y niña de nuestro país desde su primera infancia”</p><br>
+				<p>En nuestra web encontrarás artículos y materiales sobre diversos temas de primera infancia, recursos didácticos novedosos y útiles para padres y agentes educativos, videos interactivos y planeaciones pedagógicas con temáticas semanales y mensuales, según los requerimientos del ICBF, teniendo en cuenta las actividades rectoras, los intereses y necesidades de los niños y niñas.</p>
+			</div>
+		</div>
 
-						<p>En nuestra web encontrarás artículos y materiales sobre diversos temas de primera infancia, recursos didácticos novedosos y útiles para padres y agentes educativos, videos interactivos y planeaciones pedagógicas con temáticas semanales y mensuales, según los requerimientos del ICBF, teniendo en cuenta las actividades rectoras, los intereses y necesidades de los niños y niñas.</p>
+		<div class="row mt-5 mb-5 d-flex justify-content-center align-items-center p-5">
+			<div class="card mb-4 mr-4" style="width: 30rem;">
+				<img src="img/vision.svg" class="card-img-top" alt="visión">
+				<div class="card-body">
+					<h5 class="card-title">Visión</h5>
+					<p class="card-text">Dar a las modalidades de atención del ICBF (Tradicional, Familiar, e Institucional), el mejor servicio, calidad y valor en las planeaciones pedagógicas.</p>
+				</div>
+			</div>
+
+			<div class="card" style="width: 30rem;">
+				<img src="img/mision.svg" class="card-img-top" alt="misión">
+				<div class="card-body">
+					<h5 class="card-title">Misión</h5>
+					<p class="card-text">Contribuir a las necesidades que tienen las madres comunitarias y docentes, de formar niños y niñas en ambientes pedagógicos enriquecedores atendiendo sus necesidades e intereses.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row pt-5 pb-5">
+			<div class="col-12">
+				<h3>Integrantes</h3>
+				<div class="tarjetas d-flex justify-content-center flex-wrap">
+					<div class="card mb-3 mr-4 shadow p-3 mb-5 bg-white rounde" style="width: 15rem;">
+						<img src="img/cristianImg.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text">Soy una persona apasionada por la programación, responsable, puntual y siempre comprometido con mi trabajo nunca paro de aprender siempre estoy en busca de adquirir nuevos conocimientos.</p>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCristian">Ver más</button>
+						</div>
 					</div>
 
-					<div class="shadow-sm p-3 mb-5 bg-white rounded">
-							<h2>Misión</h2>
-							<p>Dar a las modalidades de atención del ICBF (Tradicional, Familiar, e Institucional), el mejor servicio, calidad y valor en las planeaciones pedagógicas.</p>
+					<div class="card mb-3 shadow p-3 mb-5 mr-4 bg-white rounde" style="width: 15rem;">
+						<img src="img/melissa.jpeg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text">Soy una chica con altas capacidades, determinada y capaz de lograr todo lo que me proponga con tiempo y dedicación; soy ágil trabajando en equipo, no me limito a lo poco, siempre trabajo para mejorar.</p>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalMelissa">Ver más</button>
+						</div>
 					</div>
-					<div class="shadow-sm p-3 mb-5 bg-white rounded">
-						<h2>Visión</h2>
-						<p>Contribuir a las necesidades que tienen las madres comunitarias y docentes, de formar niños y niñas en ambientes pedagógicos enriquecedores atendiendo sus necesidades e intereses.</p>
+
+					<div class="card mb-3 mr-4 shadow p-3 mb-5 bg-white rounde" style="width: 15rem;">
+						<img src="img/jhan.jpeg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text">Soy un joven trabajador, puntual con labores asignadas y con la capacidad de desenvolverme en cual situación laboral que se presente, Aprendo rápido, me adapto a los habientes de trabajo rápidamente y se me facilita el trabajo en equipo.</p>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalJhan">Ver más</button>
+						</div>
 					</div>
-				</section>
+
+					<div class="card shadow p-3 mb-5 bg-white rounde" style="width: 15rem;">
+						<img src="img/zohair.jpeg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text">Soy un persona con metas claras, deseos de superación y capaz de realizar las labores asignadas, no sé me dificulta adaptarme a el ambiente laboral y de dar buenos resultados ante una actividad ya sea individual o grupal.</p>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalZohair">Ver más</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	
+	<!-- Modal -->
+	<div class="modal fade" id="modalCristian" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Cristian Julio</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
 
-	<section class="container">
-		<h1 class="text-center">Planeadores</h1>
+				<div class="modal-body">
+					<div class="row d-flex align-items-center">
+						<div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+							<img src="img/cristianImg.jpg" alt="" class="d-block w-50">
+						</div>
+						<div class="col-md-8 col-12 mb-3 mt-3">
+							<h1 class="text-center">Cristian Andres Julio Cantillo</h1>
+						</div>
+					</div>
 
-		<div class="shadow-sm p-3 mb-5 bg-white rounded">
-			<h2>Quienes Somos?</h2>
-			<p>Somos un grupo de profesionales en Primera Infancia que brindamos apoyo y/o asesoría a padres, madres, cuidadores y agentes educativos de las distintas modalidades del ICBF, con el fin de hacer aportes significativos a su labor, ya sea en su rol de padre o en su rol de docentes. Ponemos al servicio de cada uno de ustedes nuestros conocimientos y experiencias desde el momento en que decidimos traspasar las barreras de un aula para llegar aún más lejos, a más niños y niñas, pero siempre con la mirada fija en el resultado esperado que no se puede perder de vista nunca: “El desarrollo integral de cada niño y niña de nuestro país desde su primera infancia”</p><br>
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-center">Información General</h2>
+						</div>
+					</div>
 
-			<p>En nuestra web encontrarás artículos y materiales sobre diversos temas de primera infancia, recursos didácticos novedosos y útiles para padres y agentes educativos, videos interactivos y planeaciones pedagógicas con temáticas semanales y mensuales, según los requerimientos del ICBF, teniendo en cuenta las actividades rectoras, los intereses y necesidades de los niños y niñas.</p>
-		</div>
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Fecha de nacimiento</td>
+										<td>25/05/2001</td>
+									</tr>
+									<tr>
+										<td>Correo</td>
+										<td>cristianandres2001julio@gmail.com</td>
+									</tr>
+									<tr>
+										<td>Ciudad</td>
+										<td>Barranquilla</td>
+									</tr>
+									<tr>
+										<td>Número</td>
+										<td>1234569567</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 
-		<div class="shadow-sm p-3 mb-5 bg-white rounded">
-				<h2>Misión</h2>
-				<p>Dar a las modalidades de atención del ICBF (Tradicional, Familiar, e Institucional), el mejor servicio, calidad y valor en las planeaciones pedagógicas.</p>
-		</div>
-		<div class="shadow-sm p-3 mb-5 bg-white rounded">
-			<h2>Visión</h2>
-			<p>Contribuir a las necesidades que tienen las madres comunitarias y docentes, de formar niños y niñas en ambientes pedagógicos enriquecedores atendiendo sus necesidades e intereses.</p>
-		</div>
-	</section>
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-center">Información Academica</h2>
+						</div>
+					</div>
 
-	<div class="container">
-		<div class="row row-cols-1 row-cols-md-2">
-		  <div class="col mb-4">
-		    <div class="card">
-		      <img src="img/cristianimg.jpg" class="card-img-top" alt="..." height="400px">
-		      <div class="card-body">
-		        <h5 class="card-title">Cristian Julio</h5>
-		        <p class="card-text">Soy una persona apasionada por la programación, responsable, puntual y siempre comprometido con mi trabajo nunca paro de aprender siempre estoy en busca de adquirir nuevos conocimientos.</p>
-						<button class="btnInfo" id="btnCristian">Ver Info</button>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col mb-4">
-		    <div class="card">
-		      <img src="img/melissa.jpeg" class="card-img-top" alt="..." height="400px">
-		      <div class="card-body">
-		        <h5 class="card-title">Melissa Perez</h5>
-		        <p class="card-text">Soy una chica con altas capacidades, determinada y capaz de lograr todo lo que me proponga con tiempo y dedicación; soy ágil trabajando en equipo, no me limito a lo poco, siempre trabajo para mejorar.</p>
-						<button class="btnInfo" id="btnMelissa">Ver Info</button>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col mb-4">
-		    <div class="card">
-		      <img src="img/jhan.jpeg" class="card-img-top" alt="..." height="400px">
-		      <div class="card-body">
-		        <h5 class="card-title">Jhan Carlos</h5>
-		        <p class="card-text">Soy un joven trabajador, puntual con labores asignadas y con la capacidad de desenvolverme en cual situación laboral que se presente, Aprendo rápido, me adapto a los habientes de trabajo rápidamente y se me facilita el trabajo en equipo.</p>
-						<button class="btnInfo" id="btnJhan">Ver Info</button>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col mb-4">
-		    <div class="card">
-		      <img src="img/zohair.jpeg" class="card-img-top" alt="..." height="400px">
-		      <div class="card-body">
-		        <h5 class="card-title">Zohair Castro</h5>
-		        <p class="card-text">Soy un persona con metas claras, deseos de superación y capaz de realizar las labores asignadas, no sé me dificulta adaptarme a el ambiente laboral y de dar buenos resultados ante una actividad ya sea individual o grupal.</p>
-						<button class="btnInfo" id="btnZohair">Ver Info</button>
-		      </div>
-		    </div>
-		  </div>
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="text-left mb-3">Secundaria</h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Titulo obtenido</td>
+										<td>Bachiller Académico</td>
+									</tr>
+									<tr>
+										<td>Institución Educativa</td>
+										<td>SARID ARTETA DE VASQUEZ</td>
+									</tr>
+									<tr>
+										<td>Fecha de Culminación</td>
+										<td>02/12/2018</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="text-left mb-3">Formación Técnica</h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Titulo Obtenido</td>
+										<td>Técnico en reparación y Mantenimiento de Computadore</td>
+									</tr>
+									<tr>
+										<td>Institución Educativa</td>
+										<td>ALITIC Alianza técnica </td>
+									</tr>
+									<tr>
+										<td>Fecha de Culminación</td>
+										<td>02/12/2018</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<footer class="d-flex justify-content-around">
-			<ul id="creditos">
-				<h3>Creditos</h3>
-				<li>Imagen de <a href="https://pixabay.com/es/users/SplitShire-364019/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=438432">SplitShire</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=438432">Pixabay</a></li>
+	<div class="modal fade" id="modalMelissa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Melissa Perez</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
 
-				<li>Imagen de <a href="https://pixabay.com/es/users/kareni-5357143/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3533177">RÜŞTÜ BOZKUŞ</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3533177">Pixabay</a></li>
+				<div class="modal-body">
+					<div class="row d-flex align-items-center">
+						<div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+							<img src="img/melissa.jpeg" alt="" class="d-block w-50">
+						</div>
+						<div class="col-md-8 col-12 mb-3 mt-3">
+							<h1 class="text-center">Melissa Perez Peña</h1>
+						</div>
+					</div>
 
-				<li>Imagen de <a href="https://pixabay.com/es/users/FrankWinkler-64960/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=540812">Frank Winkler</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=540812">Pixabay</a></li>
-			</ul>
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-center">Información General</h2>
+						</div>
+					</div>
 
-			<ul id="info">
-				<h3>Contactanos</h3>
-				<li><i class="fas fa-phone"></i> Tel:3042084767</li>
-				<li><i class="fas fa-envelope"></i> Correo: roduca09@hotmail.com</li>
-				<li><i class="fas fa-calendar-alt"></i> Horario de atención: 7am-6pm</li>
-			</ul>
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Fecha de nacimiento</td>
+										<td>19/04/2002</td>
+									</tr>
+									<tr>
+										<td>Correo</td>
+										<td>perezmelissa1904@gmail.com</td>
+									</tr>
+									<tr>
+										<td>Ciudad</td>
+										<td>Barranquilla</td>
+									</tr>
+									<tr>
+										<td>Número</td>
+										<td>1234569567</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 
-			<ul id="redes">
-				<h3>Nuestras Redes</h3>
-					<a href=" https://www.youtube.com/channel/UCnKoW7F4xyycHpJ1SWRBlEA" target="_blank"><i class="fab fa-youtube"></i></a>
-					<a href=" https://www.facebook.com/groups/miprimerainfancia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-					<a href=" https://www.instagram.com/mi_primera_infancia/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
-					<a href=" https://twitter.com/miprimerainfanc" target="_blank"><i class="fab fa-twitter"></i></a>
-			</ul>
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-center">Información Academica</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="text-left mb-3">Secundaria</h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Titulo obtenido</td>
+										<td>Bachiller Académico</td>
+									</tr>
+									<tr>
+										<td>Institución Educativa</td>
+										<td>LICEO METROPOLITANO TERESA DE JESUS</td>
+									</tr>
+									<tr>
+										<td>Fecha de Culminación</td>
+										<td>12/12/2018</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="text-left mb-3">Formación Técnica</h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Titulo Obtenido</td>
+										<td>N/A</td>
+									</tr>
+									<tr>
+										<td>Institución Educativa</td>
+										<td>N/A</td>
+									</tr>
+									<tr>
+										<td>Fecha de Culminación</td>
+										<td>N/A</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalJhan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Jhan Bastidas</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+					<div class="row d-flex align-items-center">
+						<div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+							<img src="img/jhan.jpeg" alt="" class="d-block w-50">
+						</div>
+						<div class="col-md-8 col-12 mb-3 mt-3">
+							<h1 class="text-center">Jhan Carlos Bastidas Martinez</h1>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-center">Información General</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Fecha de nacimiento</td>
+										<td>21/12/2001</td>
+									</tr>
+									<tr>
+										<td>Correo</td>
+										<td>bastidasmartinezj@gmail.com</td>
+									</tr>
+									<tr>
+										<td>Ciudad</td>
+										<td>Barranquilla</td>
+									</tr>
+									<tr>
+										<td>Número</td>
+										<td>1234567433</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-center">Información Academica</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="text-left mb-3">Secundaria</h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Titulo obtenido</td>
+										<td>Bachiller Académico</td>
+									</tr>
+									<tr>
+										<td>Institución Educativa</td>
+										<td>TECNICA AGROPECUARIA</td>
+									</tr>
+									<tr>
+										<td>Fecha de Culminación</td>
+										<td>08/12/2018</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="text-left mb-3">Formación Técnica</h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Titulo Obtenido</td>
+										<td>Técnico en producción agropecuaria</td>
+									</tr>
+									<tr>
+										<td>Institución Educativa</td>
+										<td>Centro agroempresarial y minero (SENA) </td>
+									</tr>
+									<tr>
+										<td>Fecha de Culminación</td>
+										<td>03/12/2015</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalZohair" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Zohair Castro</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+					<div class="row d-flex align-items-center">
+						<div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+							<img src="img/zohair.jpeg" alt="" class="d-block w-50">
+						</div>
+						<div class="col-md-8 col-12 mb-3 mt-3">
+							<h1 class="text-center">Zohair Andres Castro Rosis</h1>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-center">Información General</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Fecha de nacimiento</td>
+										<td>20/12/2001</td>
+									</tr>
+									<tr>
+										<td>Correo</td>
+										<td>Zacr2012@hotmail.com</td>
+										<td>3185242625</td>
+									</tr>
+									<tr>
+										<td>Ciudad</td>
+										<td>Barranquilla</td>
+									</tr>
+									<tr>
+										<td>Número</td>
+										<td>1234567433</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-center">Información Academica</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="text-left mb-3">Secundaria</h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Titulo obtenido</td>
+										<td>Bachiller Académico</td>
+									</tr>
+									<tr>
+										<td>Institución Educativa</td>
+										<td>VISTA HERMOSA</td>
+									</tr>
+									<tr>
+										<td>Fecha de Culminación</td>
+										<td>05/12/2017</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="text-left mb-3">Formación Técnica</h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Titulo Obtenido</td>
+										<td>Tecnico laboral por competencias en mantenimiento electromecanico industrial</td>
+									</tr>
+									<tr>
+										<td>Institución Educativa</td>
+										<td>ITSA</td>
+									</tr>
+									<tr>
+										<td>Fecha de Culminación</td>
+										<td>14/12/2017</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="mt-4 pt-5 pb-5 bg-dark text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-9">
+					<ul>
+						<h3 class="text-left">Contactanos</h3>
+						<p><i class="fas fa-phone"></i> Tel:3042084767</p>
+						<p><i class="fas fa-envelope"></i> Correo: roduca09@hotmail.com</p>
+						<p><i class="fas fa-calendar-alt"></i> Horario de atención: 7am-6pm</p>
+					</ul>
+				</div>
+
+				<div class="col-12 col-md-3">
+					<h3 class="mb-4 text-center">Redes</h3>
+					<div class="redes d-flex justify-content-around">
+						<a href=" https://www.youtube.com/channel/UCnKoW7F4xyycHpJ1SWRBlEA" target="_blank"><i class="fab fa-youtube"></i></a>
+						<a href=" https://www.facebook.com/groups/miprimerainfancia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href=" https://www.instagram.com/mi_primera_infancia/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href=" https://twitter.com/miprimerainfanc" target="_blank"><i class="fab fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
 
-	<script src="js/app.js"></script>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="documentacion.html">Documentación</a></li>
+			<li><a href="diagramas.html">Diagramas</a></li>
+			<li><a href="#">Galería</a></li>
+		</ul>
+
+		<i class="fa fa-times" id="btnCerrarMenu"></i>
+	</div>
+
+	<script src="js/app.js" type="module"></script>
 </body>
 </html>
