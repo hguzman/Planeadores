@@ -1,46 +1,26 @@
-//Curriculum
-const btns = document.querySelectorAll('.btnInfo');
-const modal = document.querySelector('.modal');
-const modalCristian = document.getElementById('modalCristian');
-const modalJhan = document.getElementById('modalJhan');
-const modalZohair = document.getElementById('modalZohair');
-const modalMelissa = document.getElementById('modalMelissa');
-const btnCerrar = document.querySelector('.cerrar');
+import {Interfaz} from './interfaz.js';
 
-btnCerrar.addEventListener('click', cerrarModal);
+const btnAbrirMenu = document.getElementById('btnAbrirMenu'),
+      btnCerrarMenu = document.getElementById('btnCerrarMenu'),
+      btnCerrarModal = document.getElementById('btnCerrarModal'),
+      menu = document.getElementById('menu'),
+      ul = document.querySelector('#menu > ul'),
+      diagramas = document.getElementById('diagramas');
 
-btns.forEach(function(btn) {
-	btn.addEventListener('click', abrirCurriculum);
+btnAbrirMenu.addEventListener('click', () => {
+    Interfaz.mostrarMenu(menu, btnCerrarMenu, ul);
+    btnAbrirMenu.style.color = '#fff';
 });
 
-document.addEventListener('keyup', cerrarModal);
+btnCerrarMenu.addEventListener('click', () => {
+    Interfaz.quitarMenu(menu, btnCerrarMenu, ul);
+    btnAbrirMenu.style.color = '#000';
+});
 
-function abrirCurriculum(e) {
-	modal.style.display = 'flex';
+diagramas.addEventListener('click', e => {
+    Interfaz.mostarModalDiagramas(e);
+});
 
-	if(e.target.getAttribute('id') === 'btnCristian') {
-		modalCristian.style.display = 'flex';
-	} else if(e.target.getAttribute('id') === 'btnJhan') {
-		modalJhan.style.display = 'flex';
-	} else if(e.target.getAttribute('id') === 'btnZohair') {
-		modalZohair.style.display = 'flex';
-	} else if(e.target.getAttribute('id') === 'btnMelissa') {
-		modalMelissa.style.display = 'flex';
-	}
-}
-
-function cerrarModal(e) {
-	modal.style.display = 'none';
-		modalCristian.style.display = 'none';
-		modalJhan.style.display = 'none';
-		modalZohair.style.display = 'none';
-		modalMelissa.style.display = 'none';
-
-	if(e.which == 27) {
-		modal.style.display = 'none';
-		modalCristian.style.display = 'none';
-		modalJhan.style.display = 'none';
-		modalZohair.style.display = 'none';
-		modalMelissa.style.display = 'none';
-	}
-}
+btnCerrarModal.addEventListener('click', () => {
+   Interfaz.quitarModalDiagramas();
+});
