@@ -1,126 +1,108 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+/* Header */
+
+.header {
+	background: #fff;
 }
 
-body, html {
-	font-family: helvetica, neue;
-}
+/* =================== */
 
-a {
-    text-decoration: none;
-}
+/* Menu */
 
-header {
+#menu {
+	position: fixed;
+	top: 0;
+	left: -2450px;
+	background:rgba(0, 0, 0, .6);
+	height: 100vh;
 	width: 100%;
-	height: 80px;
-	margin-bottom: 100px;
-
-	background: rgb(238,174,202);
-	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-
-	overflow: hidden;
+	z-index: 1100;
+	justify-content: space-between;
 }
 
-	header nav {
-		margin-left: 20px;
-		transition: all .3s ease;
-		width: 100%;
-	}
+#menu ul {
+	position: fixed;
+	top: 0;
+	left: -2450px;
 
-	.nav {
-		width: 100%;
-		display: flex;
-		align-items: center;
-	}
+	list-style: none;
+	padding: 20px;
 
-		header nav a {
-			color: #fff;
-			margin-left: 20px;
-			text-decoration: none;
-			transition: all 0.3s;
-		}
+	width: 80%;
+	background:rgba(40, 38, 70, .8);
+	height: 100%;
 
-		header nav a:hover {
-			color: #333;
-		}
+	transition: all .5s;
+}
 
-	header .textos {
-		color: #f4f4f4;
-		width: 50%;
-	}
+#menu ul li {
+	margin-bottom: 15px;
+}
 
-		header .textos h1 {
-			font-size: 40pt;
-			font-weight: normal;
-			margin-left: 50px;
-			width: 100%;
-		}
+#menu ul li a {
+	color: #fff;
+	transition: all .3s;
+}
 
-		header .textos p {
-			font-size: 15pt;
-			margin-left: 50px;
-			margin-top: 30px;
-		}
+#menu ul li a:hover {
+	text-decoration: none;
+	color: #8dc2fa;
+}
 
-	header .images {
-		width: 50%;
-	}
+#menu i {
+	position: fixed;
+	top: 0px;
+	right: -100px;
 
-		header .images img {
-			border-radius: 10px;
-			height: 70%;
-			object-fit: cover;
-			width: 70%;
-		}
+	color: #fff;
+	font-size: 20pt;
+	padding-top: 20px;
+	font-weight: bolder;
+}
 
+/* Botones Menú */
 
-footer {
-	position: relative;
-	margin-top: 100px;
+#btnAbrirMenu, #btnCerrarMenu {
+	cursor: pointer;
+}
+
+/* FontAwesome */
+
+div i {
+	font-size: 20pt;
+}
+
+.redes i {
+	color: #fff;
+	font-size: 25pt;;
+}
+
+/* =================== */
+
+/* Titulos */
+
+h1 a {
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	color: #413e66;
+	letter-spacing: 3px;
+}
+
+h1 > a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+h2 {
+	font-size: 34px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	color: #413e66;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400px;
 	text-align: center;
-	background: #333;
-	color: #f4f4f4;
-	padding: 20px 0;
-	letter-spacing: 1px;
-
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
 }
 
-	footer h3 {
-		margin-bottom: 10px;
-	}
-
-	footer ul a {
-		text-decoration: none;
-		color: #fff;
-		font-weight: bold;
-	}
-
-	footer ul {
-		list-style: none;
-		text-align: left;
-	}
-
-	footer ul li {
-		margin-bottom: 10px;
-	}
-
-	footer #redes a {
-		display: inline-block;
-		margin-right: 20px;
-	}
-
-	i {
-		color: white;
-		font-size: 20pt;
-	}
+/* =================== */
