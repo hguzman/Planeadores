@@ -1,0 +1,70 @@
+@import url(header.css);
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+ .ul {
+    display: flex;
+    list-style: none;
+    margin-top: 25px;
+}
+
+ .ul li {
+    width: 240px;
+    height: 240px;
+    border: 1px solid #333;
+    margin: 0 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+ .ul li img {
+    height: 300px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+ .ul li img:hover {
+    transform: scale(1.2);
+}
+
+ .ul li span {
+    display: block;
+    padding: 10px;
+    background: #0a98c0;
+    color: #fff;
+    text-align: center;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, .5);
+    z-index: 1100;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+}
+
+#modal img {
+    width: 90%;
+    max-height: 90%;
+}
+
+#modal #btnCerrarModal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    color: #fff;
+    cursor: pointer;
+}

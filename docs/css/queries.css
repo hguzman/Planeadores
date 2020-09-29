@@ -1,0 +1,25 @@
+@media screen and (max-width: 1200px) {
+	#btnAbrirMenu {
+		display: block;
+	}
+
+	.nav {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	#btnAbrirMenu {
+		display: none;
+	}
+
+	.nav {
+		display: auto;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+		height: 85vh;
+	}
+}
