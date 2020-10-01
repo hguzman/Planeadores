@@ -4,7 +4,7 @@ Se creará un aplicativo web que ayudará a la empresa Planeadores a agilizar lo
 [Landing page](https://hguzman.github.io/Planeadores/).
 
 ### Versión actual
-- 1.7.0
+-  1.11.3
 
 ### Versión de Ruby
 - 2.6.6
