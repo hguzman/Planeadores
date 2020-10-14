@@ -11,7 +11,7 @@ class NotificacionMailerTest < ActionMailer::TestCase
 
   test "nuevo" do
     mail = NotificacionMailer.nuevo
-    assert_equal "Nuevo", mail.subject
+    assert_equal "Ha sido registrado a Planeadores.", mail.subject
     assert_equal ["to@example.org"], mail.to
     assert_equal ["from@example.com"], mail.from
     assert_match "Hi", mail.body.encoded
