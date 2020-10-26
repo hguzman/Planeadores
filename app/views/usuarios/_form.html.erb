@@ -1,10 +1,10 @@
 <%= simple_form_for @usuario, wrapper: :vertical_form  do |f| %>
-	<%= f.input :email, input_html: { autocomplete: "off", autofocus: "on" } %>
- 	<%= f.input :password, input_html: { autocomplete: "off" } %>
- 	<%= f.input :password_confirmation, input_html: { autocomplete: "off" } %>
-  	<%= f.input :primerNombre, input_html: { autocomplete: "off" } %>
-  	<%= f.input :segundoNombre, input_html: { autocomplete: "off" } %>
- 	<%= f.input :primerApellido, input_html: { autocomplete: "off" } %>
+	<%= f.input :email, label: "Correo", input_html: { autocomplete: "off", autofocus: "on" } %>
+ 	<%= f.input :password, label: "Contraseña", input_html: { autocomplete: "off" } %>
+ 	<%= f.input :password_confirmation, label: "Confirmar Contraseña", input_html: { autocomplete: "off" } %>
+  	<%= f.input :primerNombre, label: "Primer Nombre", input_html: { autocomplete: "off" } %>
+  	<%= f.input :segundoNombre, label: "Segundo Nombre", input_html: { autocomplete: "off" } %>
+ 	<%= f.input :primerApellido, label: "Primer Apellido", input_html: { autocomplete: "off" } %>
  	<%= f.association :roles, as: :check_boxes %>
   	<div class="botones">
   		<%= f.button :submit, class: "btn btn-info" %>
