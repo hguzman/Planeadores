@@ -2,7 +2,7 @@
 	<!-- <td><a href="/agentes/<%= @agente.id %>/planeaciones/<%= planeacion.id %>" target="_blank"><%= planeacion.formato.capitalize %></a></td> -->
 	<td><%= link_to planeacion.formato, agente_planeacion_path(@agente, planeacion) %></td>
 	<td><%= planeacion.tematica.capitalize %></td>
-	<td><%= planeacion.fecha_de_creacion %></td>
+	<td><%= planeacion.fecha_de_creacion.strftime("%d-%m-%Y") %></td>
 	<td><%= link_to 'Editar', edit_agente_planeacion_path(@agente, planeacion), :class => "editar"%> <i class="fa fa-edit"></i></td>
 	<td><%= link_to 'Eliminar', agente_planeacion_path(@agente, planeacion), method: :delete, data: {confirm: 'Estás seguro?'}, :class => "eliminar" %> <i class="fa fa-trash"></i></td>
 </tr>
