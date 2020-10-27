@@ -1,7 +1,7 @@
 <tr>
 	<td><%= link_to "$#{transaccion.valor} COP", agente_transaccion_path(@agente, transaccion) %></td>
 	<td><%= transaccion.medio_de_pago %></td>
-	<td><%= transaccion.fecha_de_pago %></td>
+	<td><%= transaccion.fecha_de_pago.strftime("%d-%m-%Y") %></td>
 	<td><%= link_to 'Editar', edit_agente_transaccion_path(@agente, transaccion), :class => "editar"%> <i class="fa fa-edit"></i></td>
 	<td><%= link_to 'Eliminar', agente_transaccion_path(@agente, transaccion), method: :delete, data: {confirm: 'Estás seguro?'}, :class => "eliminar" %> <i class="fa fa-trash"></i></td>
 </tr>
