@@ -22,5 +22,5 @@
 	<dd><%= @transaccion.medio_de_pago.capitalize %></dd>
 
 	<dt>Fecha de Pago:</dt>
-	<dd><%= @transaccion.fecha_de_pago %></dd>
+	<dd><%= @transaccion.fecha_de_pago.strftime("%d-%m-%Y") %></dd>
 </dl>
