@@ -40,7 +40,7 @@ end
   		redirect_to agente_path(@agente)
       flash.notice = 'Agente creado'
   	else
-  		render :new
+      render :new
   	end
   end
 
@@ -55,8 +55,8 @@ end
   end
 
   def destroy
-    NotificacionMailer.borrado(@agente).deliver
     @agente.destroy
+    NotificacionMailer.borrado(@agente).deliver
     redirect_to agentes_path
     flash.notice = 'Agente eliminado'
   end
