@@ -30,5 +30,5 @@ production:
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: planeadores_production
-  username: planeadores2020@gmail.com
+  username: planeadores
   password: <%= ENV['PLANEADORES_DATABASE_PASSWORD'] %>
