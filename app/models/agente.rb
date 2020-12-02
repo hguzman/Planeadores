@@ -2,10 +2,10 @@ class Agente < ApplicationRecord
 	has_many :planeaciones, dependent: :destroy
 	has_many :transacciones, dependent: :destroy
 
-	validates :primerNombre, format: {  with: /([a-zA-Z]+)([\D])/, message: ': Solo Letras'}
+	validates :primerNombre, format: {  with: /([a-zA-Z]+)([\D])/, message: ': No se aceptan numeros'}
 	validates :primerNombre, presence: {message: ': Este campo es obligatorio'}
-	validates :segundoNombre, format: {  with: /([a-zA-Z]+)([\D])/, message: ': Solo Letras'}
-	validates :primerApellido, format: {  with: /([a-zA-Z]+)([\D])/, message: ': Solo Letras'}
+	validates :segundoNombre, format: {  with: /([a-zA-Z]+)([\D])/, message: ': No se aceptan numeros'}
+	validates :primerApellido, format: {  with: /([a-zA-Z]+)([\D])/, message: ': No se aceptan numeros'}
 	validates :primerApellido, presence: {message: ': Este campo es obligatorio'}
 	validates :nombreUds, presence: {message: ': Este campo es obligatorio'}
 	validates :modalidad, presence: {message: ': Este campo es obligatorio'}

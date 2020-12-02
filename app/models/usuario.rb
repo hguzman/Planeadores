@@ -5,11 +5,11 @@ class Usuario < ApplicationRecord
   devise :database_authenticatable,
          :recoverable, :rememberable
 
-  validates :primerNombre, format: {  with: /([a-zA-Z]+)([\D])/, message: ': Solo Letras'}
+  validates :primerNombre, format: {  with: /([a-zA-Z]+)([\D])/, message: ': No se aceptan numeros'}
   validates :primerNombre, presence: {message: ': Este campo es obligatorio'}
-  validates :segundoNombre, format: {  with: /([a-zA-Z]+)([\D])/, message: ': Solo Letras'}
+  validates :segundoNombre, format: {  with: /([a-zA-Z]+)([\D])/, message: ': No se aceptan numeros'}
   validates :segundoNombre, presence: {message: ': Este campo es obligatorio'}
-  validates :primerApellido, format: {  with: /([a-zA-Z]+)([\D])/, message: ': Solo Letras'}
+  validates :primerApellido, format: {  with: /([a-zA-Z]+)([\D])/, message: ': No se aceptan numeros'}
   validates :primerApellido, presence: {message: ': Este campo es obligatorio'}
   validates :email, presence: {message: ': Este campo es obligatorio'}
   validates :password, presence: {message: ': Este campo es obligatorio'}
