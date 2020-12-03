@@ -2,7 +2,10 @@ class Agente < ApplicationRecord
 	has_many :planeaciones, dependent: :destroy
 	has_many :transacciones, dependent: :destroy
 
+	validates :primerNombre, format: {  with: /([a-zA-Z]+)([\D])/, message: ': No se aceptan numeros'}
 	validates :primerNombre, presence: {message: ': Este campo es obligatorio'}
+	validates :segundoNombre, format: {  with: /([a-zA-Z]+)([\D])/, message: ': No se aceptan numeros'}
+	validates :primerApellido, format: {  with: /([a-zA-Z]+)([\D])/, message: ': No se aceptan numeros'}
 	validates :primerApellido, presence: {message: ': Este campo es obligatorio'}
 	validates :nombreUds, presence: {message: ': Este campo es obligatorio'}
 	validates :modalidad, presence: {message: ': Este campo es obligatorio'}
@@ -17,6 +20,6 @@ class Agente < ApplicationRecord
 	# RSpec.describe Agente, type: :model do
 	#   it { should have_many(:planeaciones).dependent(:destroy) }
 	# end
-	
+
 	# rspec spec/models/agente_spec.rb
 end
