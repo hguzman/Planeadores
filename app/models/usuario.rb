@@ -6,7 +6,6 @@ class Usuario < ApplicationRecord
          :recoverable, :rememberable
 
   validates :primerNombre, presence: {message: ': Este campo es obligatorio'}
-  validates :segundoNombre, presence: {message: ': Este campo es obligatorio'}
   validates :primerApellido, presence: {message: ': Este campo es obligatorio'}
   validates :email, presence: {message: ': Este campo es obligatorio'}
   validates :password, presence: {message: ': Este campo es obligatorio'}
