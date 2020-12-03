@@ -6,7 +6,7 @@ RSpec.describe Planeacion, type: :model do
 
   it { should belong_to(:agente) }
 
-  ##Validating_presences
+  ##Validations
 
   it do
    should validate_presence_of(:tematica).
