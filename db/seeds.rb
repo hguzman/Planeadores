@@ -11,7 +11,7 @@ usuario = Usuario.create(email: "usuario@gmail.com", password: 123456, password_
 
 a1 = Agente.create(primerNombre: "Jesus", segundoNombre: "Camilo", primerApellido: "Torres", nombreUds: "Niño jesus", modalidad: "Tradicional", correo: "jesus@gmail.com", cedula: 1001779301)
 a2 =Agente.create(primerNombre: "Maria", segundoNombre: "Agustina", primerApellido: "Vázquez", nombreUds: "Mis pequeños", modalidad: "Familiar", correo: "maria@gmail.com", cedula: 1001779302)
-a3 = Agente.create(primerNombre: "Carlos", segundoNombre: "Camilo", primerApellido: "Gil", nombreUds: "Angelitos", modalidad: "Tradicional", correo: "carlos@gmail.com", cedua: 1001779303)
+a3 = Agente.create(primerNombre: "Carlos", segundoNombre: "Camilo", primerApellido: "Gil", nombreUds: "Angelitos", modalidad: "Tradicional", correo: "carlos@gmail.com", cedula: 1001779303)
 a4 = Agente.create(primerNombre: "Diana", segundoNombre: "Isidora", primerApellido: "Llorente", nombreUds: "Pequeños", modalidad: "Familiar", correo: "diana@gmail.com", cedula: 1001779304)
 a5 = Agente.create(primerNombre: "Mario", segundoNombre: "Camilo", primerApellido: "Menéndez", nombreUds: "Traviesos", modalidad: "Tradicional", correo: "mario@gmail.com", cedula: 1001779305)
 a6 = Agente.create(primerNombre: "Hector", segundoNombre: "Camilo", primerApellido: "Salmerón", nombreUds: "Laureles", modalidad: "Propia", correo: "hector@gmail.com", cedula: 1001779306)
