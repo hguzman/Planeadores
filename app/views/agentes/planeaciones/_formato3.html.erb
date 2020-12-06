@@ -1,0 +1,48 @@
+<section class="formato2" id="pg1">
+	<table border="0" style="border-collapse: collapse; font-family: arial; font-size: 11pt;" id="table1">
+		<tr rowspan="2">
+			<td><%= image_tag wicked_pdf_asset_base64('bf.PNG') %></td>
+			<td id="centrado"><b>FORMATO DE PLANEACION PEDAGÓGICA PRIMERA INFANCIA</b></td>
+			<td><%= image_tag wicked_pdf_asset_base64('c.PNG') %></td>
+		</tr>
+		<tr>
+			<td colspan="3" id="centrado"><b>NOMBRE DE LA UNIDAD DE SERVICIO: <%= @agente.nombreUds.upcase %></b></td>
+		</tr>
+		<tr>
+			<td><b>LUGAR Y FECHA: 01/07/2020</b></td>
+			<td colspan="2"><b>NOMBRE DE LA ACTIVIDAD: </b>SOMOS COCINEROS – MIS MANOS TE ENSEÑAN A ALIMENTARTE</td>
+		</tr>
+		<tr>
+			<td id="intencionalidad" colspan="3"><b>INTENCIONALIDAD FORMATIVA: </b>RESALTAR QUE LA ALIMENTACIÓN JUEGA UN PAPEL MUY IMPORTANTE EN LA SALUD DE LAS PERSONAS. ES ESENCIAL QUE, DURANTE LA INFANCIA, LOS NIÑOS TENGAN UNA BUENA ALIMENTACIÓN Y APRENDAN A COMER DE FORMA CORRECTA.</td>
+		</tr>
+		<tr>
+			<td colspan="3" id="centrado"><b><%= "#{@agente.primerNombre.upcase} #{@agente.primerApellido.upcase}" %></b></td>
+		</tr>
+	</table>
+	<table border="1" style="border-collapse: collapse; font-family: arial; font-size: 11pt;" id="table2">
+		<tr>
+			<td>MATERIALES A UTILIZAR</td>
+			<td>DESCRIBA CÓMO ORGANIZARÁ EL ESPACIO O AMBIENTE EDUCATIVO</td>
+			<td>DESCRIBA LA ACTIVIDAD DE INICIO</td>
+			<td>DESCRIBA EL DESARROLLO DE LA ACTIVIDAD</td>
+			<td>DESCRIBA EL CIERRE DE LA ACTIVIDAD</td>
+			<td>DESCRIBA COMO DOCUMENTARÁ LA ACTIVIDAD</td>
+			<td>SITUACIONES OBSERVADAS PARA EL SEGUIMIENTO A NIÑOS Y NIÑAS</td>
+		</tr>
+		<tr>
+			<td>Alimentos, Papel, Crayolas, Celular o cámara</td>
+			<td>Invitar a los padres a congregarse en un espacio del hogar donde puedan llevar a cabo cada una de las actividades con comodidad y amplitud, tener cerca todo lo necesario para ello.</td>
+			<td>Saludar y dar inicio dando a conocer el motivo de la llamada junto con las actividades a realizar en este día. Motivar a padres y niños a participar de cada una. Indagar sobre el estado de salud y emocional de los niños y niñas.</td>
+
+			# Desde aquí
+			
+			<td><p>PRÁCTICA # 1: Para asegurar el correcto desarrollo de los niños es imprescindible ofrecerles una buena alimentación, basada en el equilibrio de frutas, verduras, carne, pescado, legumbres, arroz, etc. Sin embargo, no siempre resulta tarea fácil conseguir que ingieran ciertos productos, y uno de los alimentos que más cuesta que coman los niños es la fruta. Por tal razón queremos ayudarte con este tema y, por ello, te proponemos elaborar una divertida ensalada de frutas para niños. ¡Deja volar tu imaginación e invita a preparar este rico plato a los niños! (Ver anexo)</p><br></td>
+
+			# Hasta quí
+
+			<td></td>
+			<td>retos de cuidado y crianza en el hogar mis manos te enseñan experiencias de cuidado y crianza</td>
+			<td></td>
+		</tr>
+	</table>
+</section>
